@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
             status.className = "form-status ok";
             form.reset();
           } else {
-            status.textContent = "Something went wrong. Please email hello@your-brand.com directly.";
+            status.textContent = "Something went wrong. Please email Yvonnehome2026@outlook.com directly.";
             status.className = "form-status err";
           }
         })
         .catch(function () {
-          status.textContent = "Network error. Please email hello@your-brand.com directly.";
+          status.textContent = "Network error. Please email Yvonnehome2026@outlook.com directly.";
           status.className = "form-status err";
         });
     });
