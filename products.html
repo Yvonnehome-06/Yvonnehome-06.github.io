@@ -3,23 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Products — Home & Soft Furnishings Catalog | Yvonne Home</title>
-  <meta name="description" content="B2B catalog of home & soft furnishings: curtains, cushions, throws, rugs, bedding and table linens. OEM/ODM, low MOQ, certified materials for EU/US importers." />
+  <title>Artificial Flower Catalog — 690+ SKUs | EVONNEHOME</title>
+  <meta name="description" content="Browse 690+ artificial flowers and greenery by category: roses, hydrangeas, peonies, lilies, orchids, chrysanthemums, baby's breath, greenery and more. Factory-direct for wedding and event decorators." />
   <link rel="canonical" href="https://yvonnehome-06.github.io/products.html" />
   <link rel="alternate" hreflang="en" href="https://yvonnehome-06.github.io/products.html" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <style>
+    /* Catalog-specific additions */
+    .catalog-toolbar { display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin:22px 0 8px; }
+    .catalog-search { flex:1; min-width:220px; padding:11px 15px; border:1.5px solid var(--c-line); border-radius:999px; font:inherit; font-size:14px; }
+    .catalog-search:focus { outline:none; border-color:var(--c-accent); }
+    .catalog-count { font-size:13px; color:var(--c-muted); white-space:nowrap; }
+    .cat-section { scroll-margin-top:80px; margin-top:44px; }
+    .cat-section h2 { display:flex; align-items:baseline; gap:10px; }
+    .cat-section h2 small { font-size:13px; color:var(--c-muted); font-weight:500; }
+    .prod .thumb { cursor:zoom-in; }
+    .prod .body h3 { font-size:15px; line-height:1.35; }
+    .prod .meta { font-size:12px; margin-bottom:8px; }
+    .prod .tags .tag { font-size:11px; }
+    .load-more { display:block; margin:30px auto 0; }
+    /* Lightbox */
+    .lb { position:fixed; inset:0; z-index:100; background:rgba(12,16,14,.92); display:none; align-items:center; justify-content:center; padding:24px; }
+    .lb.open { display:flex; }
+    .lb img { max-width:min(92vw,900px); max-height:86vh; object-fit:contain; border-radius:10px; }
+    .lb-close { position:absolute; top:18px; right:24px; color:#fff; font-size:34px; cursor:pointer; line-height:1; background:none; border:0; }
+    .lb-nav { position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:40px; cursor:pointer; background:rgba(255,255,255,.1); border:0; width:52px; height:52px; border-radius:50%; line-height:1; }
+    .lb-prev { left:20px; } .lb-next { right:20px; }
+    .lb-cap { position:absolute; bottom:20px; left:0; right:0; text-align:center; color:#fff; font-size:14px; }
+  </style>
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html"><span class="dot"></span> Yvonne Home</a>
+      <a class="brand" href="index.html"><span class="dot"></span> EVONNEHOME</a>
       <nav>
         <ul class="nav-links" id="navLinks">
           <li><a href="products.html">Products</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
           <li><a href="about.html">Factory</a></li>
+          <li><a href="quality.html">Quality</a></li>
           <li><a href="blog/index.html">Resources</a></li>
           <li><a href="contact.html" class="btn btn-primary nav-cta">Request a Quote</a></li>
         </ul>
@@ -28,230 +51,29 @@
     </div>
   </header>
 
-  <div class="container">
-    <p class="crumb"><a href="index.html">Home</a> / Products</p>
-  </div>
+  <div class="container"><p class="crumb"><a href="index.html">Home</a> / Products</p></div>
 
   <section class="section" style="padding-top:24px;">
     <div class="container">
-      <p class="eyebrow">B2B Catalog</p>
-      <h1>Home &amp; soft furnishings, by category</h1>
-      <p class="lead-lg muted">All products are made to order. Tell us your target material, size, pattern and volume — we spec and quote. Prices are shared per inquiry, not listed, to protect your margin.</p>
+      <p class="eyebrow">B2B Catalog · 690+ SKUs</p>
+      <h1>Artificial flowers &amp; greenery</h1>
+      <p class="lead-lg muted">Browse our full range by flower type. Every item is made to order — tell us the style, colour, quantity and destination and we'll quote. Click any image to enlarge.</p>
 
-      <div class="chips">
-        <a class="chip" href="#curtains">Curtains</a>
-        <a class="chip" href="#cushions">Cushions</a>
-        <a class="chip" href="#throws">Throws</a>
-        <a class="chip" href="#rugs">Rugs</a>
-        <a class="chip" href="#bedding">Bedding</a>
-        <a class="chip" href="#table">Table Linens</a>
+      <div class="catalog-toolbar">
+        <input id="catSearch" class="catalog-search" type="search" placeholder="Search a flower or colour (e.g. rose, pink, eucalyptus)…" />
+        <span class="catalog-count" id="catCount">690 products</span>
       </div>
+      <div class="chips" id="catChips"></div>
+      <div id="catalog"></div>
+      <button class="btn btn-ghost btn-lg load-more" id="loadMore">Load more</button>
+      <p class="muted center" id="noResult" style="display:none;margin-top:30px;">No match. Try another keyword or <a href="contact.html">ask our team</a>.</p>
     </div>
   </section>
 
-  <!-- Curtains -->
-  <section class="section section-soft" id="curtains" style="padding-top:40px;">
-    <div class="container">
-      <h2>Curtains &amp; Drapes</h2>
-      <div class="prod-grid">
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-curtain-linen.jpg" alt="Linen curtain" /></div>
-          <div class="body">
-            <h3>Washed Linen Curtain</h3>
-            <p class="meta">100% European-flax linen · 140gsm · custom width</p>
-            <div class="tags"><span class="tag">OEKO-TEX</span><span class="tag">Blackout lining opt.</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-curtain-blackout.jpg" alt="Blackout curtain" /></div>
-          <div class="body">
-            <h3>3-Pass Blackout Curtain</h3>
-            <p class="meta">Polyester weave · 95%+ block · thermal</p>
-            <div class="tags"><span class="tag">REACH</span><span class="tag">Grommet/Tape</span><span class="tag">MOQ 300</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-curtain-sheer.jpg" alt="Sheer curtain" /></div>
-          <div class="body">
-            <h3>Voile Sheer Panel</h3>
-            <p class="meta">Lightweight polyester · soft drape · 2x fullness</p>
-            <div class="tags"><span class="tag">Custom colour</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cushions -->
-  <section class="section" id="cushions" style="padding-top:40px;">
-    <div class="container">
-      <h2>Cushions &amp; Pillows</h2>
-      <div class="prod-grid">
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-cushion-boucle.jpg" alt="Bouclé cushion" /></div>
-          <div class="body">
-            <h3>Bouclé Cushion Cover</h3>
-            <p class="meta">Poly-cotton bouclé · hidden zip · 45×45cm</p>
-            <div class="tags"><span class="tag">Insert opt.</span><span class="tag">30+ colours</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-cushion-velvet.jpg" alt="Velvet cushion" /></div>
-          <div class="body">
-            <h3>Crushed Velvet Cushion</h3>
-            <p class="meta">Polyester velvet · luxury sheen · 50×50cm</p>
-            <div class="tags"><span class="tag">OEKO-TEX</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-cushion-linen.jpg" alt="Linen cushion" /></div>
-          <div class="body">
-            <h3>Stonewashed Linen Cushion</h3>
-            <p class="meta">Pure linen · garment wash · 40×40cm</p>
-            <div class="tags"><span class="tag">Natural dye</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Throws -->
-  <section class="section section-soft" id="throws" style="padding-top:40px;">
-    <div class="container">
-      <h2>Throws &amp; Blankets</h2>
-      <div class="prod-grid">
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-throw-knit.jpg" alt="Knit throw" /></div>
-          <div class="body">
-            <h3>Chunky Knit Throw</h3>
-            <p class="meta">Acrylic/cotton blend · hand-loomed · 130×170cm</p>
-            <div class="tags"><span class="tag">Gift box opt.</span><span class="tag">MOQ 150</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-throw-fleece.jpg" alt="Fleece blanket" /></div>
-          <div class="body">
-            <h3>Sherpa Fleece Blanket</h3>
-            <p class="meta">Double-sided · anti-pill · 150×200cm</p>
-            <div class="tags"><span class="tag">CPSIA</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-throw-woven.jpg" alt="Woven throw" /></div>
-          <div class="body">
-            <h3>Cotton Woven Throw</h3>
-            <p class="meta">Jacquard weave · fringed · 120×160cm</p>
-            <div class="tags"><span class="tag">OEKO-TEX</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rugs -->
-  <section class="section" id="rugs" style="padding-top:40px;">
-    <div class="container">
-      <h2>Rugs &amp; Mats</h2>
-      <div class="prod-grid">
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-rug-area.jpg" alt="Area rug" /></div>
-          <div class="body">
-            <h3>Printed Area Rug</h3>
-            <p class="meta">Polyester chenille · digital print · 160×230cm</p>
-            <div class="tags"><span class="tag">Non-slip opt.</span><span class="tag">MOQ 100</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-rug-bath.jpg" alt="Bath mat" /></div>
-          <div class="body">
-            <h3>Memory Foam Bath Mat</h3>
-            <p class="meta">Microfiber + foam · quick-dry · 50×80cm</p>
-            <div class="tags"><span class="tag">REACH</span><span class="tag">MOQ 300</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-rug-door.jpg" alt="Door mat" /></div>
-          <div class="body">
-            <h3>Coco Door Mat</h3>
-            <p class="meta">Natural coir · PVC backing · 40×60cm</p>
-            <div class="tags"><span class="tag">Custom print</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bedding -->
-  <section class="section section-soft" id="bedding" style="padding-top:40px;">
-    <div class="container">
-      <h2>Bedding Sets</h2>
-      <div class="prod-grid">
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-bedding-linen.jpg" alt="Linen bedding" /></div>
-          <div class="body">
-            <h3>Washed Linen Duvet Set</h3>
-            <p class="meta">Pure linen · 3pc · queen/king</p>
-            <div class="tags"><span class="tag">OEKO-TEX</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-bedding-cotton.jpg" alt="Cotton bedding" /></div>
-          <div class="body">
-            <h3>Sateen Cotton Set</h3>
-            <p class="meta">300TC combed cotton · 4pc · all sizes</p>
-            <div class="tags"><span class="tag">REACH</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-bedding-bamboo.jpg" alt="Bamboo bedding" /></div>
-          <div class="body">
-            <h3>Bamboo Lyocell Set</h3>
-            <p class="meta">Tencel™ lyocell · cooling · 3pc</p>
-            <div class="tags"><span class="tag">Eco</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Table Linens -->
-  <section class="section" id="table" style="padding-top:40px;padding-bottom:64px;">
-    <div class="container">
-      <h2>Table Linens</h2>
-      <div class="prod-grid">
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-table-runner.jpg" alt="Table runner" /></div>
-          <div class="body">
-            <h3>Linen Table Runner</h3>
-            <p class="meta">Pure linen · 30×180cm · fringed</p>
-            <div class="tags"><span class="tag">OEKO-TEX</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-table-napkin.jpg" alt="Napkins" /></div>
-          <div class="body">
-            <h3>Hemstitch Napkins</h3>
-            <p class="meta">Cotton · 45×45cm · set of 4</p>
-            <div class="tags"><span class="tag">Custom colour</span><span class="tag">MOQ 300</span></div>
-          </div>
-        </div>
-        <div class="prod">
-          <div class="thumb"><img src="assets/img/p-table-placemat.jpg" alt="Placemats" /></div>
-          <div class="body">
-            <h3>Woven Placemats</h3>
-            <p class="meta">Jute blend · 30×40cm · set of 6</p>
-            <div class="tags"><span class="tag">Natural</span><span class="tag">MOQ 200</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
   <section class="section section-soft" style="text-align:center;">
     <div class="container">
-      <h2>Don't see your exact product?</h2>
-      <p class="muted" style="max-width:54ch;margin:0 auto 18px;">We develop custom soft furnishings to your spec — material, size, pattern and packaging. Send a photo or brief and we'll quote.</p>
+      <h2>Can't find the exact flower?</h2>
+      <p class="muted" style="max-width:54ch;margin:0 auto 18px;">We develop custom artificial florals to your spec — flower type, colour, stem length, bundling and packaging. Send a photo or brief and we'll quote.</p>
       <a href="contact.html" class="btn btn-primary btn-lg">Send your brief</a>
     </div>
   </section>
@@ -259,27 +81,28 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html" style="color:#fff;"><span class="dot"></span> Yvonne Home</a>
-          <p style="margin-top:14px;max-width:34ch;">B2B manufacturer of home &amp; soft furnishings for EU and US importers.</p>
-        </div>
-        <div><h4>Products</h4><p><a href="#curtains">Curtains</a></p><p><a href="#cushions">Cushions</a></p><p><a href="#throws">Throws</a></p><p><a href="#rugs">Rugs</a></p></div>
-        <div><h4>Company</h4><p><a href="about.html">Factory</a></p><p><a href="certifications.html">Certifications</a></p><p><a href="blog/index.html">Resources</a></p><p><a href="contact.html">Contact</a></p></div>
+        <div><a class="brand" href="index.html" style="color:#fff;"><span class="dot"></span> EVONNEHOME</a><p style="margin-top:14px;max-width:34ch;">Artificial flowers and greenery for wedding, event and holiday decorators worldwide.</p></div>
+        <div><h4>Products</h4><p><a href="products.html">All flowers</a></p><p><a href="products.html#roses">Roses</a></p><p><a href="products.html#greenery">Greenery</a></p></div>
+        <div><h4>Company</h4><p><a href="about.html">Factory</a></p><p><a href="quality.html">Quality</a></p><p><a href="blog/index.html">Resources</a></p></div>
         <div><h4>Get in touch</h4><p><a href="mailto:Yvonnehome2026@outlook.com">Yvonnehome2026@outlook.com</a></p><p>WhatsApp: <a href="https://wa.me/8618707746742">+86 187 0774 6742</a></p></div>
       </div>
-      <div class="footer-bottom"><span>© <span id="year"></span> Yvonne Home Home Furnishings. All rights reserved.</span><span>Made in China</span></div>
+      <div class="footer-bottom"><span>© <span id="year"></span> EVONNEHOME. All rights reserved.</span><span>Made in China</span></div>
     </div>
   </footer>
 
+  <div class="lb" id="lb" role="dialog" aria-label="Image viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+    <img id="lbImg" src="" alt="" />
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+    <div class="lb-cap" id="lbCap"></div>
+  </div>
+
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Yvonne Home Product Catalog",
-    "url": "https://yvonnehome-06.github.io/products.html",
-    "description": "B2B catalog of home & soft furnishings for importers."
-  }
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"EVONNEHOME Artificial Flower Catalog","url":"https://yvonnehome-06.github.io/products.html","description":"690+ artificial flowers and greenery in 9 categories for wedding and event decorators."}
   </script>
+  <script src="assets/js/flowers-data.js"></script>
+  <script src="assets/js/catalog.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
