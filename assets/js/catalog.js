@@ -1,11 +1,11 @@
 /* EVONNEHOME catalog — vanilla JS, zero dependencies.
-   Renders 690 products from flowers-data.js with category filter,
+   Renders 960 products from flowers-data.js with category filter,
    live search, batched rendering and lightbox. */
 (function () {
   "use strict";
   var DATA = window.FLOWER_DATA || [];
   var CATS = window.FLOWER_CATS || [];
-  var PAGE = 60;                 // 每批渲染数量，避免一次 690 张卡顿
+  var PAGE = 60;                 // 每批渲染数量，避免一次 960 张卡顿
   var shown = PAGE;
   var filtered = DATA.slice();
   var io = null;
