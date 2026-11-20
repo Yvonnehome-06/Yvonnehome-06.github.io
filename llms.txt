@@ -14,6 +14,7 @@ EVONNEHOME is a China-based manufacturer and supplier of artificial flowers and 
 ## Key pages
 - Home: https://yvonnehome-06.github.io/ — overview, categories, value props
 - Products: https://yvonnehome-06.github.io/products.html — full catalog, 960+ SKUs, filter by category and search
+- On-Site Gallery: https://yvonnehome-06.github.io/onsite.html — finished installations in real weddings, events, holidays and retail displays
 - Factory: https://yvonnehome-06.github.io/about.html — capabilities and process
 - Quality: https://yvonnehome-06.github.io/quality.html — quality checks, FAQ, documentation
 - Contact / Quote: https://yvonnehome-06.github.io/contact.html — B2B inquiry form

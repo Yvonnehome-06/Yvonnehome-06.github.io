@@ -31,6 +31,14 @@
     .lb-nav { position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:40px; cursor:pointer; background:rgba(255,255,255,.1); border:0; width:52px; height:52px; border-radius:50%; line-height:1; }
     .lb-prev { left:20px; } .lb-next { right:20px; }
     .lb-cap { position:absolute; bottom:20px; left:0; right:0; text-align:center; color:#fff; font-size:14px; }
+    /* On-site gallery feature banner */
+    .onsite-banner { display:flex; align-items:center; gap:24px; flex-wrap:wrap; margin-top:22px; padding:22px 26px; border:1.5px solid var(--c-line); border-radius:var(--radius); background:linear-gradient(120deg,var(--c-bg-soft),#fff); box-shadow:var(--shadow-sm); }
+    .onsite-banner .ob-ic { font-size:34px; flex:0 0 auto; }
+    .onsite-banner .ob-txt { flex:1; min-width:240px; }
+    .onsite-banner .ob-txt h3 { margin:0 0 4px; font-size:19px; }
+    .onsite-banner .ob-txt p { margin:0; font-size:14px; color:var(--c-muted); }
+    .onsite-banner .ob-cta { flex:0 0 auto; }
+    @media(max-width:640px){ .onsite-banner .ob-cta{ width:100%; } .onsite-banner .ob-cta .btn{ width:100%; justify-content:center; } }
   </style>
 </head>
 <body>
@@ -58,6 +66,15 @@
       <p class="eyebrow">B2B Catalog · 960+ SKUs</p>
       <h1>Artificial flowers &amp; greenery</h1>
       <p class="lead-lg muted">Browse our full range by flower type. Every item is made to order — tell us the style, colour, quantity and destination and we'll quote. Click any image to enlarge.</p>
+
+      <a class="onsite-banner" href="onsite.html">
+        <span class="ob-ic">🌷</span>
+        <span class="ob-txt">
+          <h3>了解现场效果 · See It On Site</h3>
+          <p>A skilled florist deserves great materials — see what our premium artificial flowers look like in real weddings, events and displays.</p>
+        </span>
+        <span class="ob-cta"><span class="btn btn-primary">View On-Site Gallery →</span></span>
+      </a>
 
       <div class="catalog-toolbar">
         <input id="catSearch" class="catalog-search" type="search" placeholder="Search a flower or colour (e.g. rose, pink, eucalyptus)…" />
