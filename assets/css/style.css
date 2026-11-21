@@ -295,3 +295,8 @@ p { margin: 0 0 1em; }
 .brand[style*="#fff"] .logo-script, .site-footer .brand .logo-script { color: #f2e8fb; }
 .brand[style*="#fff"] .logo-sub,   .site-footer .brand .logo-sub   { color: #fff; }
 @media (max-width: 640px){ .brand .logo-script{ font-size: 26px; } .brand .logo-sub{ font-size: 10px; } }
+
+/* Real image logo (user-supplied artwork) */
+.brand-logo { display:block; height:40px; width:auto; max-width:190px; }
+.site-footer .brand-logo { height:44px; }
+@media (max-width:640px){ .brand-logo{ height:32px; } .site-footer .brand-logo{ height:40px; } }
