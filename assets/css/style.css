@@ -328,9 +328,9 @@ p { margin: 0 0 1.1em; }
 @media (max-width: 640px){ .brand .logo-script{ font-size: 26px; } .brand .logo-sub{ font-size: 10px; } }
 
 /* Real image logo (user-supplied artwork) */
-.brand-logo { display:block; height:40px; width:auto; max-width:190px; }
-.site-footer .brand-logo { height:44px; }
-@media (max-width:640px){ .brand-logo{ height:32px; } .site-footer .brand-logo{ height:40px; } }
+.brand-logo { display:block; height:50px; width:auto; max-width:160px; }
+.site-footer .brand-logo { height:56px; max-width:170px; }
+@media (max-width:640px){ .brand-logo{ height:36px; } .site-footer .brand-logo{ height:44px; } }
 
 
 /* =========================================================
