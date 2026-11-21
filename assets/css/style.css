@@ -58,24 +58,24 @@
 
 :root {
   /* Palette — soft romantic lavender */
-  --c-ink: #2b2340;          /* deep plum ink for headings */
-  --c-body: #4b4358;         /* body text */
-  --c-muted: #736a83;        /* secondary text */
-  --c-line: #e7e0f0;         /* lavender hairlines */
-  --c-line-soft: #f1ecf7;    /* faintest divider */
-  --c-bg: #fdfbff;           /* very pale lavender white */
-  --c-bg-soft: #f6f1fb;      /* pale lavender tint */
-  --c-bg-deep: #241c36;      /* deep plum — footer / dark sections */
-  --c-accent: #7c53a0;       /* muted violet — primary CTA */
-  --c-accent-dark: #63408a;
-  --c-accent-soft: #efe7f7;  /* icon / tint blocks */
-  --c-green: #5c6b8c;        /* slate — trust / checks (cool tone) */
-  --c-green-soft: #eee9f6;
+  --c-ink: #22201C;          /* deep plum ink for headings */
+  --c-body: #4A443C;         /* body text */
+  --c-muted: #8A8275;        /* secondary text */
+  --c-line: #E3DCCB;         /* lavender hairlines */
+  --c-line-soft: #EDE7DA;    /* faintest divider */
+  --c-bg: #F7F4EE;           /* very pale lavender white */
+  --c-bg-soft: #EFEAE0;      /* pale lavender tint */
+  --c-bg-deep: #2A2C25;      /* deep plum — footer / dark sections */
+  --c-accent: #6B7A5E;       /* muted violet — primary CTA */
+  --c-accent-dark: #55634A;
+  --c-accent-soft: #E7EBDD;  /* icon / tint blocks */
+  --c-green: #5F6B54;        /* slate — trust / checks (cool tone) */
+  --c-green-soft: #E7EBDD;
 
   --radius: 3px;
   --radius-sm: 2px;
-  --shadow-sm: 0 1px 2px rgba(60,40,80,.05);
-  --shadow-md: 0 16px 44px rgba(60,40,80,.10);
+  --shadow-sm: 0 1px 2px rgba(52,46,34,.06);
+  --shadow-md: 0 16px 44px rgba(52,46,34,.12);
   --maxw: 1180px;
   --gut: clamp(18px, 4vw, 40px);
 
@@ -139,7 +139,7 @@ p { margin: 0 0 1.1em; }
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(252,250,255,.93); backdrop-filter: saturate(140%) blur(10px);
+  background: rgba(247,244,238,.94); backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--c-line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
@@ -255,17 +255,17 @@ p { margin: 0 0 1.1em; }
 .faq-item p { margin: 0; color: var(--c-muted); font-size: 15px; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--c-bg-deep); color: #d8cfe6; padding: 56px 0 30px; }
+.site-footer { background: var(--c-bg-deep); color: #D6D0C0; padding: 56px 0 30px; }
 .site-footer h4 { color: #fff; font-size: 14px; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 14px; }
-.site-footer a { color: #d8cfe6; }
+.site-footer a { color: #D6D0C0; }
 .site-footer a:hover { color: #fff; }
 .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1.25fr; gap: 40px; }
 .footer-grid p { font-size: 14.5px; margin: 0 0 10px; }
-.footer-grid h4 { color: #efe7f7; margin-bottom: 18px; }
-.founder-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(145deg, #a98bc4, #6d4f8d); color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Great Vibes', cursive; font-size: 42px; margin-bottom: 12px; border: 3px solid rgba(255,255,255,.28); box-shadow: 0 6px 18px rgba(0,0,0,.18); } /* 创始人照片位备用样式（页脚暂未启用） */
-.founder-name { font-size: 14px; color: #efe7f7; }
-.founder-name span { display: block; font-size: 12px; color: #a99bbf; margin-top: 3px; letter-spacing: .04em; }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 36px; padding-top: 20px; font-size: 13px; color: #a99bbf; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.footer-grid h4 { color: #EFEDE3; margin-bottom: 18px; }
+.founder-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(145deg, #9AA88A, #5F6B54); color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Great Vibes', cursive; font-size: 42px; margin-bottom: 12px; border: 3px solid rgba(255,255,255,.28); box-shadow: 0 6px 18px rgba(0,0,0,.18); } /* 创始人照片位备用样式（页脚暂未启用） */
+.founder-name { font-size: 14px; color: #EFEDE3; }
+.founder-name span { display: block; font-size: 12px; color: #A9A596; margin-top: 3px; letter-spacing: .04em; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 36px; padding-top: 20px; font-size: 13px; color: #A9A596; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 
 /* ---------- Breadcrumb ---------- */
 .crumb { font-size: 13px; color: var(--c-muted); padding: 18px 0 0; }
@@ -323,7 +323,7 @@ p { margin: 0 0 1.1em; }
   letter-spacing: 2.4px; color: var(--c-ink); text-transform: uppercase;
   margin-top: 1px;
 }
-.brand[style*="#fff"] .logo-script, .site-footer .brand .logo-script { color: #f2e8fb; }
+.brand[style*="#fff"] .logo-script, .site-footer .brand .logo-script { color: #E9EDE1; }
 .brand[style*="#fff"] .logo-sub,   .site-footer .brand .logo-sub   { color: #fff; }
 @media (max-width: 640px){ .brand .logo-script{ font-size: 26px; } .brand .logo-sub{ font-size: 10px; } }
 
@@ -412,10 +412,10 @@ p { margin: 0 0 1.1em; }
 .studio-split figure figcaption { font-size: 13px; color: var(--c-muted); margin-top: 14px; }
 
 /* ---------- Dark CTA band ---------- */
-.cta-band { background: var(--c-bg-deep); color: #efe7f7; }
+.cta-band { background: var(--c-bg-deep); color: #EFEDE3; }
 .cta-band .container { padding-top: clamp(48px, 6vw, 92px); padding-bottom: clamp(48px, 6vw, 92px); }
 .cta-band h2 { color: #fff; max-width: 20ch; }
-.cta-band p { color: #b6a9c9; max-width: 52ch; }
+.cta-band p { color: #B6B1A2; max-width: 52ch; }
 .cta-band .btn-ghost { color: #fff; border-color: rgba(255,255,255,.34); }
 .cta-band .btn-ghost:hover { border-color: #fff; color: #fff; }
 
