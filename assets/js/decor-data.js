@@ -1,27 +1,66 @@
 // CEREMONY & EVENT DECOR DATA — 典礼配饰数据
 // ---------------------------------------------------------------
-// 每条记录一个对象，字段说明：
-//   img  : 图片路径（相对站点根目录），例 "assets/img/decor/decor-001.jpg"
-//   cat  : 子分类 slug，三选一：drapery | sheers | accents
-//   title: 英文标题（海外客户看），例 "Ivory Sheer Curtain Panel"
-//   desc : 英文一句话说明（可选），例 "Soft drape for wedding arches and backdrops."
-//
-// 子分类对应：
-//   drapery = Drapery & Backdrops  布幔 / 背景幔
-//   sheers  = Sheer Curtains       纱帘
-//   accents = Ribbons & Accents     丝带与装饰物
-//
-// 目前含 3 款婚礼丝带（accents 子类），布幔/纱帘图样待用户提供后可继续按格式追加。
+// 每条记录：img 图片路径 / cat 子分类 slug / title 英文标题 / desc 英文说明
+// 子分类：candelabra 烛台 | runners 桌旗 | chair 椅背花 | frames 支架 |
+//           accents 丝带装饰物 | holiday 节日枝干 | drapery 布幔 | sheers 纱帘
 // ---------------------------------------------------------------
 window.DECOR_DATA = [
-  // 婚礼丝带（原独立分类，2026-11 并入典礼配饰 · 装饰物）
   { img: "assets/img/newitems/ribbons-1005.jpg", cat: "accents", title: "Wedding Sash Ribbon - 2 Pack", desc: "Wedding sash ribbon for chair backs, aisle decor and ceremony styling." },
   { img: "assets/img/newitems/ribbons-1006.jpg", cat: "accents", title: "Wedding Sash Ribbon - A Toast To Forever", desc: "Wedding sash ribbon for chair backs, aisle decor and ceremony styling." },
   { img: "assets/img/newitems/ribbons-1007.jpg", cat: "accents", title: "Wedding Sash Ribbon - Just Married", desc: "Wedding sash ribbon for chair backs, aisle decor and ceremony styling." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-3pc-gold.jpg", cat: "candelabra", title: "Cupid Candelabra 3-Piece Set - Gold", desc: "Three-arm cupid candelabra in gold for ceremony tables. Candles not included." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-large-gold.jpg", cat: "candelabra", title: "Cupid Candelabra Large - Gold", desc: "Large cupid candelabra in gold, sized for statement centrepieces." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-medium-gold.jpg", cat: "candelabra", title: "Cupid Candelabra Medium - Gold", desc: "Mid-size cupid candelabra in gold for table settings and aisle decor." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-small-gold.jpg", cat: "candelabra", title: "Cupid Candelabra Small - Gold", desc: "Small cupid candelabra in gold for intimate tables and detail styling." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-3pc-black.jpg", cat: "candelabra", title: "Cupid Candelabra 3-Piece Set - Black", desc: "Three-arm cupid candelabra in black for moody, modern ceremonies. Candles not included." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-large-black.jpg", cat: "candelabra", title: "Cupid Candelabra Large - Black", desc: "Large cupid candelabra in black, sized for statement centrepieces." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-medium-black.jpg", cat: "candelabra", title: "Cupid Candelabra Medium - Black", desc: "Mid-size cupid candelabra in black for table settings and aisle decor." },
+  { img: "assets/img/decor/candelabra/cupid-candelabra-small-black.jpg", cat: "candelabra", title: "Cupid Candelabra Small - Black", desc: "Small cupid candelabra in black for intimate tables and detail styling." },
+  { img: "assets/img/decor/candelabra/european-candelabra-3pc-antique-gold.jpg", cat: "candelabra", title: "European Candelabra 3-Piece Set - Antique Gold", desc: "Three classic candlesticks in antique gold, sized for ceremony and dining tables." },
+  { img: "assets/img/decor/candelabra/european-candelabra-3pc-french-gold.jpg", cat: "candelabra", title: "European Candelabra 3-Piece Set - French Gold", desc: "Three classic candlesticks in French gold for wedding and event tables." },
+  { img: "assets/img/decor/candelabra/european-candelabra-3pc-silver.jpg", cat: "candelabra", title: "European Candelabra 3-Piece Set - Silver", desc: "Three classic candlesticks in silver for cool-toned table settings." },
+  { img: "assets/img/decor/candelabra/european-candelabra-3pc-black.jpg", cat: "candelabra", title: "European Candelabra 3-Piece Set - Black", desc: "Three slim candlesticks in matte black, a modern look for any venue." },
+  { img: "assets/img/decor/candelabra/european-candelabra-6pc-antique-gold.jpg", cat: "candelabra", title: "European Candelabra 6-Piece Set - Antique Gold", desc: "Six classic candlesticks in antique gold for long banquet and ceremony tables." },
+  { img: "assets/img/decor/candelabra/european-candelabra-6pc-french-gold.jpg", cat: "candelabra", title: "European Candelabra 6-Piece Set - French Gold", desc: "Six classic candlesticks in French gold for long banquet and ceremony tables." },
+  { img: "assets/img/decor/candelabra/european-candelabra-6pc-silver.jpg", cat: "candelabra", title: "European Candelabra 6-Piece Set - Silver", desc: "Six classic candlesticks in silver for long banquet and ceremony tables." },
+  { img: "assets/img/decor/candelabra/european-candelabra-6pc-black.jpg", cat: "candelabra", title: "European Candelabra 6-Piece Set - Black", desc: "Six slim candlesticks in matte black for long banquet and ceremony tables." },
+  { img: "assets/img/decor/candelabra/european-candlestick-tall-33cm.jpg", cat: "candelabra", title: "European Candlestick Tall - 33 cm", desc: "Single tall candlestick in matte black, 33 cm high." },
+  { img: "assets/img/decor/candelabra/european-candlestick-medium-28cm.jpg", cat: "candelabra", title: "European Candlestick Medium - 28 cm", desc: "Single mid-height candlestick in matte black, 28 cm high." },
+  { img: "assets/img/decor/candelabra/european-candlestick-short-23cm.jpg", cat: "candelabra", title: "European Candlestick Short - 23 cm", desc: "Single low candlestick in matte black, 23 cm high." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-blush.jpg", cat: "runners", title: "Pearl Mesh Table Runner - Blush Pink", desc: "Soft blush tulle runner scattered with pearl beads for wedding tables." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-white.jpg", cat: "runners", title: "Pearl Mesh Table Runner - White", desc: "Ivory pearl-bead tulle runner for classic ceremony and dining tables." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-champagne.jpg", cat: "runners", title: "Pearl Mesh Table Runner - Champagne", desc: "Champagne pearl-bead tulle runner that pairs easily with ivory florals." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-burgundy.jpg", cat: "runners", title: "Pearl Mesh Table Runner - Burgundy", desc: "Deep burgundy pearl-bead tulle runner for rich autumn and winter palettes." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-emerald.jpg", cat: "runners", title: "Pearl Mesh Table Runner - Emerald Green", desc: "Emerald green pearl-bead tulle runner with a rich, botanical feel." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-yellow.jpg", cat: "runners", title: "Pearl Mesh Table Runner - Yellow", desc: "Soft yellow pearl-bead tulle runner for bright spring celebrations." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-red-bow.jpg", cat: "runners", title: "Pearl Mesh Table Runner - Red Bow & Pearl", desc: "Festive runner with a large red bow and pearl beading for holiday tables." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-white-applique.jpg", cat: "runners", title: "Pearl Mesh Table Runner - White Applique & Pearl", desc: "Elegant white applique runner with pearl beading for formal tables." },
+  { img: "assets/img/decor/runners/pearl-mesh-runner-pink-bow.jpg", cat: "runners", title: "Pearl Mesh Table Runner - Pink Bow", desc: "Romantic pink runner finished with a bow and pearl beading." },
+  { img: "assets/img/decor/chair/chair-flower-white.jpg", cat: "chair", title: "Chair Back Flower - White", desc: "Ivory rose chair back flower with satin ribbon, for ceremony seating." },
+  { img: "assets/img/decor/chair/chair-flower-pink.jpg", cat: "chair", title: "Chair Back Flower - Blush Pink", desc: "Soft pink rose chair back flower with satin ribbon, for ceremony seating." },
+  { img: "assets/img/decor/chair/chair-flower-yellow.jpg", cat: "chair", title: "Chair Back Flower - Buttercup Yellow", desc: "Buttercup yellow rose chair back flower for bright summer ceremonies." },
+  { img: "assets/img/decor/frames/floral-frame-black-01.jpg", cat: "frames", title: "Floral Support Frame - Black 01", desc: "Black metal garden arch frame for climbing flowers and ceremony backdrops." },
+  { img: "assets/img/decor/frames/floral-frame-black-02.jpg", cat: "frames", title: "Floral Support Frame - Black 02", desc: "Black metal arch frame styled as a garden ceremony entrance." },
+  { img: "assets/img/decor/frames/floral-frame-black-03.jpg", cat: "frames", title: "Floral Support Frame - Black 03", desc: "Black metal garden arch frame for event installations and photo walls." },
+  { img: "assets/img/decor/frames/floral-frame-black-04.jpg", cat: "frames", title: "Floral Support Frame - Black 04", desc: "Black metal arch frame used for outdoor event and party installations." },
+  { img: "assets/img/decor/frames/floral-frame-black-05.jpg", cat: "frames", title: "Floral Support Frame - Black 05", desc: "Black metal arch frame with floral styling for venue entrances." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-01-orange.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 01 - Orange & Black", desc: "Orange pumpkin stem with dark foliage for Halloween table and shop displays." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-02-pink.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 02 - Pink & Orange", desc: "Warm pink and orange pumpkin stem for autumn event displays." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-03-sunflower.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 03 - Autumn Sunflower", desc: "Sunflower and pumpkin stem mix for rustic autumn and Thanksgiving decor." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-04-gothic.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 04 - Gothic Purple", desc: "Purple and black gothic pumpkin stem for evening and haunted-house styling." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-05-dark-purple.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 05 - Dark Purple", desc: "Dark purple pumpkin stem with black foliage for moody seasonal displays." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-06-red-rose.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 06 - Red Rose Gothic", desc: "Deep red rose stem with black accents for gothic Halloween styling." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-07-black-pink.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 07 - Black & Pink", desc: "Black pumpkin stem with soft pink foliage for playful Halloween displays." },
+  { img: "assets/img/decor/holiday/pumpkin-stem-08-blue-eye.jpg", cat: "holiday", title: "Halloween Pumpkin Stem 08 - Black & Blue", desc: "Black pumpkin stem with blue-eyed accents for playful Halloween styling." },
 ];
 
 window.DECOR_CATS = [
+  { slug: "candelabra", en: "Candle Holders & Candelabra", cn: "烛台" },
+  { slug: "runners", en: "Table Runners & Netting", cn: "桌旗 / 网纱" },
+  { slug: "chair", en: "Chair Decor", cn: "椅背花" },
+  { slug: "frames", en: "Frames & Supports", cn: "花艺支架" },
+  { slug: "accents", en: "Ribbons & Accents", cn: "丝带与装饰物" },
+  { slug: "holiday", en: "Seasonal Stems", cn: "节日枝干" },
   { slug: "drapery", en: "Drapery & Backdrops", cn: "布幔 / 背景幔" },
-  { slug: "sheers",  en: "Sheer Curtains",      cn: "纱帘" },
-  { slug: "accents", en: "Ribbons & Accents",   cn: "丝带与装饰物" },
+  { slug: "sheers", en: "Sheer Curtains", cn: "纱帘" },
 ];
