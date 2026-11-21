@@ -1,4 +1,4 @@
-/* EVONNEHOME on-site gallery — vanilla JS, zero dependencies.
+/* Evonne Flora Co. on-site gallery — vanilla JS, zero dependencies.
    Renders real-installation photos from onsite-data.js with category
    filter, lightbox and a graceful empty state while photos are pending. */
 (function () {

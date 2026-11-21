@@ -1,4 +1,4 @@
-/* EVONNEHOME catalog — vanilla JS, zero dependencies.
+/* Evonne Flora Co. catalog — vanilla JS, zero dependencies.
    Renders 960 products from flowers-data.js with category filter,
    live search, batched rendering and lightbox. */
 (function () {

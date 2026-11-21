@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Great Vibes";
+  font-style: normal; font-weight: 400; font-display: swap;
+  src: url("../fonts/greatvibes-400.woff2") format("woff2");
+}
 /* =========================================================
-   EVONNEHOME — Artificial Flowers for Weddings & Events
+   Evonne Flora Co. — Artificial Flowers for Weddings & Events
    Design system — romantic lavender + elegant European serif
    Fonts self-hosted (zero external dependencies).
    ========================================================= */
@@ -275,3 +280,18 @@ p { margin: 0 0 1em; }
   .grid-2, .grid-3, .grid-4, .prod-grid, .cat-grid, .post-grid, .footer-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 18px; }
 }
+
+/* ---------- Brand logo (Evonne Flora Co.) ---------- */
+.brand { gap: 0; flex-direction: column; align-items: flex-start; line-height: 1; font-size: inherit; }
+.brand .logo-script {
+  font-family: "Great Vibes", var(--font-serif); font-weight: 400;
+  font-size: 30px; color: var(--c-accent); line-height: .92; letter-spacing: .3px;
+}
+.brand .logo-sub {
+  font-family: var(--font-serif); font-weight: 600; font-size: 11px;
+  letter-spacing: 2.4px; color: var(--c-ink); text-transform: uppercase;
+  margin-top: 1px;
+}
+.brand[style*="#fff"] .logo-script, .site-footer .brand .logo-script { color: #f2e8fb; }
+.brand[style*="#fff"] .logo-sub,   .site-footer .brand .logo-sub   { color: #fff; }
+@media (max-width: 640px){ .brand .logo-script{ font-size: 26px; } .brand .logo-sub{ font-size: 10px; } }

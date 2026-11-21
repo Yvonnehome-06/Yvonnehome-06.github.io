@@ -1,4 +1,4 @@
-/* EVONNEHOME ceremony & event decor — vanilla JS, zero dependencies.
+/* Evonne Flora Co. ceremony & event decor — vanilla JS, zero dependencies.
    Renders decor items from decor-data.js with subcategory filter,
    lightbox and a graceful empty state while photos are pending. */
 (function () {
