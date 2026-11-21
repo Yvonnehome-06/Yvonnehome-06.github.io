@@ -236,9 +236,9 @@ p { margin: 0 0 1em; }
 .site-footer h4 { color: #fff; font-size: 14px; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 14px; }
 .site-footer a { color: #d8cfe6; }
 .site-footer a:hover { color: #fff; }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1.15fr 1fr 1fr 1.15fr; gap: 28px; }
+.footer-grid { display: grid; grid-template-columns: 1.7fr 1fr 1.3fr 1.2fr; gap: 28px; }
 .footer-grid p { font-size: 15px; margin: 0 0 9px; }
-.founder-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(145deg, #a98bc4, #6d4f8d); color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Great Vibes', cursive; font-size: 42px; margin-bottom: 12px; border: 3px solid rgba(255,255,255,.28); box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.founder-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(145deg, #a98bc4, #6d4f8d); color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Great Vibes', cursive; font-size: 42px; margin-bottom: 12px; border: 3px solid rgba(255,255,255,.28); box-shadow: 0 6px 18px rgba(0,0,0,.18); } /* 创始人照片位备用样式（页脚暂未启用） */
 .founder-name { font-size: 14px; color: #efe7f7; }
 .founder-name span { display: block; font-size: 12px; color: #a99bbf; margin-top: 3px; letter-spacing: .04em; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 36px; padding-top: 20px; font-size: 13px; color: #a99bbf; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
