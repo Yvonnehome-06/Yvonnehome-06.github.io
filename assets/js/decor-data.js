@@ -9,18 +9,19 @@
 // 子分类对应：
 //   drapery = Drapery & Backdrops  布幔 / 背景幔
 //   sheers  = Sheer Curtains       纱帘
-//   accents = Decor Accents        装饰物
+//   accents = Ribbons & Accents     丝带与装饰物
 //
-// 目前图片待用户提供，数组为空 —— 页面会显示友好的"即将更新"占位。
-// 用户发来图片文件夹路径后，把压缩好的图按下面格式逐条填入即可，无需改页面。
+// 目前含 3 款婚礼丝带（accents 子类），布幔/纱帘图样待用户提供后可继续按格式追加。
 // ---------------------------------------------------------------
 window.DECOR_DATA = [
-  // 示例（取消注释即可预览效果）：
-  // { img: "assets/img/decor/decor-001.jpg", cat: "drapery", title: "Ivory Drapery Backdrop", desc: "Flowing fabric panel for ceremony backdrops." },
+  // 婚礼丝带（原独立分类，2026-11 并入典礼配饰 · 装饰物）
+  { img: "assets/img/newitems/ribbons-1005.jpg", cat: "accents", title: "Wedding Sash Ribbon - 2 Pack", desc: "Wedding sash ribbon for chair backs, aisle decor and ceremony styling." },
+  { img: "assets/img/newitems/ribbons-1006.jpg", cat: "accents", title: "Wedding Sash Ribbon - A Toast To Forever", desc: "Wedding sash ribbon for chair backs, aisle decor and ceremony styling." },
+  { img: "assets/img/newitems/ribbons-1007.jpg", cat: "accents", title: "Wedding Sash Ribbon - Just Married", desc: "Wedding sash ribbon for chair backs, aisle decor and ceremony styling." },
 ];
 
 window.DECOR_CATS = [
   { slug: "drapery", en: "Drapery & Backdrops", cn: "布幔 / 背景幔" },
   { slug: "sheers",  en: "Sheer Curtains",      cn: "纱帘" },
-  { slug: "accents", en: "Decor Accents",       cn: "装饰物" },
+  { slug: "accents", en: "Ribbons & Accents",   cn: "丝带与装饰物" },
 ];
