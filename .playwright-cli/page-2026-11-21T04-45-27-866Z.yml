@@ -1,0 +1,111 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "EVONNEHOME" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Products" [ref=e9] [cursor=pointer]:
+              - /url: products.html
+          - listitem [ref=e10]:
+            - link "Factory" [ref=e11] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e12]:
+            - link "Quality" [ref=e13] [cursor=pointer]:
+              - /url: quality.html
+          - listitem [ref=e14]:
+            - link "Resources" [ref=e15] [cursor=pointer]:
+              - /url: blog/index.html
+          - listitem [ref=e16]:
+            - link "Request a Quote" [ref=e17] [cursor=pointer]:
+              - /url: contact.html
+  - generic [ref=e19]:
+    - paragraph [ref=e20]: Ceremony & Event Decor · 典礼配饰
+    - heading "The details that define the venue." [level=1] [ref=e21]
+    - paragraph [ref=e22]: From flowing drapery to delicate sheers and finishing accents — everything beyond the bloom.
+    - paragraph [ref=e23]: Drapery, sheer curtains and decorative accents for weddings, events, holiday windows and retail displays. Tell us the venue, colours and quantity and we'll put together a tailored selection and quote.
+  - paragraph [ref=e25]:
+    - link "Home" [ref=e26] [cursor=pointer]:
+      - /url: index.html
+    - text: /
+    - link "Products" [ref=e27] [cursor=pointer]:
+      - /url: products.html
+    - text: / Ceremony & Event Decor
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - heading "Drapery, sheers & accents" [level=2] [ref=e31]
+      - generic [ref=e32]: 0 items
+    - generic [ref=e33]:
+      - generic [ref=e34]: 🎀
+      - heading "Our decor accessory range is being curated" [level=3] [ref=e35]
+      - paragraph [ref=e36]: We're putting together our selection of drapery, sheer curtains and decorative accents. In the meantime, browse our artificial florals — or tell us what your venue needs and we'll source it for you.
+      - paragraph [ref=e37]: 典礼配饰（布幔、纱帘、装饰物）图样正在整理中，即将上线。也可直接把场地需求发给我们，我们按需配货报价。
+      - generic [ref=e38]:
+        - link "Browse Florals" [ref=e39] [cursor=pointer]:
+          - /url: products.html
+        - link "Send your brief" [ref=e40] [cursor=pointer]:
+          - /url: contact.html
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: 🪟
+        - heading "Drapery & Backdrops" [level=3] [ref=e44]
+        - paragraph [ref=e45]: Flowing fabric panels and backdrops for ceremony stages, arches and photo zones.
+        - generic [ref=e46]: 布幔 / 背景幔
+      - generic [ref=e47]:
+        - generic [ref=e48]: 🤍
+        - heading "Sheer Curtains" [level=3] [ref=e49]
+        - paragraph [ref=e50]: Light, airy sheers that soften a venue and layer beautifully with florals.
+        - generic [ref=e51]: 纱帘
+      - generic [ref=e52]:
+        - generic [ref=e53]: ✨
+        - heading "Decor Accents" [level=3] [ref=e54]
+        - paragraph [ref=e55]: Finishing pieces — garlands, toppers and small accents that complete the look.
+        - generic [ref=e56]: 装饰物
+  - generic [ref=e58]:
+    - paragraph [ref=e59]: Flowers & more
+    - heading "Planning a full venue look?" [level=2] [ref=e60]
+    - paragraph [ref=e61]: Combine artificial florals with drapery, sheers and accents in one order. Send us the style, colours, quantity and destination for a tailored quote.
+    - link "Request a Quote" [ref=e62] [cursor=pointer]:
+      - /url: contact.html
+  - contentinfo [ref=e63]:
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - link "EVONNEHOME" [ref=e67] [cursor=pointer]:
+            - /url: index.html
+          - paragraph [ref=e69]: Artificial flowers, greenery and event decor for wedding, event and holiday decorators worldwide.
+        - generic [ref=e70]:
+          - heading "Products" [level=4] [ref=e71]
+          - paragraph [ref=e72]:
+            - link "All flowers" [ref=e73] [cursor=pointer]:
+              - /url: products.html
+          - paragraph [ref=e74]:
+            - link "Ceremony & Event Decor" [ref=e75] [cursor=pointer]:
+              - /url: decor.html
+          - paragraph [ref=e76]:
+            - link "On-Site Gallery" [ref=e77] [cursor=pointer]:
+              - /url: onsite.html
+        - generic [ref=e78]:
+          - heading "Company" [level=4] [ref=e79]
+          - paragraph [ref=e80]:
+            - link "Factory" [ref=e81] [cursor=pointer]:
+              - /url: about.html
+          - paragraph [ref=e82]:
+            - link "Quality" [ref=e83] [cursor=pointer]:
+              - /url: quality.html
+          - paragraph [ref=e84]:
+            - link "Resources" [ref=e85] [cursor=pointer]:
+              - /url: blog/index.html
+        - generic [ref=e86]:
+          - heading "Get in touch" [level=4] [ref=e87]
+          - paragraph [ref=e88]:
+            - link "Yvonnehome2026@outlook.com" [ref=e89] [cursor=pointer]:
+              - /url: mailto:Yvonnehome2026@outlook.com
+          - paragraph [ref=e90]:
+            - text: "WhatsApp:"
+            - link "+86 187 0774 6742" [ref=e91] [cursor=pointer]:
+              - /url: https://wa.me/8618707746742
+      - generic [ref=e92]:
+        - generic [ref=e93]: © 2026 EVONNEHOME. All rights reserved.
+        - generic [ref=e94]: Made in China
