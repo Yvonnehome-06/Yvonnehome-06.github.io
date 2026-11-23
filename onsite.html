@@ -58,6 +58,7 @@
     .onsite-cap h3 { color:#fff; font-family:var(--font-serif); font-size:18px; margin:0 0 3px; line-height:1.25; }
     .onsite-cap p { font-size:12px; opacity:.9; margin:0 0 7px; }
     .onsite-cap .look-btn { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#fff; border:1px solid rgba(255,255,255,.7); border-radius:999px; padding:4px 10px; }
+    .onsite-cap .look-count { display:inline-block; margin-left:7px; font-size:11px; color:#fff; opacity:.85; letter-spacing:.03em; }
 
     /* shop the look rail */
     .look-panel { background:#fff; border:1px solid var(--c-line); border-radius:var(--radius); padding:24px; margin-top:8px; }
@@ -76,24 +77,44 @@
     .onsite-empty .em-ic { font-size:40px; margin-bottom:10px; }
     .onsite-empty p { max-width:48ch; margin:0 auto 8px; }
 
+    /* inside-the-look breakdown */
+    .bd-case { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.25fr); gap:34px; align-items:start; margin-top:22px; }
+    .bd-shot { border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-sm); background:var(--c-bg-soft); }
+    .bd-shot img { width:100%; display:block; }
+    .bd-group { margin-bottom:26px; }
+    .bd-group:last-child { margin-bottom:0; }
+    .bd-group h3 { font-family:var(--font-serif); font-size:19px; margin:0 0 4px; }
+    .bd-group > p { font-size:13px; color:var(--c-muted); margin:0 0 14px; }
+    .bd-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .bd-item { display:flex; gap:11px; align-items:flex-start; padding:10px; border:1px solid var(--c-line); border-radius:6px; background:#fff; text-decoration:none; color:inherit; transition:box-shadow .2s, border-color .2s; }
+    .bd-item:hover { box-shadow:var(--shadow-sm); border-color:var(--c-accent); }
+    .bd-item img { width:52px; height:52px; object-fit:cover; border-radius:4px; flex:0 0 auto; background:var(--c-bg-soft); }
+    .bd-item .bd-txt { min-width:0; }
+    .bd-item h4 { font-size:13px; font-weight:600; margin:0 0 2px; line-height:1.3; }
+    .bd-item .bd-cn { font-size:11px; color:var(--c-muted); display:block; }
+    .bd-item .bd-role { font-size:11.5px; line-height:1.45; color:#5B574D; margin-top:4px; display:block; }
+
     .lb { position:fixed; inset:0; z-index:100; background:rgba(20,20,18,.95); display:none; align-items:center; justify-content:center; padding:24px; }
     .lb.open { display:flex; }
     .lb-inner { display:flex; gap:26px; align-items:center; max-width:1180px; width:100%; }
     .lb-stage { flex:1 1 60%; min-width:0; text-align:center; }
     .lb-stage img { max-width:100%; max-height:82vh; object-fit:contain; border-radius:8px; }
-    .lb-side { flex:0 0 320px; max-height:82vh; overflow:auto; color:#fff; }
+    .lb-side { flex:0 0 340px; max-height:82vh; overflow:auto; color:#fff; }
     .lb-side h3 { font-family:var(--font-serif); color:#fff; font-size:22px; margin:0 0 8px; }
     .lb-side p { color:#D8D3C8; font-size:13px; line-height:1.6; margin:0 0 18px; }
     .lb-side .lb-label { font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:#A9A396; margin:0 0 10px; }
+    .lb-side .lb-label:not(:first-child) { margin-top:18px; padding-top:14px; border-top:1px solid rgba(255,255,255,.14); }
     .lb-mini { display:flex; align-items:center; gap:10px; padding:8px; border:1px solid rgba(255,255,255,.18); border-radius:4px; margin-bottom:8px; text-decoration:none; color:#fff; }
     .lb-mini:hover { background:rgba(255,255,255,.08); }
     .lb-mini img { width:46px; height:46px; object-fit:cover; border-radius:3px; flex:0 0 auto; }
     .lb-mini span { font-size:12px; line-height:1.3; }
+    .lb-mini small { color:#A9A396; }
+    .lb-mini em { display:block; font-style:normal; color:#C9C3B7; font-size:11px; line-height:1.4; margin-top:3px; }
     .lb-close { position:absolute; top:16px; right:22px; color:#fff; font-size:34px; cursor:pointer; line-height:1; background:none; border:0; }
     .lb-nav { position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:36px; cursor:pointer; background:rgba(255,255,255,.1); border:0; width:46px; height:46px; border-radius:50%; line-height:1; }
     .lb-prev { left:16px; } .lb-next { right:16px; }
-    @media (max-width:1000px){ .scene-grid{grid-template-columns:repeat(2,1fr);} .look-grid{grid-template-columns:repeat(3,1fr);} .lb-side{flex-basis:260px;} }
-    @media (max-width:760px){ .onsite-grid{grid-template-columns:repeat(2,1fr);} .lb-inner{flex-direction:column; overflow:auto;} .lb-side{flex:none; max-height:none; width:100%;} .lb-stage img{max-height:52vh;} }
+    @media (max-width:1000px){ .scene-grid{grid-template-columns:repeat(2,1fr);} .look-grid{grid-template-columns:repeat(3,1fr);} .lb-side{flex-basis:260px;} .bd-case{grid-template-columns:1fr; gap:24px;} }
+    @media (max-width:760px){ .onsite-grid{grid-template-columns:repeat(2,1fr);} .lb-inner{flex-direction:column; overflow:auto;} .lb-side{flex:none; max-height:none; width:100%;} .lb-stage img{max-height:52vh;} .bd-list{grid-template-columns:1fr;} }
     @media (max-width:520px){ .onsite-grid{grid-template-columns:1fr;} .scene-grid{grid-template-columns:repeat(2,1fr);} .look-grid{grid-template-columns:repeat(2,1fr);} }
   </style>
 </head>
@@ -167,6 +188,15 @@
     </div>
   </section>
 
+  <section class="section section-soft" id="breakdownSection" style="display:none;">
+    <div class="container">
+      <p class="section-label">03 — Inside the look</p>
+      <h2 id="bdTitle"></h2>
+      <p class="muted" id="bdIntro" style="max-width:64ch;"></p>
+      <div id="breakdownPanel"></div>
+    </div>
+  </section>
+
   <section class="section section-soft" style="text-align:center;">
     <div class="container">
       <p class="eyebrow">Your project, our florals</p>
@@ -208,7 +238,6 @@
       <div class="lb-side">
         <h3 id="onsiteLbTitle"></h3>
         <p id="onsiteLbDesc"></p>
-        <p class="lb-label">Products in this look</p>
         <div id="onsiteLbProducts"></div>
         <a href="contact.html" class="btn btn-primary btn-block" style="margin-top:14px;">Ask about this look</a>
       </div>

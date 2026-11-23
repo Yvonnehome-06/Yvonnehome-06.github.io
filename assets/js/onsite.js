@@ -111,12 +111,22 @@
   function renderLookPanel(list) {
     if (!elLook) return;
     if (activeScene === "all") { elLook.innerHTML = ""; return; }
-    var keys = [], seen = {};
-    list.forEach(function(x){
-      (x.products||[]).forEach(function(k){ if(PRODUCTS[k] && !seen[k]){seen[k]=1;keys.push(k);} });
+    // round-robin across cases so one case with a long breakdown can't
+    // crowd out every other look in the same scene
+    var buckets = list.map(function(x){
+      var b = [], seen = {};
+      (x.products||[]).forEach(function(k){ if(PRODUCTS[k] && !seen[k]){seen[k]=1;b.push(k);} });
+      return b;
     });
-    // prefer a balanced spread of flower types
-    keys = keys.slice(0, 12);
+    var keys = [], seen = {}, i = 0, added = true;
+    while (added && keys.length < 12) {
+      added = false;
+      for (var b = 0; b < buckets.length; b++) {
+        var k = buckets[b][i];
+        if (k && !seen[k]) { seen[k] = 1; keys.push(k); added = true; if (keys.length >= 12) break; }
+      }
+      i++;
+    }
     if (!keys.length) { elLook.innerHTML = ""; return; }
     var cards = keys.map(function(k){
       var p = PRODUCTS[k];
@@ -130,6 +140,48 @@
       '<h2>'+esc(s ? s.en : activeScene)+'</h2>' +
       '<p class="look-intro">These are the flowers and greenery used across the '+esc((s?s.en:activeScene).toLowerCase())+' scenes below. Click any piece to find it in the catalog — colours and stem lengths can be selected to match your palette.</p>' +
       '<div class="look-grid">'+cards+'</div></div>';
+  }
+
+  // --- "inside the look" breakdown: full material list for cases that have one ---
+  var elBdSection = document.getElementById("breakdownSection");
+  var elBdTitle = document.getElementById("bdTitle");
+  var elBdIntro = document.getElementById("bdIntro");
+  var elBdPanel = document.getElementById("breakdownPanel");
+
+  function renderBreakdown(list) {
+    if (!elBdSection || !elBdPanel) return;
+    var x = list.find(function(c){ return c.materials; });
+    if (!x) { elBdSection.style.display = "none"; return; }
+    elBdSection.style.display = "";
+    elBdTitle.textContent = x.title;
+    var n = 0;
+    ["blooms","foliage"].forEach(function(g){
+      if (x.materials[g] && x.materials[g].items) n += x.materials[g].items.length;
+    });
+    elBdIntro.textContent = "Every piece in this installation, broken down by what it does. " +
+      n + " materials in all — click any of them to find the matching SKU in the catalog.";
+
+    var groups = "";
+    ["blooms","foliage"].forEach(function(g){
+      var grp = x.materials[g]; if (!grp || !grp.items || !grp.items.length) return;
+      var blurb = g === "blooms"
+        ? "The main flowers and the small accents that fill the gaps between them."
+        : "The trailing strands and foliage — this is what gives the installation its movement and depth.";
+      groups += '<div class="bd-group"><h3>'+esc(grp.label)+'</h3><p>'+esc(blurb)+'</p><div class="bd-list">';
+      grp.items.forEach(function(it){
+        var p = PRODUCTS[it.k]; if (!p) return;
+        groups += '<a class="bd-item" href="products.html?q='+encodeURIComponent(p.n)+'">' +
+          '<img src="'+esc(p.t)+'" alt="'+esc(p.n)+'" loading="lazy" />' +
+          '<div class="bd-txt"><h4>'+esc(p.n)+'</h4>' +
+          '<span class="bd-cn">'+esc(p.cn||p.c)+'</span>' +
+          '<span class="bd-role">'+esc(it.role||'')+'</span></div></a>';
+      });
+      groups += '</div></div>';
+    });
+
+    elBdPanel.innerHTML = '<div class="bd-case">' +
+      '<div class="bd-shot"><img src="'+esc(x.img)+'" alt="'+esc(x.title)+'" /></div>' +
+      '<div>'+groups+'</div></div>';
   }
 
   function render() {
@@ -148,21 +200,31 @@
     if (!current.length) {
       if (elEmpty) elEmpty.style.display="block";
       renderLookPanel(current);
+      renderBreakdown(current);
       return;
     }
     if (elEmpty) elEmpty.style.display="none";
     current.forEach(function(x){
       var node = document.createElement("div");
       node.className = "onsite-item";
+      var nMat = 0;
+      if (x.materials) {
+        ["blooms","foliage"].forEach(function(g){
+          if (x.materials[g] && x.materials[g].items) nMat += x.materials[g].items.length;
+        });
+      } else { nMat = (x.products||[]).length; }
       node.innerHTML =
         '<img data-src="'+esc(x.img)+'" alt="'+esc(x.title)+'" loading="lazy" />' +
         '<div class="onsite-cap"><h3>'+esc(x.title)+'</h3><p>'+esc(sceneName(x.scene))+'</p>' +
-        '<span class="look-btn">View look →</span></div>';
+        '<span class="look-btn">View look →</span>' +
+        (nMat ? '<span class="look-count">'+nMat+' materials</span>' : '') +
+        '</div>';
       elGrid.appendChild(node);
       node.addEventListener("click", function(){ openLightbox(current.indexOf(x)); });
     });
     elGrid.querySelectorAll("img[data-src]").forEach(function(img){ if(io) io.observe(img); else img.src=img.dataset.src; });
     renderLookPanel(current);
+    renderBreakdown(current);
   }
 
   // --- lightbox with per-look product list ---
@@ -172,6 +234,27 @@
   var lbDesc = document.getElementById("onsiteLbDesc");
   var lbProds = document.getElementById("onsiteLbProducts");
   var lbIndex = 0;
+
+  function miniCard(k, role) {
+    var p = PRODUCTS[k]; if (!p) return "";
+    return '<a class="lb-mini" href="products.html?q='+encodeURIComponent(p.n)+'">' +
+      '<img src="'+esc(p.t)+'" alt="'+esc(p.n)+'" />' +
+      '<span>'+esc(p.n)+'<br><small>'+esc(p.cn||p.c)+'</small>' +
+      (role ? '<em>'+esc(role)+'</em>' : '') + '</span></a>';
+  }
+
+  function materialGroups(x) {
+    var m = x.materials; if (!m) return "";
+    var html = "";
+    ["blooms","foliage"].forEach(function(g){
+      var grp = m[g]; if (!grp || !grp.items || !grp.items.length) return;
+      html += '<p class="lb-label">'+esc(grp.label)+'</p><div class="lb-mats">';
+      grp.items.forEach(function(it){ html += miniCard(it.k, it.role); });
+      html += '</div>';
+    });
+    return html;
+  }
+
   function openLightbox(i) {
     if (!lb || !current[i]) return;
     lbIndex = i;
@@ -179,13 +262,11 @@
     lbImg.src = x.img; lbImg.alt = x.title;
     lbTitle.textContent = x.title;
     lbDesc.textContent = x.desc + "  ·  " + sceneName(x.scene);
-    var html = "";
-    (x.products||[]).forEach(function(k){
-      var p = PRODUCTS[k]; if (!p) return;
-      html += '<a class="lb-mini" href="products.html?q='+encodeURIComponent(p.n)+'">' +
-        '<img src="'+esc(p.t)+'" alt="'+esc(p.n)+'" />' +
-        '<span>'+esc(p.n)+'<br><small style="color:#A9A396">'+esc(p.cn||p.c)+'</small></span></a>';
-    });
+    var html = materialGroups(x);
+    if (!html) {
+      html = '<p class="lb-label">Products in this look</p>';
+      (x.products||[]).forEach(function(k){ html += miniCard(k, ""); });
+    }
     lbProds.innerHTML = html;
     lb.classList.add("open"); document.body.style.overflow="hidden";
   }
@@ -220,7 +301,7 @@
   // deep link: ?scene=wedding&color=pink — shareable filtered view
   try {
     var params = new URLSearchParams(location.search);
-    var ps = params.get("scene"), pc = params.get("color");
+    var ps = params.get("scene"), pc = params.get("color"), pi = params.get("case");
     if (ps && (ps === "all" || bySlug(SCENES, ps))) activeScene = ps;
     if (pc && (pc === "all" || bySlug(COLORS, pc))) activeColor = pc;
     if (ps) {
@@ -228,6 +309,12 @@
       if (elSceneGrid) elSceneGrid.querySelectorAll(".scene-card").forEach(function(x){x.classList.toggle("active",x.dataset.scene===activeScene);});
     }
     if (pc && elColorChips) elColorChips.querySelectorAll(".chip").forEach(function(x){x.classList.toggle("active",x.dataset.color===activeColor);});
+    render();
+    // ?case=<id> opens that installation directly — shareable single-look link
+    if (pi) {
+      var idx = current.findIndex(function(x){ return String(x.id) === String(pi); });
+      if (idx >= 0) openLightbox(idx);
+    }
   } catch (e) {}
   render();
 })();
