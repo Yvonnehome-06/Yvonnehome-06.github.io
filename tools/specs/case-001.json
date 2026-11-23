@@ -1,0 +1,44 @@
+{
+  "case_id": 1,
+  "title": "Twin Column Forest Display",
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "White blooms",
+      "blurb": "The ivory mass at the top and base — hydrangea for volume, peony for weight.",
+      "items": [
+        {"cn": "白绣球", "role": "Large white clusters along the top of each column — the visual main flower."},
+        {"cn": "白牡丹", "role": "Heavy layered white heads at the base, giving the column weight."},
+        {"cn": "白芍药", "role": "Full white peony blooms, opening out among the greenery."},
+        {"cn": "花园玫瑰", "role": "Round-petal white rose heads scattered through the lower section."},
+        {"cn": "洋牡丹", "role": "Soft layered white ranunculus, the small ruffled blooms."},
+        {"cn": "白蝴蝶兰", "role": "White phalaenopsis with a visible lip, tucked low on the column."},
+        {"cn": "绿毛球", "role": "Round green button balls dotted through the base."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Lavender & grey-blue accents",
+      "blurb": "The cool notes that stop the ivory from reading flat — a muted purple mass and fine filler.",
+      "items": [
+        {"cn": "灰紫绣球", "role": "Grey-lavender hydrangea mass on the right column, dense and clustered."},
+        {"cn": "紫洋牡丹", "role": "Soft lilac ranunculus through the middle-left, adding depth."},
+        {"cn": "浅紫小紫菊", "role": "Fine purple daisies filling the gaps inside the lavender mass."},
+        {"cn": "白落新妇", "role": "Misty white filler softening the transition between white and purple."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Foliage & grasses",
+      "blurb": "The fine trailing greenery that gives this display its soft, forest-like edge.",
+      "items": [
+        {"cn": "文竹", "role": "Fine airy trailing foliage — the signature movement of this display."},
+        {"cn": "高山羊齿", "role": "Spreading fern shaping the outer silhouette."},
+        {"cn": "尤加利", "role": "Round-leaf and fine-leaf eucalyptus mixed through the base."},
+        {"cn": "蓬莱松", "role": "Fluffy massed needle leaves filling the lower layer."},
+        {"cn": "橄榄枝", "role": "Long berry-bearing branches reaching up past the top of the columns."},
+        {"cn": "喷泉草", "role": "Light airy strands adding movement and airiness."}
+      ]
+    }
+  ]
+}

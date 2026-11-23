@@ -1,0 +1,39 @@
+{
+  "case_id": 3,
+  "title": "Castle Wedding Arch",
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "Blooms & accents",
+      "blurb": "The main flowers and the small accents that fill the gaps between them.",
+      "items": [
+        {"cn": "白绣球", "role": "Large white clusters along the top — the visual main flower."},
+        {"cn": "白玫瑰", "role": "Mixed-size white rose heads scattered through the spray."},
+        {"cn": "花园玫瑰", "role": "Single garden-rose heads — the round-petal whites."},
+        {"cn": "洋牡丹", "role": "Layered soft white ranunculus, the small ruffled blooms."},
+        {"cn": "白落新妇", "role": "Fluffy fine white misty accent softening the base of every cluster."},
+        {"cn": "绿毛球", "role": "Round green button balls dotted through the greenery."},
+        {"cn": "喷泉草", "role": "Fine airy strands adding movement and airiness."},
+        {"cn": "满天星", "role": "Tiny white blooms filling the gaps."},
+        {"cn": "小手球", "role": "Fine twiggy white branches for the small-flower notes."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Trailing strands & foliage",
+      "blurb": "The trailing strands and foliage — this is what gives the installation its movement and depth.",
+      "items": [
+        {"cn": "柔丽丝", "role": "The long drooping tassels down the centre — the soul of this arch."},
+        {"cn": "天门冬", "role": "Fine soft trailing branches, thread by thread."},
+        {"cn": "文竹", "role": "Light airy pinnate leaves for softness."},
+        {"cn": "马尾松", "role": "Deep-green needle base foliage."},
+        {"cn": "松针", "role": "Dark-green needle tips that carry the outline."},
+        {"cn": "蓬莱松", "role": "Fluffy massed fine needle leaves filling the base layer."},
+        {"cn": "高山羊齿", "role": "Spreading fern that shapes the outer edge."},
+        {"cn": "千层金", "role": "Light yellow-green gradient branches lifting the top layer."},
+        {"cn": "散尾葵", "role": "Wide spreading pinnate leaves across the base."},
+        {"cn": "尤加利", "role": "Round-leaf and fine-leaf eucalyptus as the base greenery."}
+      ]
+    }
+  ]
+}
