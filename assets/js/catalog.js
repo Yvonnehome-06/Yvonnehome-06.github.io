@@ -162,9 +162,18 @@
     if (e.key === "ArrowRight") step(1);
   });
 
-  // hash 直达分类
+  // 首屏渲染；支持 hash 直达分类 与 ?q= 关键词直达（供案例页“shop the look”链接使用）
   render(true);
-  if (location.hash) {
+  var qs = "";
+  try { qs = new URLSearchParams(location.search).get("q") || ""; } catch (e) {}
+  if (qs && elSearch) {
+    elSearch.value = qs;
+    var q = qs.trim().toLowerCase();
+    filtered = DATA.filter(function (x) {
+      return (x.name + " " + (x.cn || "") + " " + x.catCn + " " + (x.sku || "")).toLowerCase().indexOf(q) >= 0;
+    });
+    render(true);
+  } else if (location.hash) {
     var id = location.hash.slice(1);
     var b = elChips ? elChips.querySelector('[data-cat="' + id + '"]') : null;
     if (b) b.click();
