@@ -3,7 +3,7 @@
 # Site: https://yvonnehome-06.github.io/
 
 ## Brand
-Evonne Flora Co. is a China-based studio that curates and supplies artificial flowers and greenery to wedding planners, event decorators, holiday decorators and floral wholesalers worldwide. The studio selects and verifies the range rather than manufacturing it: every line is sourced, sampled and checked before it goes on the list. Product range: artificial roses, hydrangeas, peonies, lilies, orchids, chrysanthemums, baby's breath, artificial greenery and leaves, and other artificial blooms. Catalog: 1,000+ SKUs across 11 categories, plus a separate line of ceremony accents: candle holders and candelabra, pearl-mesh table runners, chair back flowers, black metal floral frames, confetti cannons, seasonal stems and ribbons. Business model: wholesale supply, custom colour / stem length / bundling and private-label packaging.
+Evonne Flora Co. is a China-based studio that curates and supplies artificial flowers and greenery to wedding planners, event decorators, holiday decorators and floral wholesalers worldwide. The studio selects and verifies the range rather than manufacturing it: every line is sourced, sampled and checked before it goes on the list. Product range: artificial roses, hydrangeas, peonies, lilies, orchids, chrysanthemums, baby's breath, artificial greenery and leaves, and other artificial blooms. Catalog: 1,079 SKUs across 11 categories, plus a separate line of ceremony accents: backdrop drapery, sheer chair tulle, pillar candles, candle holders and candelabra, horn arch frames, column planters, trumpet vases, satin tablecloths, pearl-mesh table runners, ruched dessert tables, iridescent butterfly accents, coloured jute mesh, chair back flowers, confetti cannons, seasonal stems and ribbons. Business model: wholesale supply, custom colour / stem length / bundling and private-label packaging.
 
 ## What we do
 - Select and supply realistic artificial flowers, floral stems and greenery for weddings, events and holiday displays.
@@ -16,9 +16,9 @@ Evonne Flora Co. is a China-based studio that curates and supplies artificial fl
 
 ## Key pages
 - Home: https://yvonnehome-06.github.io/ — studio overview, on-site work, collection, craft and standards
-- Collections: https://yvonnehome-06.github.io/products.html — full catalog, 1,000+ SKUs, filter by category and search
+- Collections: https://yvonnehome-06.github.io/products.html — full catalog, 1,079 SKUs, filter by category and search
 - On-Site Gallery: https://yvonnehome-06.github.io/onsite.html — 83 real installations browseable by scene (weddings, events, interiors, storefronts, birthdays, tables, floral walls, hanging) and colour palette; each look links to the matching products in the catalog
-- Ceremony & Event Decor: https://yvonnehome-06.github.io/decor.html — candle holders and candelabra, pearl-mesh table runners, chair back flowers, black metal floral frames, confetti cannons, seasonal stems and ribbons for weddings, events and displays
+- Ceremony & Event Decor: https://yvonnehome-06.github.io/decor.html — backdrop drapery in 14 colours, sheer chair tulle in 15 colours, white pillar candles, candle holders and candelabra, horn arch frames, classical column planters, trumpet vases, satin tablecloths, pearl-mesh table runners, ruched dessert tables, iridescent butterfly accents, coloured jute mesh, chair back flowers, confetti cannons, seasonal stems and ribbons
 - Studio: https://yvonnehome-06.github.io/about.html — the studio story, how we work with decorators, our standards in numbers
 - Craft & Quality: https://yvonnehome-06.github.io/quality.html — what we check on every order, FAQ, documentation
 - Contact / Quote: https://yvonnehome-06.github.io/contact.html — project brief form
