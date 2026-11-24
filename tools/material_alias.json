@@ -226,6 +226,39 @@
     ],
     "小雏菊-黄": [
       "mini-daisy-yellow"
+    ],
+    "蓝绣球": [
+      "90-petal-hydrangea-blue"
+    ],
+    "蓝大飞燕": [
+      "larkspur-blue"
+    ],
+    "蓝玫瑰": [
+      "new-diamond-rose-misty-blue"
+    ],
+    "粉百合": [
+      "4-head-lily-pink"
+    ],
+    "白百合": [
+      "4-head-lily-white"
+    ],
+    "百合": [
+      "4-head-lily-white"
+    ],
+    "粉洋牡丹": [
+      "ranunculus-pink"
+    ],
+    "白色小雏菊": [
+      "mini-daisy-white"
+    ],
+    "黄菊": [
+      "jumbo-pompon-mum-yellow"
+    ],
+    "乒乓菊": [
+      "jumbo-pompon-mum-yellow"
+    ],
+    "黄色小飞燕": [
+      "larkspur"
     ]
   },
   "by_key": {
@@ -266,6 +299,12 @@
     "larkspur-purple": "紫大飞燕",
     "larkspur-yellow": "黄飞燕",
     "ranunculus-pink": "浅粉洋牡丹",
-    "mini-daisy-yellow": "黄色洋甘菊/小雏菊"
+    "mini-daisy-yellow": "黄色洋甘菊/小雏菊",
+    "90-petal-hydrangea-blue": "蓝绣球",
+    "larkspur-blue": "蓝大飞燕",
+    "new-diamond-rose-misty-blue": "蓝玫瑰（雾蓝）",
+    "4-head-lily-pink": "粉百合",
+    "4-head-lily-white": "白百合",
+    "jumbo-pompon-mum-yellow": "黄菊/乒乓菊"
   }
 }
