@@ -99,26 +99,31 @@ def main():
 
     if do_push:
         print('[4/4] 推送并核验线上 ...')
+        pushed = False
         for i in range(1, 7):
             r = sh('git push origin main', cwd=SITE)
             ls = sh('git ls-remote origin main', cwd=SITE)
             head = sh('git rev-parse HEAD', cwd=SITE).stdout.strip()
             if head and head in (ls.stdout or ''):
                 print('  推送成功（第 %d 次尝试）' % i)
+                pushed = True
                 break
             print('  第 %d 次推送失败，重试 ...' % i)
             time.sleep(5)
-        time.sleep(40)
+        if not pushed:
+            print('  !! 推送 6 次全部失败 —— 线上仍是旧内容，必须手动重推！')
+            return 2
+        local_js = open(os.path.join(SITE, 'assets/js/onsite-data.js'), encoding='utf-8').read().strip()
         ok = False
-        for i in range(1, 7):
+        for i in range(1, 9):
             r = sh('curl -s %s/assets/js/onsite-data.js' % LIVE)
-            if r.returncode == 0 and 'window.ONSITE_CASES' in (r.stdout or ''):
+            if r.returncode == 0 and (r.stdout or '').strip() == local_js:
                 ok = True
-                print('  线上数据已生效（第 %d 次尝试）' % i)
+                print('  线上数据已生效（第 %d 次尝试，内容与本地一致）' % i)
                 break
             time.sleep(25)
         if not ok:
-            print('  !! 线上未确认生效，请稍后手动核验')
+            print('  !! 推送已完成但 CDN 尚未同步，请稍后手动核验线上内容')
     else:
         print('[4/4] 跳过推送（加 --push 启用）')
     return 0
