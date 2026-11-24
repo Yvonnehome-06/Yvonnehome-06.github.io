@@ -145,5 +145,9 @@ window.LOOK_PRODUCTS = {
   "core-diamond-rose-white": {"n": "Core-Diamond Rose - White", "cn": "包芯钻石玫瑰-白", "c": "roses", "s": "包芯钻石玫瑰-白-66cm", "t": "assets/img/flowers/roses/thumb/roses-029.jpg", "f": "assets/img/flowers/roses/roses-029.jpg"},
   "balloon-flower-white": {"n": "Balloon Flower - White", "cn": "桔梗-白", "c": "others", "s": "桔梗-白-70cm", "t": "assets/img/flowers/others/thumb/others-086.jpg", "f": "assets/img/flowers/others/others-086.jpg"},
   "9-head-phalaenopsis-orchid-green": {"n": "9-Head Phalaenopsis Orchid - Green", "cn": "9头蝴蝶兰-绿", "c": "orchids", "s": "9头蝴蝶兰-绿", "t": "assets/img/flowers/orchids/thumb/orchids-018.jpg", "f": "assets/img/flowers/orchids/orchids-018.jpg"},
-  "3-branch-dandelion": {"n": "3-Branch Dandelion", "cn": "三叉蒲公英", "c": "chrysanthemums", "s": "BJ三叉蒲公英", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-041.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-041.jpg"}
+  "3-branch-dandelion": {"n": "3-Branch Dandelion", "cn": "三叉蒲公英", "c": "chrysanthemums", "s": "BJ三叉蒲公英", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-041.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-041.jpg"},
+  "jumbo-pompon-mum-white": {"n": "Jumbo Pompon Mum - White", "cn": "大乒乓菊-白", "c": "chrysanthemums", "s": "大乒乓菊-白-65cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-010.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-010.jpg"},
+  "reed-grass": {"n": "Reed Grass", "cn": "芦苇草", "c": "greenery", "s": "芦苇草", "t": "assets/img/flowers/greenery/thumb/greenery-040.jpg", "f": "assets/img/flowers/greenery/greenery-040.jpg"},
+  "foxtail-grass": {"n": "Foxtail Grass", "cn": "狼尾草", "c": "greenery", "s": "YY狼尾草", "t": "assets/img/flowers/greenery/thumb/greenery-184.jpg", "f": "assets/img/flowers/greenery/greenery-184.jpg"},
+  "mini-asparagus-fern": {"n": "Mini Asparagus Fern", "cn": "小文竹", "c": "greenery", "s": "BJ小文竹", "t": "assets/img/flowers/greenery/thumb/greenery-099.jpg", "f": "assets/img/flowers/greenery/greenery-099.jpg"}
 };

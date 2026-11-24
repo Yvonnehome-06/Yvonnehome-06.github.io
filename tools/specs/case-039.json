@@ -1,0 +1,32 @@
+{
+  "case_id": 39,
+  "title": "White, Blue & Pink Tall Vase",
+  "desc": "A tall gold-vase centrepiece mixing white delphinium and hydrangea with soft blue poppies and pink ranunculus, trailing fine green strands.",
+  "scene": "event",
+  "colors": ["white", "pink", "blue"],
+  "groups": [
+    {
+      "key": "main-flowers",
+      "label": "Main flowers",
+      "blurb": "White spikes and blooms carrying the bouquet, accented with blue and pink touches.",
+      "items": [
+        {"cn": "飞燕-白", "role": "White delphinium spikes lifting the silhouette with tall vertical lines."},
+        {"cn": "126瓣绣球-白", "role": "Petal-white hydrangea forming the white body of the arrangement."},
+        {"cn": "洋牡丹-粉", "role": "Soft pink ranunculus adding rounded rose-like blooms."},
+        {"cn": "大乒乓菊-白", "role": "White pompon mums giving neat round accents through the white field."},
+        {"cn": "飞燕-粉", "role": "Light pink larkspur echoing the delphinium lines in a blush tone."}
+      ]
+    },
+    {
+      "key": "grasses",
+      "label": "Grasses & trailing greens",
+      "blurb": "Fine grasses and hanging strands keeping the shape airy and loose.",
+      "items": [
+        {"cn": "垂钓空气草", "role": "Trailing air grass hanging down in fine, soft green strands."},
+        {"cn": "芦苇草", "role": "Fountain-like reed grass spraying outwards for airy movement."},
+        {"cn": "狼尾草", "role": "Tall foxtail grass adding upright, brush-like lines."},
+        {"cn": "小文竹", "role": "Fine asparagus fern filling the silhouette with delicate green texture."}
+      ]
+    }
+  ]
+}
