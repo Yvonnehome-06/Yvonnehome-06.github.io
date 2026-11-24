@@ -1,0 +1,48 @@
+{
+  "case_id": 2,
+  "groups": [
+    {
+      "key": "purple",
+      "label": "Purple blooms",
+      "blurb": "The purple mass that carries the storefront — clustered main flowers with fine misty fillers.",
+      "items": [
+        {"cn": "90瓣绣球-紫", "role": "Large purple clusters massed along the facade — the visual main flower."},
+        {"cn": "飞燕-紫", "role": "Tall purple line flowers pulling the vertical layers upward."},
+        {"cn": "小雏菊-紫", "role": "Fine purple filler clusters scattered between the main blooms."},
+        {"cn": "勿忘我-紫", "role": "Misty purple strands softening the transitions."},
+        {"cn": "洋牡丹-紫", "role": "Soft layered lilac blooms easing the purple into the yellow zones."}
+      ]
+    },
+    {
+      "key": "yellow",
+      "label": "Yellow accents",
+      "blurb": "Golden touches scattered through the purple mass for the wild, sunny contrast.",
+      "items": [
+        {"cn": "大飞燕-黄", "role": "Yellow line flowers paired with the purple spikes for height."},
+        {"cn": "虞美人-黄", "role": "Light single-petal yellow poppies dotted through the greenery."},
+        {"cn": "小雏菊-黄", "role": "Fine fresh yellow daisies scattered across the facade."}
+      ]
+    },
+    {
+      "key": "pink",
+      "label": "Pink touches",
+      "blurb": "Small soft accents keeping the purple-and-yellow mix from going hard.",
+      "items": [
+        {"cn": "洋牡丹-粉", "role": "A few soft pink ranunculus tucked in as gentle accents."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Base greens & trailing vines",
+      "blurb": "The large wild green base covering the facade, with fine vines trailing naturally off the frame.",
+      "items": [
+        {"cn": "蓬莱松-深绿", "role": "Fluffy massed needle leaves filling the base layer."},
+        {"cn": "尤加利", "role": "Mixed eucalyptus varieties adding grey-toned depth through the greens."},
+        {"cn": "喷泉草", "role": "Light misty grass strands adding airy movement."},
+        {"cn": "情人草", "role": "Misty filler weaving through the flower mass."},
+        {"cn": "山归来", "role": "Fine winding vine strands threading through and trailing off the frame."},
+        {"cn": "橄榄枝", "role": "Berry-bearing fine branches threading upward through the greens."}
+      ]
+    }
+  ]
+}

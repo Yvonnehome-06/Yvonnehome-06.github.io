@@ -22,22 +22,19 @@
       "blurb": "The cool notes that stop the ivory from reading flat — a muted purple mass and fine filler.",
       "items": [
         {"cn": "灰紫绣球", "role": "Grey-lavender hydrangea mass on the right column, dense and clustered."},
-        {"cn": "紫洋牡丹", "role": "Soft lilac ranunculus through the middle-left, adding depth."},
-        {"cn": "浅紫小紫菊", "role": "Fine purple daisies filling the gaps inside the lavender mass."},
-        {"cn": "白落新妇", "role": "Misty white filler softening the transition between white and purple."}
+        {"cn": "紫洋牡丹", "role": "Soft lilac ranunculus through the middle-left, adding depth."}
       ]
     },
     {
       "key": "foliage",
       "label": "Foliage & grasses",
-      "blurb": "The fine trailing greenery that gives this display its soft, forest-like edge.",
+      "blurb": "The fine trailing greenery that gives this display its soft, forest-like edge — asparagus fern is the soul of this look.",
       "items": [
-        {"cn": "文竹", "role": "Fine airy trailing foliage — the signature movement of this display."},
-        {"cn": "高山羊齿", "role": "Spreading fern shaping the outer silhouette."},
-        {"cn": "尤加利", "role": "Round-leaf and fine-leaf eucalyptus mixed through the base."},
+        {"cn": "文竹", "role": "Fine airy trailing foliage in large mass — the signature of this display, creating the soft misty forest feel."},
+        {"cn": "尤加利", "role": "Round-leaf and fine-leaf eucalyptus with berry tops, adding grey-toned depth."},
         {"cn": "蓬莱松", "role": "Fluffy massed needle leaves filling the lower layer."},
         {"cn": "橄榄枝", "role": "Long berry-bearing branches reaching up past the top of the columns."},
-        {"cn": "喷泉草", "role": "Light airy strands adding movement and airiness."}
+        {"cn": "喷泉草", "role": "Light misty strands adding airy filler and movement."}
       ]
     }
   ]

@@ -1,0 +1,31 @@
+{
+  "case_id": 26,
+  "title": "Sunlit Green Wedding Arch",
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "Blooms",
+      "blurb": "The flower masses carrying the ivory-and-green palette.",
+      "items": [
+        {"cn": "绿绣球", "role": "Large green clusters forming the main flower mass along the top."},
+        {"cn": "白绣球", "role": "The white cluster accent at the top-right corner."},
+        {"cn": "绿毛球", "role": "Fluffy round green balls dotted through the flowers."},
+        {"cn": "白小菊", "role": "Fine white filler clusters filling the gaps."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Trailing strands & foliage",
+      "blurb": "Green line, movement and the deep base layer — the foxtail is the soul of this arch.",
+      "items": [
+        {"cn": "绿灵草", "role": "The long bright-green hanging tassels — the signature of this installation."},
+        {"cn": "文竹", "role": "Fine feathery trailing branches adding airy movement."},
+        {"cn": "蓬莱松", "role": "Fluffy massed needle leaves forming the base layer."},
+        {"cn": "尤加利", "role": "Grey-green round-leaf and fine-leaf eucalyptus adding depth."},
+        {"cn": "大羽叶", "role": "Large pinnate leaves spreading across the upper layer."},
+        {"cn": "山归来", "role": "Fine winding vine branches threading through the greenery."},
+        {"cn": "松枝", "role": "Deep-green needle foliage as the dark base."}
+      ]
+    }
+  ]
+}
