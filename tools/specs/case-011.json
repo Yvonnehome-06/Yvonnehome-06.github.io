@@ -1,0 +1,23 @@
+{
+  "case_id": 11,
+  "groups": [
+    {
+      "key": "dried-blooms",
+      "label": "Dried statement pieces",
+      "blurb": "The pale and caramel dried masses that anchor this wabi-sabi installation.",
+      "items": [
+        {"cn": "12头芦苇-白", "role": "Large white pampas plumes — the soft, airy focal mass of the installation."},
+        {"cn": "12头芦苇-香槟", "role": "Pale champagne pampas plumes adding the warmer, sandy layer."},
+        {"cn": "126瓣绣球-咖色", "role": "Caramel-toned dried hydrangea heads — the warm brown focal clusters."}
+      ]
+    },
+    {
+      "key": "trailing-texture",
+      "label": "Trailing dried texture",
+      "blurb": "Fine, hanging texture that softens the edges of the arrangement.",
+      "items": [
+        {"cn": "老人须", "role": "Pale, wispy Spanish-moss tendrils trailing down like dried silver silk."}
+      ]
+    }
+  ]
+}
