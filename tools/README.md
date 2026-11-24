@@ -81,3 +81,11 @@ python tools/run_case.py tools/specs/case-003.json --commit "说明" --push
 | `tools/apply_case.py` | 写数据 + 输出缺口 |
 | `tools/run_case.py` | 一键：应用 → 校验 → 提交 → 推送 → 线上核验 |
 | `tools/specs/case-XXX.json` | 各案例的拆解 spec |
+
+## 同实景多图合并 / 删除 / 详情页（2026-11-24）
+
+- 分组定义在 `tools/groups.json`：`groups[]`（keep + absorb）+ `hidden[]`（用户要求删除的案例 id，数据保留仅前端隐藏）
+- 改完配置后跑 `python tools/apply_groups.py`（幂等，可反复重跑）
+- **注意**：`git checkout -- assets/` 会把合并字段一起还原——回归测试重跑拆解后若需恢复数据，用 `python tools/apply_groups.py` 重建，不要用 checkout 还原整个 assets 目录
+- 材料清单**不在页面下方平铺展示**（用户明确否决），只在点开案例后的灯箱详情界面里显示：左大图 + 右侧浅色面板（分组编号/说明 + 材料缩略图卡片 + 询价按钮）
+- 左上角水印去除：PIL 纹理克隆（取水印框正下方同尺寸树叶块 + 羽化蒙版），主图与 thumb 都要处理；box 需留足余量（WELLNEED logo + 文字约 190×130px，取 200×150px 框）

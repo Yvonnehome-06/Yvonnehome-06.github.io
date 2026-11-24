@@ -25,9 +25,17 @@ def main():
     spec = json.load(open(GROUPS, encoding='utf-8'))
     groups = spec['groups']
 
-    # idempotency: clear prior merge fields
+    # idempotency: clear prior merge / hide fields
     for c in cases:
-        c.pop('images', None); c.pop('imageCount', None); c.pop('mergedInto', None)
+        c.pop('images', None); c.pop('imageCount', None); c.pop('mergedInto', None); c.pop('hidden', None)
+
+    # cases the user asked to delete from the showcase (data kept for rollback)
+    hidden = spec.get('hidden', [])
+    for hid in hidden:
+        if hid not in by_id:
+            raise SystemExit('!! hidden id 不存在: %s' % hid)
+        by_id[hid]['hidden'] = True
+        print('隐藏案例 id=%d (%s)' % (hid, by_id[hid].get('title','')))
 
     covered = set()
     for g in groups:
@@ -51,8 +59,9 @@ def main():
 
     out = src[:m.start(2)] + json.dumps(cases, ensure_ascii=False) + src[m.end(2):]
     open(DATA, 'w', encoding='utf-8').write(out)
-    print('\n写入完成：%d 组，%d 个案例被并入，展示案例 %d' %
-          (len(groups), len(covered)-len(groups), len(cases)-len([c for c in cases if c.get('mergedInto')])))
+    visible = len(cases) - len([c for c in cases if c.get('mergedInto') or c.get('hidden')])
+    print('\n写入完成：%d 组，%d 个案例被并入，%d 个隐藏，展示案例 %d' %
+          (len(groups), len(covered)-len(groups), len(hidden), visible))
 
 if __name__ == '__main__':
     main()

@@ -4,7 +4,7 @@
   "use strict";
   // Cases merged into a same-scene group are hidden from browsing; the kept
   // case carries images[] with every photo in that group.
-  var DATA = (window.ONSITE_CASES || []).filter(function(x){ return !x.mergedInto; });
+  var DATA = (window.ONSITE_CASES || []).filter(function(x){ return !x.mergedInto && !x.hidden; });
   var SCENES = window.ONSITE_SCENES || [];
   var COLORS = window.ONSITE_COLORS || [];
   var PRODUCTS = window.LOOK_PRODUCTS || {};
@@ -144,12 +144,7 @@
       '<div class="look-grid">'+cards+'</div></div>';
   }
 
-  // --- "inside the look" breakdown: full material list for cases that have one ---
-  var elBdSection = document.getElementById("breakdownSection");
-  var elBdTitle = document.getElementById("bdTitle");
-  var elBdIntro = document.getElementById("bdIntro");
-  var elBdPanel = document.getElementById("breakdownPanel");
-
+  // Material groups are dynamic — shown inside each case detail view, not flat on the page.
   // material groups are dynamic — a case can have any number (blooms / accents / foliage)
   function matGroups(x) {
     var m = x.materials; if (!m) return [];
@@ -158,54 +153,6 @@
       if (!grp || !grp.items || !grp.items.length) return null;
       return { key:g, label:grp.label || g, blurb:grp.blurb || "", items:grp.items };
     }).filter(Boolean);
-  }
-
-  function renderBreakdown(list) {
-    if (!elBdSection || !elBdPanel) return;
-    var withMat = list.filter(function(c){ return c.materials; });
-    if (!withMat.length) { elBdSection.style.display = "none"; elBdPanel.innerHTML = ""; return; }
-    elBdSection.style.display = "";
-
-    var total = 0;
-    withMat.forEach(function(c){ matGroups(c).forEach(function(g){ total += g.items.length; }); });
-
-    if (withMat.length === 1) {
-      elBdTitle.textContent = withMat[0].title;
-      elBdIntro.textContent = "Every piece in this installation, broken down by what it does. " +
-        total + " materials in all — click any of them to find the matching SKU in the catalog.";
-    } else {
-      elBdTitle.textContent = "Installations, broken down";
-      elBdIntro.textContent = "Every piece in these installations, broken down by what it does. " +
-        total + " materials in all — click any of them to find the matching SKU in the catalog.";
-    }
-
-    var panels = "";
-    withMat.forEach(function(x){
-      var groups = "";
-      matGroups(x).forEach(function(g){
-        groups += '<div class="bd-group"><h3>'+esc(g.label)+'</h3>' +
-          (g.blurb ? '<p>'+esc(g.blurb)+'</p>' : '') + '<div class="bd-list">';
-        g.items.forEach(function(it){
-          var p = PRODUCTS[it.k]; if (!p) return;
-          groups += '<a class="bd-item" href="products.html?q='+encodeURIComponent(p.n)+'">' +
-            '<img src="'+esc(p.t)+'" alt="'+esc(p.n)+'" loading="lazy" />' +
-            '<div class="bd-txt"><h4>'+esc(p.n)+'</h4>' +
-            '<span class="bd-cn">'+esc(p.cn||p.c)+'</span>' +
-            '<span class="bd-role">'+esc(it.role||'')+'</span></div></a>';
-        });
-        groups += '</div></div>';
-      });
-      panels += '<div class="bd-block">' +
-        (withMat.length > 1
-          ? '<h3 class="bd-case-title">'+esc(x.title)+
-            '<span>'+esc(sceneName(x.scene))+'</span></h3>'
-          : '') +
-        '<div class="bd-case">' +
-          '<div class="bd-shot"><img src="'+esc(x.img)+'" alt="'+esc(x.title)+'" /></div>' +
-          '<div>'+groups+'</div></div></div>';
-    });
-
-    elBdPanel.innerHTML = panels;
   }
 
   function render() {
@@ -224,7 +171,6 @@
     if (!current.length) {
       if (elEmpty) elEmpty.style.display="block";
       renderLookPanel(current);
-      renderBreakdown(current);
       return;
     }
     if (elEmpty) elEmpty.style.display="none";
@@ -249,7 +195,6 @@
     });
     elGrid.querySelectorAll("img[data-src]").forEach(function(img){ if(io) io.observe(img); else img.src=img.dataset.src; });
     renderLookPanel(current);
-    renderBreakdown(current);
   }
 
   // --- lightbox with per-look product list ---
@@ -266,16 +211,25 @@
     var p = PRODUCTS[k]; if (!p) return "";
     return '<a class="lb-mini" href="products.html?q='+encodeURIComponent(p.n)+'">' +
       '<img src="'+esc(p.t)+'" alt="'+esc(p.n)+'" />' +
-      '<span>'+esc(p.n)+'<br><small>'+esc(p.cn||p.c)+'</small>' +
+      '<span class="lb-mini-txt"><strong>'+esc(p.n)+'</strong>' +
+      '<small>'+esc(p.cn||p.c)+'</small>' +
       (role ? '<em>'+esc(role)+'</em>' : '') + '</span></a>';
   }
 
   function materialGroups(x) {
-    var html = "";
-    matGroups(x).forEach(function(g){
-      html += '<p class="lb-label">'+esc(g.label)+'</p><div class="lb-mats">';
+    var html = "", total = 0;
+    var groups = matGroups(x);
+    groups.forEach(function(g){ total += g.items.length; });
+    if (!groups.length) return "";
+    html += '<div class="lb-mats-head"><span>What is in this look</span><span>'+total+' materials</span></div>';
+    groups.forEach(function(g, gi){
+      html += '<div class="lb-group">' +
+        '<div class="lb-group-title"><span class="lb-gnum">'+String(gi+1).padStart(2,"0")+'</span>' +
+        '<span>'+esc(g.label)+'</span><span class="lb-gcount">'+g.items.length+'</span></div>';
+      if (g.blurb) html += '<p class="lb-gblurb">'+esc(g.blurb)+'</p>';
+      html += '<div class="lb-mats">';
       g.items.forEach(function(it){ html += miniCard(it.k, it.role); });
-      html += '</div>';
+      html += '</div></div>';
     });
     return html;
   }
@@ -312,8 +266,9 @@
     lbDesc.textContent = x.desc + "  ·  " + sceneName(x.scene);
     var html = materialGroups(x);
     if (!html) {
-      html = '<p class="lb-label">Products in this look</p>';
+      html = '<div class="lb-mats-head"><span>What is in this look</span><span>'+(x.products||[]).length+' products</span></div><div class="lb-mats">';
       (x.products||[]).forEach(function(k){ html += miniCard(k, ""); });
+      html += '</div>';
     }
     lbProds.innerHTML = html;
     showShot();
