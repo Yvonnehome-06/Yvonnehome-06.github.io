@@ -84,5 +84,11 @@ window.LOOK_PRODUCTS = {
   "milane-berry": {"n": "3-Branch Milane Berry", "cn": "三叉米兰果深绿", "c": "greenery", "s": "YY三叉米兰果深绿", "t": "assets/img/flowers/greenery/thumb/greenery-167.jpg", "f": "assets/img/flowers/greenery/greenery-167.jpg"},
   "mini-daisy-white": {"n": "Mini Daisy - White", "cn": "小雏菊-白", "c": "chrysanthemums", "s": "小雏菊-白-56cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-017.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-017.jpg"},
   "foxtail": {"n": "Foxtail", "cn": "狐尾", "c": "others", "s": "狐尾", "t": "assets/img/flowers/others/thumb/others-113.jpg", "f": "assets/img/flowers/others/others-113.jpg"},
-  "mountain-return": {"n": "Mountain Return", "cn": "山归来", "c": "greenery", "s": "HY山归来", "t": "assets/img/flowers/greenery/thumb/greenery-130.jpg", "f": "assets/img/flowers/greenery/greenery-130.jpg"}
+  "mountain-return": {"n": "Mountain Return", "cn": "山归来", "c": "greenery", "s": "HY山归来", "t": "assets/img/flowers/greenery/thumb/greenery-130.jpg", "f": "assets/img/flowers/greenery/greenery-130.jpg"},
+  "90-petal-hydrangea-purple": {"n": "90-Petal Hydrangea - Purple", "cn": "90瓣绣球-紫", "c": "hydrangeas", "s": "90瓣绣球-紫-70cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-066.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-066.jpg"},
+  "larkspur-purple": {"n": "Larkspur - Purple", "cn": "飞燕-紫", "c": "orchids", "s": "飞燕-紫-120cm", "t": "assets/img/flowers/orchids/thumb/orchids-078.jpg", "f": "assets/img/flowers/orchids/orchids-078.jpg"},
+  "forget-me-not-purple": {"n": "Forget-Me-Not - Purple", "cn": "勿忘我-紫", "c": "babys-breath", "s": "勿忘我-紫-77cm", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-003.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-003.jpg"},
+  "larkspur-yellow": {"n": "Larkspur - Yellow", "cn": "大飞燕-黄", "c": "orchids", "s": "MZ大飞燕", "t": "assets/img/flowers/orchids/thumb/orchids-085.jpg", "f": "assets/img/flowers/orchids/orchids-085.jpg"},
+  "shirley-poppy-yellow": {"n": "Shirley Poppy - Yellow", "cn": "虞美人-黄", "c": "others", "s": "虞美人-黄-61cm", "t": "assets/img/flowers/others/thumb/others-140.jpg", "f": "assets/img/flowers/others/others-140.jpg"},
+  "mini-daisy-yellow": {"n": "Mini Daisy - Yellow", "cn": "小雏菊-黄", "c": "chrysanthemums", "s": "小雏菊-黄-56cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-020.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-020.jpg"}
 };
