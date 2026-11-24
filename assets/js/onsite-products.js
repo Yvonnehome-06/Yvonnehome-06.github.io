@@ -113,5 +113,9 @@ window.LOOK_PRODUCTS = {
   "larkspur-white": {"n": "Larkspur - White", "cn": "飞燕-白", "c": "orchids", "s": "飞燕-白-120cm", "t": "assets/img/flowers/orchids/thumb/orchids-076.jpg", "f": "assets/img/flowers/orchids/orchids-076.jpg"},
   "austin-rose-coffee": {"n": "Austin Rose - Coffee", "cn": "奥斯汀玫瑰-咖色", "c": "roses", "s": "奥斯汀玫瑰-咖色-66cm", "t": "assets/img/flowers/roses/thumb/roses-051.jpg", "f": "assets/img/flowers/roses/roses-051.jpg"},
   "126-petal-hydrangea-coffee": {"n": "126-Petal Hydrangea - Coffee", "cn": "126瓣绣球-咖色", "c": "hydrangeas", "s": "126瓣绣球-咖色-58cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-001.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-001.jpg"},
-  "12-head-reed-yellow": {"n": "12-Head Reed - Yellow", "cn": "12头芦苇-黄", "c": "greenery", "s": "12头芦苇-黄-118cm", "t": "assets/img/flowers/greenery/thumb/greenery-007.jpg", "f": "assets/img/flowers/greenery/greenery-007.jpg"}
+  "12-head-reed-yellow": {"n": "12-Head Reed - Yellow", "cn": "12头芦苇-黄", "c": "greenery", "s": "12头芦苇-黄-118cm", "t": "assets/img/flowers/greenery/thumb/greenery-007.jpg", "f": "assets/img/flowers/greenery/greenery-007.jpg"},
+  "ranunculus-red": {"n": "Ranunculus - Red", "cn": "洋牡丹-红", "c": "peonies", "s": "洋牡丹-红-65cm", "t": "assets/img/flowers/peonies/thumb/peonies-051.jpg", "f": "assets/img/flowers/peonies/peonies-051.jpg"},
+  "shirley-poppy-red": {"n": "Shirley Poppy - Red", "cn": "虞美人-红", "c": "others", "s": "虞美人-红-61cm", "t": "assets/img/flowers/others/thumb/others-139.jpg", "f": "assets/img/flowers/others/others-139.jpg"},
+  "galsang-flower-pink": {"n": "Galsang Flower - Pink", "cn": "格桑花-粉", "c": "others", "s": "格桑花-粉-65cm", "t": "assets/img/flowers/others/thumb/others-084.jpg", "f": "assets/img/flowers/others/others-084.jpg"},
+  "galsang-flower-light-purple": {"n": "Galsang Flower - Light Purple", "cn": "格桑花-浅紫", "c": "others", "s": "格桑花-浅紫-65cm", "t": "assets/img/flowers/others/thumb/others-081.jpg", "f": "assets/img/flowers/others/others-081.jpg"}
 };

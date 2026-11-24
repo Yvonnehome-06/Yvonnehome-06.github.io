@@ -1,0 +1,43 @@
+{
+  "case_id": 9,
+  "groups": [
+    {
+      "key": "main",
+      "label": "Rainbow main blooms",
+      "blurb": "A vivid mix of pinks, oranges, blues and reds climbing the column.",
+      "items": [
+        {"cn": "洋牡丹-红", "role": "Deep red ranunculus woven through the mixed colour mass."},
+        {"cn": "洋牡丹-粉", "role": "Soft pink ranunculus layering through the arrangement."},
+        {"cn": "虞美人-红", "role": "Thin-petalled orange-red Shirley poppy adding bright accents."},
+        {"cn": "虞美人-黄", "role": "Light yellow Shirley poppy scattered through the column."},
+        {"cn": "格桑花-粉", "role": "Small pink cosmos-like galsang flowers, fresh and airy."},
+        {"cn": "格桑花-浅紫", "role": "Pale lilac galsang flowers adding delicate colour."},
+        {"cn": "飞燕-粉", "role": "Pink larkspur spikes lifting the vertical lines of the design."},
+        {"cn": "飞燕-紫", "role": "Purple larkspur spikes stretching the height."},
+        {"cn": "飞燕-蓝", "role": "Light blue larkspur spikes adding cool vertical accents."},
+        {"cn": "小雏菊-白", "role": "White mini daisies with yellow centres filling the gaps."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Hydrangea accents",
+      "blurb": "Round colour-block hydrangea balls grounding the rainbow palette.",
+      "items": [
+        {"cn": "90瓣绣球-蓝", "role": "Light blue hydrangea ball as a cool colour anchor."},
+        {"cn": "90瓣绣球-紫", "role": "Purple hydrangea ball balancing the warm tones."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Greens & fillers",
+      "blurb": "Soft greens and wispy fillers tying the wild rainbow mix together.",
+      "items": [
+        {"cn": "蓬莱松-深绿", "role": "Fluffy needle foliage forming the base layer."},
+        {"cn": "垂钓空气草", "role": "Wispy fountain grass adding wild movement."},
+        {"cn": "小圆尤加利", "role": "Grey-green eucalyptus balancing the bright colours."},
+        {"cn": "情人草-白", "role": "Hazy white statice filling between the blooms."},
+        {"cn": "山归来", "role": "Thin mountain-return vine branches stretching the lines."}
+      ]
+    }
+  ]
+}
