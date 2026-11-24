@@ -106,5 +106,12 @@ window.LOOK_PRODUCTS = {
   "mimosa": {"n": "Mimosa", "cn": "含羞草", "c": "greenery", "s": "BJ含羞草", "t": "assets/img/flowers/greenery/thumb/greenery-095.jpg", "f": "assets/img/flowers/greenery/greenery-095.jpg"},
   "cutout-monstera-leaf": {"n": "Cutout Monstera Leaf", "cn": "镂空龟背叶", "c": "greenery", "s": "BJ镂空龟背叶", "t": "assets/img/flowers/greenery/thumb/greenery-110.jpg", "f": "assets/img/flowers/greenery/greenery-110.jpg"},
   "taro-leaf": {"n": "Taro Leaf", "cn": "香芋叶", "c": "greenery", "s": "香芋叶", "t": "assets/img/flowers/greenery/thumb/greenery-046.jpg", "f": "assets/img/flowers/greenery/greenery-046.jpg"},
-  "12-head-reed": {"n": "12-Head Reed", "cn": "12头芦苇", "c": "greenery", "s": "12头芦苇", "t": "assets/img/flowers/greenery/thumb/greenery-008.jpg", "f": "assets/img/flowers/greenery/greenery-008.jpg"}
+  "12-head-reed": {"n": "12-Head Reed", "cn": "12头芦苇", "c": "greenery", "s": "12头芦苇", "t": "assets/img/flowers/greenery/thumb/greenery-008.jpg", "f": "assets/img/flowers/greenery/greenery-008.jpg"},
+  "austin-rose-pink": {"n": "Austin Rose - Pink", "cn": "奥斯汀玫瑰-粉", "c": "roses", "s": "奥斯汀玫瑰-粉-66cm", "t": "assets/img/flowers/roses/thumb/roses-054.jpg", "f": "assets/img/flowers/roses/roses-054.jpg"},
+  "9-head-phalaenopsis-orchid-pink": {"n": "9-Head Phalaenopsis Orchid - Pink", "cn": "9头蝴蝶兰-粉", "c": "orchids", "s": "9头蝴蝶兰-粉-97cm", "t": "assets/img/flowers/orchids/thumb/orchids-015.jpg", "f": "assets/img/flowers/orchids/orchids-015.jpg"},
+  "larkspur-pink": {"n": "Larkspur - Pink", "cn": "飞燕-粉", "c": "orchids", "s": "飞燕-粉-120cm", "t": "assets/img/flowers/orchids/thumb/orchids-077.jpg", "f": "assets/img/flowers/orchids/orchids-077.jpg"},
+  "larkspur-white": {"n": "Larkspur - White", "cn": "飞燕-白", "c": "orchids", "s": "飞燕-白-120cm", "t": "assets/img/flowers/orchids/thumb/orchids-076.jpg", "f": "assets/img/flowers/orchids/orchids-076.jpg"},
+  "austin-rose-coffee": {"n": "Austin Rose - Coffee", "cn": "奥斯汀玫瑰-咖色", "c": "roses", "s": "奥斯汀玫瑰-咖色-66cm", "t": "assets/img/flowers/roses/thumb/roses-051.jpg", "f": "assets/img/flowers/roses/roses-051.jpg"},
+  "126-petal-hydrangea-coffee": {"n": "126-Petal Hydrangea - Coffee", "cn": "126瓣绣球-咖色", "c": "hydrangeas", "s": "126瓣绣球-咖色-58cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-001.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-001.jpg"},
+  "12-head-reed-yellow": {"n": "12-Head Reed - Yellow", "cn": "12头芦苇-黄", "c": "greenery", "s": "12头芦苇-黄-118cm", "t": "assets/img/flowers/greenery/thumb/greenery-007.jpg", "f": "assets/img/flowers/greenery/greenery-007.jpg"}
 };

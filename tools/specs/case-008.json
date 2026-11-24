@@ -1,0 +1,50 @@
+{
+  "case_id": 8,
+  "groups": [
+    {
+      "key": "pink",
+      "label": "Pink main blooms",
+      "blurb": "Soft dusty-rose clusters forming the upper mass of the hanging wall.",
+      "items": [
+        {"cn": "奥斯汀玫瑰-粉", "role": "Dusty-pink Austin roses as the rounded main flower clusters."},
+        {"cn": "9头蝴蝶兰-粉", "role": "Pink phalaenopsis at the top-right with free-flowing petals."},
+        {"cn": "洋牡丹-粉", "role": "Layered pink ranunculus enriching the flower surface."},
+        {"cn": "飞燕-粉", "role": "Slim pink larkspur spikes adding vertical lines."},
+        {"cn": "126瓣绣球-粉", "role": "Fluffy pink hydrangea balls filling out the mass."}
+      ]
+    },
+    {
+      "key": "white",
+      "label": "White blooms & cascades",
+      "blurb": "Ivory whites with long cascading stems — the signature trailing soul of this design.",
+      "items": [
+        {"cn": "飞燕-白", "role": "Long white larkspur cascading like a waterfall — the signature flower of this look."},
+        {"cn": "9头蝴蝶兰-白", "role": "Strings of white phalaenopsis through the middle section."},
+        {"cn": "126瓣绣球-白", "role": "White hydrangea balls in the lower layer."},
+        {"cn": "洋牡丹-白", "role": "White ranunculus woven through to brighten the mass."},
+        {"cn": "软胶满天星-白", "role": "Fine white baby's-breath filling as light airy texture."}
+      ]
+    },
+    {
+      "key": "vintage",
+      "label": "Caramel & vintage tones",
+      "blurb": "Warm caramel and pale-brown notes bridging the cool pinks and whites.",
+      "items": [
+        {"cn": "奥斯汀玫瑰-咖色", "role": "Caramel-toned Austin roses giving the vintage warm transition."},
+        {"cn": "126瓣绣球-咖色", "role": "Pale brown hydrangea balls for the dried-flower vintage feel."},
+        {"cn": "12头芦苇-黄", "role": "Pale yellow reed lines adding fluffy wild texture."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Greens & trailing lines",
+      "blurb": "Misty fine grass and thin vines stretching the trailing movement downward.",
+      "items": [
+        {"cn": "垂钓空气草", "role": "Misty fine fountain grass drooping downward."},
+        {"cn": "山归来", "role": "Thin mountain-return vines stretching the trailing feel."},
+        {"cn": "小圆尤加利", "role": "Grey-green eucalyptus pressing back the layers."},
+        {"cn": "情人草-白", "role": "Fine hazy filler softening the whole arrangement."}
+      ]
+    }
+  ]
+}
