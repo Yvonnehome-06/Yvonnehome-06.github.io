@@ -100,5 +100,7 @@ window.LOOK_PRODUCTS = {
   "yellow-rose": {"n": "Yellow Rose", "cn": "黄玫瑰", "c": "roses", "s": "DM黄玫瑰", "t": "assets/img/flowers/roses/thumb/roses-112.jpg", "f": "assets/img/flowers/roses/roses-112.jpg"},
   "larkspur": {"n": "Larkspur", "cn": "小飞燕", "c": "orchids", "s": "XKL小飞燕", "t": "assets/img/flowers/orchids/thumb/orchids-107.jpg", "f": "assets/img/flowers/orchids/orchids-107.jpg"},
   "4-head-lily-pink": {"n": "4-Head Lily - Pink", "cn": "4头百合-粉", "c": "lilies", "s": "4头百合-粉-82cm", "t": "assets/img/flowers/lilies/thumb/lilies-013.jpg", "f": "assets/img/flowers/lilies/lilies-013.jpg"},
-  "4-head-lily-white": {"n": "4-Head Lily - White", "cn": "4头百合-白", "c": "lilies", "s": "4头百合-白-82cm", "t": "assets/img/flowers/lilies/thumb/lilies-012.jpg", "f": "assets/img/flowers/lilies/lilies-012.jpg"}
+  "4-head-lily-white": {"n": "4-Head Lily - White", "cn": "4头百合-白", "c": "lilies", "s": "4头百合-白-82cm", "t": "assets/img/flowers/lilies/thumb/lilies-012.jpg", "f": "assets/img/flowers/lilies/lilies-012.jpg"},
+  "golden-lily": {"n": "Golden Lily", "cn": "三头金百合", "c": "lilies", "s": "ZX三头金百合", "t": "assets/img/flowers/lilies/thumb/lilies-043.jpg", "f": "assets/img/flowers/lilies/lilies-043.jpg"},
+  "bunched-cypress-leaf": {"n": "Bunched Cypress Leaf", "cn": "把束大柏叶", "c": "greenery", "s": "把束大柏叶", "t": "assets/img/flowers/greenery/thumb/greenery-023.jpg", "f": "assets/img/flowers/greenery/greenery-023.jpg"}
 };

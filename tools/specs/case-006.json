@@ -1,0 +1,40 @@
+{
+  "case_id": 6,
+  "groups": [
+    {
+      "key": "mains",
+      "label": "Main blooms",
+      "blurb": "The statement flowers climbing the texture wall — white orchid lines, orange lilies and warm roses.",
+      "items": [
+        {"cn": "9头蝴蝶兰-白", "role": "White phalaenopsis orchids in vertical strands — the signature line flower of this installation."},
+        {"cn": "三头金百合", "role": "Golden-orange lilies massed through the middle layer."},
+        {"cn": "单头多层向日葵-黄", "role": "Sunflowers scattered along the ground layer."},
+        {"cn": "新款钻石玫瑰-桔", "role": "Warm orange roses tucked through the upper and middle layers."},
+        {"cn": "洋牡丹-粉", "role": "Soft pale-pink ranunculus layered along the ground."}
+      ]
+    },
+    {
+      "key": "yellow",
+      "label": "Yellow accents",
+      "blurb": "Light yellow touches bridging the warm flowers and the green mass.",
+      "items": [
+        {"cn": "虞美人-黄", "role": "Light single-petal yellow poppies dotted low."},
+        {"cn": "小雏菊-黄", "role": "Fine yellow daisies filling the gaps."},
+        {"cn": "大飞燕-黄", "role": "Yellow delphinium spikes lifting the line of the arrangement."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Greens & trailing grasses",
+      "blurb": "The wild textured green base — soft trailing strands are the soul of this look.",
+      "items": [
+        {"cn": "垂吊柔丝草", "role": "Large soft trailing strands hanging down the wall — the soul of this installation."},
+        {"cn": "蓬莱松-深绿", "role": "Fluffy needle greenery forming the base layer."},
+        {"cn": "小圆尤加利", "role": "Grey-green round leaves dotted through the greens."},
+        {"cn": "松枝", "role": "Deep-green needle branches on both sides of the wall."},
+        {"cn": "把束大柏叶", "role": "Compact cypress-leaf bunches shaping the two cone-like side trees."},
+        {"cn": "喷泉草", "role": "Misty grass strands softening the edges."}
+      ]
+    }
+  ]
+}

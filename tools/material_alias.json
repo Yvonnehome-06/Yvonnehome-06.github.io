@@ -28,12 +28,6 @@
     "浅紫洋牡丹": [
       "ranunculus-purple"
     ],
-    "白落新妇": [
-      "statice-white"
-    ],
-    "落新妇": [
-      "statice-white"
-    ],
     "霞草": [
       "statice-white"
     ],
@@ -106,15 +100,6 @@
     ],
     "蓬莱松": [
       "pine-spray-dg"
-    ],
-    "高山羊齿": [
-      "asparagus-fern-dg"
-    ],
-    "羊齿": [
-      "asparagus-fern-dg"
-    ],
-    "蕨": [
-      "asparagus-fern-dg"
     ],
     "千层金": [
       "layered-gold-lg"
@@ -194,6 +179,12 @@
     "垂吊柔丝": [
       "foxtail"
     ],
+    "垂吊柔丝草": [
+      "foxtail"
+    ],
+    "长马尾草": [
+      "foxtail"
+    ],
     "长垂松": [
       "foxtail"
     ],
@@ -267,7 +258,7 @@
     "rose-garden-white": "花园玫瑰",
     "ranunculus-white": "洋牡丹",
     "ranunculus-purple": "紫洋牡丹",
-    "statice-white": "白落新妇",
+    "statice-white": "情人草",
     "dianthus-green": "绿毛球",
     "air-grass": "喷泉草",
     "baby-white": "满天星",
@@ -279,7 +270,7 @@
     "horsetail-pine": "马尾松",
     "pine-needle-dg": "松针",
     "pine-spray-dg": "蓬莱松",
-    "asparagus-fern-dg": "高山羊齿",
+    "asparagus-fern-dg": "芦荀草",
     "layered-gold-lg": "千层金",
     "areca": "散尾葵",
     "areca-3": "散尾葵",
