@@ -1,0 +1,44 @@
+{
+  "case_id": 40,
+  "title": "Arched Green Botanical Wall",
+  "desc": "An arched living-wall installation layered with caladium foliage, trailing grasses and light-green hydrangea over a moss base.",
+  "scene": "interior",
+  "colors": ["green"],
+  "groups": [
+    {
+      "key": "statement-leaves",
+      "label": "Statement foliage",
+      "blurb": "Patterned caladium-style leaves carrying the wall's main texture.",
+      "items": [
+        {"cn": "彩玉叶粉点", "role": "White leaves veined and speckled in red, echoing the red-vein caladium patches across the wall."}
+      ]
+    },
+    {
+      "key": "trailing",
+      "label": "Trailing greens",
+      "blurb": "Hanging strands softening the arch and breaking the leaf mass.",
+      "items": [
+        {"cn": "垂钓空气草", "role": "Air grass hanging in long fine strands through the middle of the arch."},
+        {"cn": "垂吊柔丝草", "role": "Soft feathery plumes threading through the greenery for fine texture."}
+      ]
+    },
+    {
+      "key": "fillers",
+      "label": "Filler foliage",
+      "blurb": "Veined and rounded leaves filling the gaps between statement pieces.",
+      "items": [
+        {"cn": "彩玉叶绿黄", "role": "Green-yellow speckled arrow leaves filling the mid-tones of the wall."},
+        {"cn": "彩玉叶", "role": "White leaves with dark net veining adding the patterned filler patches."},
+        {"cn": "小圆尤加利", "role": "Round eucalyptus sprigs adding small cool-green leaf circles."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Floral accents",
+      "blurb": "Light green blooms breaking the all-foliage surface.",
+      "items": [
+        {"cn": "126瓣绣球-浅绿", "role": "Light yellow-green hydrangea clusters concentrated at the top of the arch."}
+      ]
+    }
+  ]
+}

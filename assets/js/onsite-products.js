@@ -149,5 +149,7 @@ window.LOOK_PRODUCTS = {
   "jumbo-pompon-mum-white": {"n": "Jumbo Pompon Mum - White", "cn": "大乒乓菊-白", "c": "chrysanthemums", "s": "大乒乓菊-白-65cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-010.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-010.jpg"},
   "reed-grass": {"n": "Reed Grass", "cn": "芦苇草", "c": "greenery", "s": "芦苇草", "t": "assets/img/flowers/greenery/thumb/greenery-040.jpg", "f": "assets/img/flowers/greenery/greenery-040.jpg"},
   "foxtail-grass": {"n": "Foxtail Grass", "cn": "狼尾草", "c": "greenery", "s": "YY狼尾草", "t": "assets/img/flowers/greenery/thumb/greenery-184.jpg", "f": "assets/img/flowers/greenery/greenery-184.jpg"},
-  "mini-asparagus-fern": {"n": "Mini Asparagus Fern", "cn": "小文竹", "c": "greenery", "s": "BJ小文竹", "t": "assets/img/flowers/greenery/thumb/greenery-099.jpg", "f": "assets/img/flowers/greenery/greenery-099.jpg"}
+  "mini-asparagus-fern": {"n": "Mini Asparagus Fern", "cn": "小文竹", "c": "greenery", "s": "BJ小文竹", "t": "assets/img/flowers/greenery/thumb/greenery-099.jpg", "f": "assets/img/flowers/greenery/greenery-099.jpg"},
+  "colour-jade-leaf-greenery15": {"n": "Colour Jade Leaf", "cn": "彩玉叶绿黄", "c": "greenery", "s": "LX彩玉叶绿黄", "t": "assets/img/flowers/greenery/thumb/greenery-150.jpg", "f": "assets/img/flowers/greenery/greenery-150.jpg"},
+  "colour-jade-leaf-greenery14": {"n": "Colour Jade Leaf", "cn": "彩玉叶", "c": "greenery", "s": "LX彩玉叶", "t": "assets/img/flowers/greenery/thumb/greenery-148.jpg", "f": "assets/img/flowers/greenery/greenery-148.jpg"}
 };

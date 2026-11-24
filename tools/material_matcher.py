@@ -369,7 +369,15 @@ class Matcher:
         if not key or key.endswith('-'):
             key = (key or 'item').rstrip('-') or 'item'
         if key in self.look and self.look[key].get('cn') != cn:
-            key = key + '-' + re.sub(r'[^a-z0-9]+', '', _norm(cn))[:6]
+            suf = re.sub(r'[^a-z0-9]+', '', _norm(cn))[:6]
+            if not suf:
+                # 中文名归一化后无 ASCII 可用（如"彩玉叶"）——退回图片文件名做区分后缀，
+                # 防止同英文名不同变体（彩玉叶/彩玉叶绿黄）退化成同一个键互相覆盖
+                stem = os.path.splitext(os.path.basename(f or rec.get('thumb') or ''))[0]
+                suf = re.sub(r'[^a-z0-9]+', '', stem.lower())[:10] or 'var'
+            key = key + '-' + suf
+            while key in self.look and self.look[key].get('cn') != cn:
+                key += 'x'
         return {
             'k': key,
             'role': role,
