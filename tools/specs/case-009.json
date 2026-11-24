@@ -4,39 +4,39 @@
     {
       "key": "main",
       "label": "Rainbow main blooms",
-      "blurb": "A vivid mix of pinks, oranges, blues and reds climbing the column.",
+      "blurb": "The vivid pink, red, yellow and lilac flower mass climbing the column.",
       "items": [
-        {"cn": "洋牡丹-红", "role": "Deep red ranunculus woven through the mixed colour mass."},
-        {"cn": "洋牡丹-粉", "role": "Soft pink ranunculus layering through the arrangement."},
-        {"cn": "虞美人-红", "role": "Thin-petalled orange-red Shirley poppy adding bright accents."},
+        {"cn": "洋牡丹-粉", "role": "Layered pink ranunculus through the lower flower mass."},
+        {"cn": "洋牡丹-红", "role": "Deep orange-red ranunculus adding warm colour beside the pinks."},
+        {"cn": "虞美人-红", "role": "Thin-petalled red Shirley poppy as a bright accent."},
         {"cn": "虞美人-黄", "role": "Light yellow Shirley poppy scattered through the column."},
-        {"cn": "格桑花-粉", "role": "Small pink cosmos-like galsang flowers, fresh and airy."},
-        {"cn": "格桑花-浅紫", "role": "Pale lilac galsang flowers adding delicate colour."},
-        {"cn": "飞燕-粉", "role": "Pink larkspur spikes lifting the vertical lines of the design."},
-        {"cn": "飞燕-紫", "role": "Purple larkspur spikes stretching the height."},
-        {"cn": "飞燕-蓝", "role": "Light blue larkspur spikes adding cool vertical accents."},
-        {"cn": "小雏菊-白", "role": "White mini daisies with yellow centres filling the gaps."}
+        {"cn": "飞燕-粉", "role": "Pink larkspur spikes lifting the vertical lines."},
+        {"cn": "飞燕-紫", "role": "Pale purple larkspur stretching the height."},
+        {"cn": "飞燕-蓝", "role": "Light blue larkspur adding cool vertical accents."},
+        {"cn": "格桑花-粉", "role": "Small pink cosmos-like flowers, fresh and airy."},
+        {"cn": "格桑花-浅紫", "role": "Pale lilac cosmos-like flowers adding delicate colour."}
       ]
     },
     {
       "key": "accents",
-      "label": "Hydrangea accents",
-      "blurb": "Round colour-block hydrangea balls grounding the rainbow palette.",
+      "label": "Round accents",
+      "blurb": "Cool hydrangea balls and tiny daisies breaking up the wild mix.",
       "items": [
         {"cn": "90瓣绣球-蓝", "role": "Light blue hydrangea ball as a cool colour anchor."},
-        {"cn": "90瓣绣球-紫", "role": "Purple hydrangea ball balancing the warm tones."}
+        {"cn": "90瓣绣球-紫", "role": "Pale lilac hydrangea ball balancing the warm tones."},
+        {"cn": "小雏菊-白", "role": "White mini daisies with yellow centres filling the gaps."}
       ]
     },
     {
       "key": "greens",
-      "label": "Greens & fillers",
-      "blurb": "Soft greens and wispy fillers tying the wild rainbow mix together.",
+      "label": "Greens, grasses & fillers",
+      "blurb": "Fine needle greens, wispy grasses and hazy fillers tying the rainbow together.",
       "items": [
         {"cn": "蓬莱松-深绿", "role": "Fluffy needle foliage forming the base layer."},
-        {"cn": "垂钓空气草", "role": "Wispy fountain grass adding wild movement."},
-        {"cn": "小圆尤加利", "role": "Grey-green eucalyptus balancing the bright colours."},
+        {"cn": "文竹", "role": "Fine asparagus fern sprigs draping over the upper flowers."},
+        {"cn": "垂钓空气草", "role": "Wispy fine grass adding wild downward movement."},
         {"cn": "情人草-白", "role": "Hazy white statice filling between the blooms."},
-        {"cn": "山归来", "role": "Thin mountain-return vine branches stretching the lines."}
+        {"cn": "12头芦苇-香槟", "role": "Pale champagne reed plumes at the top — the light-brown tall grass line."}
       ]
     }
   ]
