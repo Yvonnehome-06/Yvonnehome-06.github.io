@@ -132,5 +132,8 @@ window.LOOK_PRODUCTS = {
   "pine-spray-light-green": {"n": "Pine Spray - Light Green", "cn": "蓬莱松-浅绿", "c": "greenery", "s": "蓬莱松-浅绿", "t": "assets/img/flowers/greenery/thumb/greenery-043.jpg", "f": "assets/img/flowers/greenery/greenery-043.jpg"},
   "ducks-foot-tree": {"n": "Duck's Foot Tree", "cn": "鸭掌木", "c": "greenery", "s": "JN鸭掌木", "t": "assets/img/flowers/greenery/thumb/greenery-145.jpg", "f": "assets/img/flowers/greenery/greenery-145.jpg"},
   "allium": {"n": "Allium", "cn": "葱球", "c": "others", "s": "葱球", "t": "assets/img/flowers/others/thumb/others-128.jpg", "f": "assets/img/flowers/others/others-128.jpg"},
-  "air-grass-": {"n": "Air Grass", "cn": "空气草小垂钓", "c": "greenery", "s": "BJ空气草小垂钓", "t": "assets/img/flowers/greenery/thumb/greenery-106.jpg", "f": "assets/img/flowers/greenery/greenery-106.jpg"}
+  "air-grass-": {"n": "Air Grass", "cn": "空气草小垂钓", "c": "greenery", "s": "BJ空气草小垂钓", "t": "assets/img/flowers/greenery/thumb/greenery-106.jpg", "f": "assets/img/flowers/greenery/greenery-106.jpg"},
+  "126-petal-hydrangea-dark-purple": {"n": "126-Petal Hydrangea - Dark Purple", "cn": "126瓣绣球-深紫", "c": "hydrangeas", "s": "126瓣绣球-深紫-58cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-005.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-005.jpg"},
+  "austin-rose-yellow": {"n": "Austin Rose - Yellow", "cn": "奥斯汀玫瑰-黄", "c": "roses", "s": "奥斯汀玫瑰-黄-66cm", "t": "assets/img/flowers/roses/thumb/roses-058.jpg", "f": "assets/img/flowers/roses/roses-058.jpg"},
+  "5-head-ball-chrysanthemum-purple": {"n": "5-Head Ball Chrysanthemum - Purple", "cn": "5头球菊-紫", "c": "chrysanthemums", "s": "5头球菊-紫-50cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-003.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-003.jpg"}
 };

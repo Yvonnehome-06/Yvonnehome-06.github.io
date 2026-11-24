@@ -1,0 +1,36 @@
+{
+  "case_id": 25,
+  "groups": [
+    {
+      "key": "hydrangea",
+      "label": "Hydrangea mass",
+      "blurb": "Saturated blue and deep violet hydrangeas forming the dense gradient body of the floor arrangement.",
+      "items": [
+        {"cn": "126瓣绣球-宝蓝", "role": "Royal blue hydrangea balls — the vivid blue core of the blue-to-violet gradient."},
+        {"cn": "126瓣绣球-深紫", "role": "Deep violet hydrangeas carrying the palette from blue into purple."}
+      ]
+    },
+    {
+      "key": "line-flowers",
+      "label": "Line flowers & accent blooms",
+      "blurb": "Tall larkspur spikes and round accent roses lifting colour through the green foliage.",
+      "items": [
+        {"cn": "飞燕-蓝", "role": "Blue larkspur spikes stretching the blue tone upward through the arrangement."},
+        {"cn": "飞燕-紫", "role": "Purple larkspur adding violet height beside the blue spikes."},
+        {"cn": "奥斯汀玫瑰-黄", "role": "Warm yellow Austin roses dotting bright accents among the blue and violet."},
+        {"cn": "奥斯汀玫瑰-粉", "role": "Soft pink Austin roses warming the lower edge of the arrangement."},
+        {"cn": "5头球菊-紫", "role": "Small violet ball chrysanthemums echoing the purple hydrangeas in tight clusters."},
+        {"cn": "洋牡丹-粉", "role": "Light pink ranunculus adding soft layered petals near the base."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Foliage & texture",
+      "blurb": "Grey-green foliage and fine trailing grass softening the structure between the blooms.",
+      "items": [
+        {"cn": "3D尤加利", "role": "Grey-green eucalyptus foliage threading through the flowers."},
+        {"cn": "垂钓空气草", "role": "Fine trailing air grass (fountain-grass effect) draping along the outer edge."}
+      ]
+    }
+  ]
+}
