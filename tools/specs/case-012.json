@@ -1,0 +1,47 @@
+{
+  "case_id": 12,
+  "groups": [
+    {
+      "key": "main",
+      "label": "Main blooms",
+      "blurb": "Blue and lilac hydrangeas with soft pink and warm accents — the spring palette of this entrance piece.",
+      "items": [
+        {"cn": "126瓣绣球-蓝", "role": "Bright blue hydrangea heads — one of the two signature colours of this look."},
+        {"cn": "126瓣绣球-浅紫", "role": "Pale lilac hydrangeas paired with the blue for a soft spring contrast."},
+        {"cn": "洋牡丹-粉", "role": "Light pink ranunculus adding layered, delicate petals."},
+        {"cn": "奥斯汀玫瑰-粉", "role": "Pink Austin roses bringing full, rounded blooms into the arrangement."},
+        {"cn": "小雏菊-白", "role": "White daisies with yellow centres scattered through the display."},
+        {"cn": "虞美人-粉", "role": "Pink poppies adding light, paper-thin accents."},
+        {"cn": "虞美人-红", "role": "Red poppies for bright, warm contrast among the blues."}
+      ]
+    },
+    {
+      "key": "lines",
+      "label": "Line flowers",
+      "blurb": "Tall spires that give the butterfly arch its height and movement.",
+      "items": [
+        {"cn": "飞燕-蓝", "role": "Blue delphinium spires lifting the blue story upward."},
+        {"cn": "飞燕-紫", "role": "Pale purple delphinium spires echoing the lilac hydrangeas."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Small accents",
+      "blurb": "Fine, airy flowers that fill the gaps between the larger blooms.",
+      "items": [
+        {"cn": "格桑花-粉", "role": "Small pink cosmos-like flowers sprinkling the whole installation."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Foliage & grasses",
+      "blurb": "Fresh green texture and soft trailing lines grounding the arrangement.",
+      "items": [
+        {"cn": "蓬莱松-深绿", "role": "Deep green asparagus fern providing a lush base."},
+        {"cn": "细叶尤加利", "role": "Fine-leaf eucalyptus threading green through the palette."},
+        {"cn": "垂钓空气草", "role": "Trailing fine grass softening the edges like fountain grass."},
+        {"cn": "情人草-白", "role": "Creamy baby's-breath-like spray filling the gaps with haze."}
+      ]
+    }
+  ]
+}
