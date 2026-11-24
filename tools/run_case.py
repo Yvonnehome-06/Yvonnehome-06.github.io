@@ -87,7 +87,10 @@ def main():
 
     if do_commit:
         print('[3/4] 提交 ...')
-        files = ['assets/js/onsite-data.js', 'assets/js/onsite-products.js']
+        spec_rel = os.path.relpath(os.path.abspath(spec), SITE).replace('\\', '/')
+        files = ['assets/js/onsite-data.js', 'assets/js/onsite-products.js',
+                 spec_rel, 'tools/material_alias.json', 'tools/material_matcher.py',
+                 'tools/missing-materials.md']
         r = sh('git add %s' % ' '.join(files), cwd=SITE)
         r = sh('git commit -m %s' % json.dumps(msg), cwd=SITE)
         print('  ' + (r.stdout or r.stderr).strip().splitlines()[0] if (r.stdout or r.stderr).strip() else '  committed')
