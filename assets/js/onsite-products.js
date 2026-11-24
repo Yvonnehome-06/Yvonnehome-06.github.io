@@ -120,5 +120,8 @@ window.LOOK_PRODUCTS = {
   "galsang-flower-light-purple": {"n": "Galsang Flower - Light Purple", "cn": "格桑花-浅紫", "c": "others", "s": "格桑花-浅紫-65cm", "t": "assets/img/flowers/others/thumb/others-081.jpg", "f": "assets/img/flowers/others/others-081.jpg"},
   "126-petal-hydrangea-blue": {"n": "126-Petal Hydrangea - Blue", "cn": "126瓣绣球-蓝", "c": "hydrangeas", "s": "126瓣绣球-蓝-58cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-011.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-011.jpg"},
   "shirley-poppy-pink": {"n": "Shirley Poppy - Pink", "cn": "虞美人-粉", "c": "others", "s": "虞美人-粉-61cm", "t": "assets/img/flowers/others/thumb/others-138.jpg", "f": "assets/img/flowers/others/others-138.jpg"},
-  "austin-rose-champagne": {"n": "Austin Rose - Champagne", "cn": "奥斯汀玫瑰-香槟", "c": "roses", "s": "奥斯汀玫瑰-香槟-66cm", "t": "assets/img/flowers/roses/thumb/roses-057.jpg", "f": "assets/img/flowers/roses/roses-057.jpg"}
+  "austin-rose-champagne": {"n": "Austin Rose - Champagne", "cn": "奥斯汀玫瑰-香槟", "c": "roses", "s": "奥斯汀玫瑰-香槟-66cm", "t": "assets/img/flowers/roses/thumb/roses-057.jpg", "f": "assets/img/flowers/roses/roses-057.jpg"},
+  "3d-anthurium": {"n": "3D Anthurium", "cn": "3D掌", "c": "others", "s": "3D掌", "t": "assets/img/flowers/others/thumb/others-008.jpg", "f": "assets/img/flowers/others/others-008.jpg"},
+  "maple-leaf": {"n": "Maple Leaf", "cn": "枫叶", "c": "greenery", "s": "FKLJ枫叶", "t": "assets/img/flowers/greenery/thumb/greenery-117.jpg", "f": "assets/img/flowers/greenery/greenery-117.jpg"},
+  "weeping-willow": {"n": "Weeping Willow", "cn": "垂柳", "c": "others", "s": "垂柳", "t": "assets/img/flowers/others/thumb/others-048.jpg", "f": "assets/img/flowers/others/others-048.jpg"}
 };
