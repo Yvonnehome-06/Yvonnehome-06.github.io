@@ -151,5 +151,11 @@ window.LOOK_PRODUCTS = {
   "foxtail-grass": {"n": "Foxtail Grass", "cn": "狼尾草", "c": "greenery", "s": "YY狼尾草", "t": "assets/img/flowers/greenery/thumb/greenery-184.jpg", "f": "assets/img/flowers/greenery/greenery-184.jpg"},
   "mini-asparagus-fern": {"n": "Mini Asparagus Fern", "cn": "小文竹", "c": "greenery", "s": "BJ小文竹", "t": "assets/img/flowers/greenery/thumb/greenery-099.jpg", "f": "assets/img/flowers/greenery/greenery-099.jpg"},
   "colour-jade-leaf-greenery15": {"n": "Colour Jade Leaf", "cn": "彩玉叶绿黄", "c": "greenery", "s": "LX彩玉叶绿黄", "t": "assets/img/flowers/greenery/thumb/greenery-150.jpg", "f": "assets/img/flowers/greenery/greenery-150.jpg"},
-  "colour-jade-leaf-greenery14": {"n": "Colour Jade Leaf", "cn": "彩玉叶", "c": "greenery", "s": "LX彩玉叶", "t": "assets/img/flowers/greenery/thumb/greenery-148.jpg", "f": "assets/img/flowers/greenery/greenery-148.jpg"}
+  "colour-jade-leaf-greenery14": {"n": "Colour Jade Leaf", "cn": "彩玉叶", "c": "greenery", "s": "LX彩玉叶", "t": "assets/img/flowers/greenery/thumb/greenery-148.jpg", "f": "assets/img/flowers/greenery/greenery-148.jpg"},
+  "new-diamond-rose-yellow": {"n": "New Diamond Rose - Yellow", "cn": "新款钻石玫瑰-黄", "c": "roses", "s": "新款钻石玫瑰-黄-66cm", "t": "assets/img/flowers/roses/thumb/roses-079.jpg", "f": "assets/img/flowers/roses/roses-079.jpg"},
+  "diamond-rose-white": {"n": "Diamond Rose - White", "cn": "钻石玫瑰-白", "c": "roses", "s": "钻石玫瑰-白-66cm", "t": "assets/img/flowers/roses/thumb/roses-108.jpg", "f": "assets/img/flowers/roses/roses-108.jpg"},
+  "5-head-ball-chrysanthemum-pink": {"n": "5-Head Ball Chrysanthemum - Pink", "cn": "5头球菊-粉", "c": "chrysanthemums", "s": "5头球菊-粉-50cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-002.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-002.jpg"},
+  "soft-gel-babys-breath-purple": {"n": "Soft-Gel Baby's Breath - Purple", "cn": "软胶满天星-紫", "c": "babys-breath", "s": "软胶满天星-紫-62cm", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-013.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-013.jpg"},
+  "wood-hydrangea-white": {"n": "Wood Hydrangea - White", "cn": "木绣球-白", "c": "hydrangeas", "s": "木绣球-白-80cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-084.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-084.jpg"},
+  "dingding-berry-light-green": {"n": "Dingding Berry - Light Green", "cn": "叮叮果-浅绿", "c": "others", "s": "叮叮果-浅绿", "t": "assets/img/flowers/others/thumb/others-038.jpg", "f": "assets/img/flowers/others/others-038.jpg"}
 };

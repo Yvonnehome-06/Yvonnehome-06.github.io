@@ -1,0 +1,44 @@
+{
+  "case_id": 41,
+  "title": "Bow & Greenery Wall",
+  "desc": "A lush green-flower wall finished with an oversized white satin bow, dotted with blue larkspur, yellow roses and soft pink accents.",
+  "scene": "wedding",
+  "colors": ["green", "white", "blue", "yellow", "pink"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Flowers",
+      "blurb": "Small blue, yellow and pink blooms scattered through the green base.",
+      "items": [
+        {"cn": "飞燕-蓝", "role": "Blue delphinium spikes scattered across the wall for the cool blue notes."},
+        {"cn": "新款钻石玫瑰-黄", "role": "Bright yellow roses clustered in small groups through the greenery."},
+        {"cn": "钻石玫瑰-白", "role": "White roses adding soft neutral blooms between the colours."},
+        {"cn": "5头球菊-粉", "role": "Pink ball chrysanthemums giving fluffy round pink accents."},
+        {"cn": "软胶满天星-紫", "role": "Purple star-like sprigs dotted through the middle of the wall."},
+        {"cn": "小雏菊-黄", "role": "Yellow mini daisies filling gaps with fine petalled texture."},
+        {"cn": "木绣球-白", "role": "Small white viburnum-style hydrangea clusters lightening the green mass."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "Fine fern-like greens building the wall's base texture.",
+      "items": [
+        {"cn": "文竹", "role": "Asparagus fern forming the large fine-textured base of the wall."},
+        {"cn": "柳芽浅绿", "role": "Long willow-green strands trailing down the wall for hanging lines."},
+        {"cn": "小圆尤加利", "role": "Round-leaf eucalyptus adding small cool-green circles."},
+        {"cn": "彩玉叶绿黄", "role": "Green-yellow speckled leaves dotted through as pattern accents."},
+        {"cn": "叮叮果-浅绿", "role": "Light-green berry sprigs adding tiny round fruit details."},
+        {"cn": "小文竹", "role": "Fine mini asparagus fern filling the remaining green texture."}
+      ]
+    },
+    {
+      "key": "styling",
+      "label": "Styling piece",
+      "blurb": "The statement ribbon finish at the centre of the arch.",
+      "items": [
+        {"cn": "白色缎面蝴蝶结", "role": "White satin ribbon bow centred on the wall, tails flowing down the sides."}
+      ]
+    }
+  ]
+}
