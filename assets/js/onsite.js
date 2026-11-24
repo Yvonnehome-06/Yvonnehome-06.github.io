@@ -2,7 +2,9 @@
    and colour palette, then shop the products behind each look. Vanilla JS. */
 (function () {
   "use strict";
-  var DATA = window.ONSITE_CASES || [];
+  // Cases merged into a same-scene group are hidden from browsing; the kept
+  // case carries images[] with every photo in that group.
+  var DATA = (window.ONSITE_CASES || []).filter(function(x){ return !x.mergedInto; });
   var SCENES = window.ONSITE_SCENES || [];
   var COLORS = window.ONSITE_COLORS || [];
   var PRODUCTS = window.LOOK_PRODUCTS || {};
@@ -233,11 +235,14 @@
       if (x.materials) {
         matGroups(x).forEach(function(g){ nMat += g.items.length; });
       } else { nMat = (x.products||[]).length; }
+      var nPhotos = x.imageCount || (x.images ? x.images.length : 0);
       node.innerHTML =
         '<img data-src="'+esc(x.img)+'" alt="'+esc(x.title)+'" loading="lazy" />' +
+        (nPhotos > 1 ? '<span class="photo-count">1 / '+nPhotos+'</span>' : '') +
         '<div class="onsite-cap"><h3>'+esc(x.title)+'</h3><p>'+esc(sceneName(x.scene))+'</p>' +
         '<span class="look-btn">View look →</span>' +
-        (nMat ? '<span class="look-count">'+nMat+' materials</span>' : '') +
+        (nPhotos > 1 ? '<span class="look-count">'+nPhotos+' photos</span>' : '') +
+        (nMat && nPhotos <= 1 ? '<span class="look-count">'+nMat+' materials</span>' : '') +
         '</div>';
       elGrid.appendChild(node);
       node.addEventListener("click", function(){ openLightbox(current.indexOf(x)); });
@@ -253,7 +258,9 @@
   var lbTitle = document.getElementById("onsiteLbTitle");
   var lbDesc = document.getElementById("onsiteLbDesc");
   var lbProds = document.getElementById("onsiteLbProducts");
-  var lbIndex = 0;
+  var lbCount = document.getElementById("onsiteLbCount");
+  var lbDots = document.getElementById("onsiteLbDots");
+  var lbIndex = 0, shotIndex = 0;
 
   function miniCard(k, role) {
     var p = PRODUCTS[k]; if (!p) return "";
@@ -273,11 +280,34 @@
     return html;
   }
 
+  function shotsOf(x) { return (x.images && x.images.length) ? x.images : [x.img]; }
+
+  function showShot() {
+    var x = current[lbIndex]; if (!x) return;
+    var imgs = shotsOf(x);
+    if (shotIndex >= imgs.length) shotIndex = 0;
+    if (shotIndex < 0) shotIndex = imgs.length - 1;
+    lbImg.src = imgs[shotIndex]; lbImg.alt = x.title + " — photo " + (shotIndex+1);
+    if (lbCount) lbCount.textContent = imgs.length > 1 ? (shotIndex+1) + " / " + imgs.length : "";
+    if (lbDots) {
+      lbDots.innerHTML = "";
+      if (imgs.length > 1) {
+        imgs.forEach(function(src, i){
+          var dot = document.createElement("button");
+          dot.className = "lb-dot" + (i===shotIndex ? " active" : "");
+          dot.type = "button";
+          dot.setAttribute("aria-label", "Photo " + (i+1));
+          dot.addEventListener("click", function(){ shotIndex=i; showShot(); });
+          lbDots.appendChild(dot);
+        });
+      }
+    }
+  }
+
   function openLightbox(i) {
     if (!lb || !current[i]) return;
-    lbIndex = i;
+    lbIndex = i; shotIndex = 0;
     var x = current[i];
-    lbImg.src = x.img; lbImg.alt = x.title;
     lbTitle.textContent = x.title;
     lbDesc.textContent = x.desc + "  ·  " + sceneName(x.scene);
     var html = materialGroups(x);
@@ -286,10 +316,22 @@
       (x.products||[]).forEach(function(k){ html += miniCard(k, ""); });
     }
     lbProds.innerHTML = html;
+    showShot();
     lb.classList.add("open"); document.body.style.overflow="hidden";
   }
   function closeLightbox() { if(lb) lb.classList.remove("open"); document.body.style.overflow=""; }
-  function step(d) { if(current.length) openLightbox((lbIndex+d+current.length)%current.length); }
+  // Arrow keys / nav buttons page through photos of the current look first,
+  // then move to the next look once the last photo is reached.
+  function step(d) {
+    if (!current.length) return;
+    var imgs = shotsOf(current[lbIndex]);
+    var next = shotIndex + d;
+    if (next >= 0 && next < imgs.length) { shotIndex = next; showShot(); return; }
+    var ni = (lbIndex + d + current.length) % current.length;
+    openLightbox(ni);
+    if (d > 0) shotIndex = 0; else shotIndex = shotsOf(current[ni]).length - 1;
+    showShot();
+  }
   if (document.getElementById("onsiteLbClose")) document.getElementById("onsiteLbClose").addEventListener("click", closeLightbox);
   if (document.getElementById("onsiteLbPrev")) document.getElementById("onsiteLbPrev").addEventListener("click", function(){step(-1);});
   if (document.getElementById("onsiteLbNext")) document.getElementById("onsiteLbNext").addEventListener("click", function(){step(1);});
