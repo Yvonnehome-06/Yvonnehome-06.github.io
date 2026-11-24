@@ -1,0 +1,32 @@
+{
+  "case_id": 10,
+  "groups": [
+    {
+      "key": "main",
+      "label": "Hydrangea main blooms",
+      "blurb": "Fresh green and creamy white hydrangeas — the clean core of this baby celebration.",
+      "items": [
+        {"cn": "126瓣绣球-浅绿", "role": "Light green hydrangea balls — the signature main flower of this look."},
+        {"cn": "126瓣绣球-白", "role": "Creamy white hydrangeas paired with the green ones."},
+        {"cn": "126瓣绣球-粉", "role": "A few pale pink hydrangeas softening the transition."},
+        {"cn": "奥斯汀玫瑰-白", "role": "Round, full creamy-white Austin roses nestled among the hydrangeas."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Soft accents",
+      "blurb": "Light layers woven between the hydrangeas for depth.",
+      "items": [
+        {"cn": "洋牡丹-白", "role": "White ranunculus woven between the hydrangeas adding layers."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Fresh greens",
+      "blurb": "Grey-green foliage keeping the palette clean and soft.",
+      "items": [
+        {"cn": "小圆尤加利", "role": "Grey-green eucalyptus filling the gaps between the blooms."}
+      ]
+    }
+  ]
+}
