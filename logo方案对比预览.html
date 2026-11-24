@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Logo 方案对比预览（未改动线上站点）· Evonne Flora Co.</title>
+<style>
+  @font-face{font-family:"Playfair Display";font-weight:400;src:url("assets/fonts/playfair-400.woff2") format("woff2")}
+  @font-face{font-family:"Playfair Display";font-weight:600;src:url("assets/fonts/playfair-600.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:400;src:url("assets/fonts/inter-400.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:500;src:url("assets/fonts/inter-500.woff2") format("woff2")}
+  *{box-sizing:border-box}
+  body{margin:0;background:#f2f2f4;color:#22252b;font-family:"Inter","PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.6;padding:0 0 60px}
+  .bar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e2e2e6;padding:14px 28px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .bar h1{font-size:16px;margin:0;font-weight:500}
+  .bar .tag{font-size:12px;background:#fdeceb;color:#b3341f;padding:3px 9px;border-radius:999px;border:1px solid #f4cdc8}
+  .intro{max-width:1060px;margin:26px auto 0;padding:0 28px;color:#55585f;font-size:13.5px}
+  .intro b{color:#22252b;font-weight:500}
+  .card{max-width:1060px;margin:20px auto;padding:0 28px}
+  .meta{display:flex;align-items:baseline;gap:12px;margin:0 0 10px}
+  .meta h2{font-family:"Playfair Display",serif;font-size:20px;margin:0;font-weight:600;color:#22201C}
+  .meta span{font-size:12.5px;color:#7a7a80}
+  .meta .rec{font-size:11.5px;background:#E7EBDD;color:#3B4A33;padding:2px 8px;border-radius:999px;border:1px solid #cdd6c1}
+  /* 模拟导航 */
+  .navsim{background:#F7F4EE;border:1px solid #E3DCCB;border-radius:8px 8px 0 0;display:flex;align-items:center;justify-content:space-between;padding:14px 26px;height:76px}
+  .navsim .logo{height:42px;display:flex;align-items:center}
+  .posterbox{height:66px;display:flex;align-items:center;border:1px solid #E3DCCB;padding:4px 8px;background:#fff}
+  .posterbox img{max-height:56px;width:auto;display:block}
+  .navsim .logo img{max-height:42px;max-width:230px;width:auto;display:block}
+  .navsim .links{display:flex;gap:24px;align-items:center}
+  .navsim .links a{color:#4A443C;font-size:13.5px;text-decoration:none}
+  .navsim .btn{background:#6B7A5E;color:#fff;padding:10px 18px;font-size:13px;border-radius:2px}
+  /* 模拟页脚 */
+  .footsim{background:#2A2C25;border-radius:0 0 8px 8px;padding:24px 26px;display:flex;align-items:center;gap:40px}
+  .footsim .flogo{height:40px;display:flex;align-items:center}
+  .footsim .flogo img{max-height:40px;max-width:210px;width:auto;display:block}
+  .footsim .fcol{font-size:12.5px;color:#A9A596}
+  .footsim .fcol b{display:block;color:#EFEDE3;font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:8px;font-weight:600}
+  .note{font-size:12.5px;color:#6a6a70;margin:10px 0 0}
+</style>
+</head>
+<body>
+<div class="bar"><h1>Logo 方案对比预览</h1><span class="tag">仅预览文件 · 线上站点未改动</span></div>
+<div class="intro">
+  四个方案放进<b>真实导航栏与页脚</b>里看效果（纸感配色：象牙白底 / 墨黑字 / 橄榄绿按钮）。方案 A 是你现在线上的手写体；B、C、D 是豆包生成的三个新标志。
+</div>
+
+<div id="root"></div>
+
+<script>
+var OPTIONS = [
+  { id:'A', name:'当前线上 logo', tag:'手写体 Evonne', img:'assets/img/logo-evonne.png', light:'assets/img/logo-evonne-light.png',
+    note:'手写体温度最高，但与新换的 Playfair 标题体系不是同一种声音；导航里略显松散。' },
+  { id:'B', name:'豆包 01', tag:'两行衬线 + 橄榄绿细线装饰', img:'_logo_cand/cand1.png', light:'_logo_cand/cand1-light.png', poster:'C:/Users/Administrator/.workbuddy/clipboard-images/clipboard-2026-11-21T11-14-41-775Z-2a29bae8.png',
+    note:'带装饰线的"海报感"版本，适合做品牌主视觉或社交头像，但放进导航条偏高、占位大。' },
+  { id:'C', name:'豆包 02', tag:'单行横排', img:'_logo_cand/cand2.png', light:'_logo_cand/cand2-light.png',
+    note:'横排单行，导航里最省空间；但 "Flora Co." 用橄榄绿，字体粗细与标题层级不完全一致。' },
+  { id:'D', name:'豆包 03', tag:'两行斜体衬线', img:'_logo_cand/cand3.png', light:'_logo_cand/cand3-light.png',
+    note:'墨黑 + 橄榄绿正好落在现在的品牌色上，斜体衬线与 Playfair 标题同源，导航和页脚都最协调。', rec:'推荐' }
+];
+
+document.getElementById('root').innerHTML = OPTIONS.map(function(o){
+  return '<div class="card">'+
+    '<div class="meta"><h2>方案 '+o.id+' · '+o.name+'</h2><span>'+o.tag+'</span>'+(o.rec?'<span class="rec">'+o.rec+'</span>':'')+'</div>'+
+    (o.poster ?
+      '<div class="navsim"><div class="posterbox"><img src="'+o.poster+'" alt=""/></div></div>' :
+      '<div class="navsim"><div class="logo"><img src="'+o.img+'" alt=""/></div>'+
+      '<div class="links"><a href="#">Collections</a><a href="#">Studio</a><a href="#">Journal</a><a href="#">Contact</a>'+
+      '<span class="btn">Request a Quote</span></div></div>') +
+    (o.poster ? '' : '<div class="footsim"><div class="flogo"><img src="'+o.light+'" alt=""/></div>'+
+      '<div class="fcol"><b>Explore</b>Product Catalog<br/>Project Showcase<br/>About Us<br/>Contact Us</div>'+
+      '<div class="fcol"><b>Contact Us</b>Yvonnehome2026@outlook.com<br/>WhatsApp: +86 187 0774 6742</div></div>') +
+    '<p class="note">'+o.note+'</p></div>';
+}).join('');
+</script>
+</body>
+</html>

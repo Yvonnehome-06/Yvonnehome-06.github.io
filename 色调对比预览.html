@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>色调对比预览（未改动线上站点）· Evonne Flora Co.</title>
+<style>
+  @font-face{font-family:"Playfair Display";font-weight:400;src:url("assets/fonts/playfair-400.woff2") format("woff2")}
+  @font-face{font-family:"Playfair Display";font-weight:600;src:url("assets/fonts/playfair-600.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:400;src:url("assets/fonts/inter-400.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:500;src:url("assets/fonts/inter-500.woff2") format("woff2")}
+  @font-face{font-family:"Great Vibes";font-weight:400;src:url("assets/fonts/greatvibes-400.woff2") format("woff2")}
+
+  *{box-sizing:border-box}
+  body{margin:0;background:#f2f2f4;color:#22252b;
+    font-family:"Inter","PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.6;padding:0 0 60px}
+
+  .bar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+    border-bottom:1px solid #e2e2e6;padding:14px 28px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .bar h1{font-size:16px;margin:0;font-weight:500}
+  .bar .tag{font-size:12px;background:#fdeceb;color:#b3341f;padding:3px 9px;border-radius:999px;border:1px solid #f4cdc8}
+  .bar nav{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap}
+  .bar nav a{font-size:13px;color:#55585f;text-decoration:none;border-bottom:1px solid #d8d8dd}
+  .bar nav a:hover{color:#111}
+
+  .intro{max-width:1180px;margin:26px auto 0;padding:0 28px;color:#55585f;font-size:13.5px}
+  .intro b{color:#22252b;font-weight:500}
+
+  .wrap{max-width:1180px;margin:22px auto;padding:0 28px;display:grid;
+    grid-template-columns:250px minmax(0,1fr);gap:26px;align-items:start}
+
+  .info{position:sticky;top:78px}
+  .info h2{font-family:"Playfair Display",serif;font-size:22px;margin:0 0 6px;color:var(--ink)}
+  .info .en{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+  .info p.desc{font-size:13px;color:var(--body);margin:0 0 14px}
+  .sw{display:flex;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:10px}
+  .sw div{flex:1;height:42px}
+  .sw code{display:block;font-size:10.5px;text-align:center;padding:5px 2px;color:var(--muted);
+    border-top:1px solid var(--line);font-family:"Inter",sans-serif;letter-spacing:.02em}
+  .fit{font-size:12.5px;color:var(--muted);margin:0}
+  .fit b{color:var(--ink);font-weight:500}
+
+  .preview{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg)}
+  .pv-hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;padding:34px 34px 30px;align-items:center}
+  .pv-eyebrow{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+  .pv-hero h3{font-family:"Playfair Display",serif;font-weight:600;font-size:29px;line-height:1.16;color:var(--ink);margin:0 0 12px}
+  .pv-hero h3 em{font-style:italic;color:var(--accent)}
+  .pv-hero p.lead{font-size:13.5px;color:var(--muted);margin:0 0 18px;max-width:46ch}
+  .pv-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .pv-btn{font-size:12.5px;padding:9px 16px;border:1px solid var(--line);border-radius:2px;color:var(--ink)}
+  .pv-btn.primary{background:var(--accent);color:var(--btn-on);border-color:var(--accent)}
+  .pv-sign{font-family:"Great Vibes",cursive;font-size:30px;color:var(--accent);margin:16px 0 0;line-height:1}
+  .pv-img img{width:100%;aspect-ratio:4/4.3;object-fit:cover;object-position:center top;display:block;border-radius:3px}
+
+  .pv-statement{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soft);padding:26px 34px}
+  .pv-statement p{font-family:"Playfair Display",serif;font-size:20px;line-height:1.35;color:var(--ink);margin:0;max-width:40ch}
+  .pv-statement p em{font-style:italic;color:var(--accent)}
+  .pv-statement small{display:block;margin-top:10px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+  .pv-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:26px 34px}
+  .tile img{width:100%;aspect-ratio:4/3.4;object-fit:cover;display:block;border-radius:3px}
+  .tile h4{font-family:"Playfair Display",serif;font-weight:600;font-size:15px;color:var(--ink);margin:10px 0 1px}
+  .tile span{font-size:11.5px;color:var(--muted)}
+
+  .pv-craft{border-top:1px solid var(--line);padding:8px 34px 26px}
+  .craft-row{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .craft-row:last-child{border-bottom:0}
+  .craft-row .n{font-family:"Playfair Display",serif;font-size:19px;color:var(--accent);line-height:1.2}
+  .craft-row h5{font-family:"Playfair Display",serif;font-weight:600;font-size:15px;margin:0 0 4px;color:var(--ink)}
+  .craft-row p{margin:0;font-size:12.5px;color:var(--muted);max-width:70ch}
+
+  @media (max-width:900px){
+    .wrap{grid-template-columns:1fr}
+    .info{position:static}
+    .pv-hero{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <h1>首页色调对比预览</h1>
+  <span class="tag">仅预览文件 · 线上站点未改动</span>
+  <nav>
+    <a href="#a">A 纸感</a><a href="#b">B 暗调</a><a href="#c">C 现有淡紫</a><a href="#d">D 暖米墨绿</a>
+  </nav>
+</div>
+
+<div class="intro">
+  同一套首页版式（首屏 → 宣言带 → 分类 → 选品流程），套四套配色对比。<b>图片与字体都是站内真实素材</b>，方便你判断哪种最像"精致的个人花材工作室"。
+</div>
+
+<div id="root"></div>
+
+<script>
+var PALETTES = [
+  {
+    id:"a", name:"编辑式纸感", en:"Editorial · Paper",
+    desc:"象牙白纸底、墨色字、橄榄绿点缀。白底商品图直接融进纸底，最不像模板。",
+    fit:"适合：精品工坊、婚礼策划师；气质安静、有质感",
+    bg:"#F7F4EE", ink:"#22201C", body:"#4A443C", muted:"#8A8275", line:"#E3DCCB",
+    accent:"#6B7A5E", soft:"#EFEAE0", deep:"#2A2C25", btnOn:"#FFFFFF",
+    sw:[["背景","#F7F4EE"],["标题","#22201C"],["强调","#6B7A5E"],["线条","#E3DCCB"]]
+  },
+  {
+    id:"b", name:"暗调奢华", en:"Dark Luxe",
+    desc:"墨黑底、米白字、哑金线条。视觉上最显高级，但深底会吃掉白底商品图。",
+    fit:"适合：高客单、高端活动；但偏时装感，与婚礼柔美有距离",
+    bg:"#16151A", ink:"#EFEAE4", body:"#CFC8BE", muted:"#918B84", line:"#2E2D34",
+    accent:"#C0A062", soft:"#1F1E24", deep:"#0D0D10", btnOn:"#16151A",
+    sw:[["背景","#16151A"],["标题","#EFEAE4"],["强调","#C0A062"],["线条","#2E2D34"]]
+  },
+  {
+    id:"c", name:"现有淡紫", en:"Current Lavender",
+    desc:"线上现在的方案：淡紫白底 + 深梅紫 + 柔紫。品牌色延续，改动成本最低。",
+    fit:"适合：保留既有品牌资产；上限受紫调影响，偏柔偏甜",
+    bg:"#FDFBFF", ink:"#2B2340", body:"#4B4358", muted:"#736A83", line:"#E7E0F0",
+    accent:"#7C53A0", soft:"#F6F1FB", deep:"#241C36", btnOn:"#FFFFFF",
+    sw:[["背景","#FDFBFF"],["标题","#2B2340"],["强调","#7C53A0"],["线条","#E7E0F0"]]
+  },
+  {
+    id:"d", name:"暖米墨绿", en:"Warm Olive",
+    desc:"米白底 + 墨绿字 + 陶土色点缀。比纸感更沉一点，比暗调更温暖，像植物工作室。",
+    fit:"适合：自然质感、绿植/花艺工作室；比淡紫少一分甜，多一分专业",
+    bg:"#FBF7F0", ink:"#23302A", body:"#3E4A43", muted:"#7A857E", line:"#E6E2D6",
+    accent:"#2F4A3C", soft:"#F2EFE4", deep:"#1C2622", btnOn:"#FFFFFF",
+    sw:[["背景","#FBF7F0"],["标题","#23302A"],["强调","#2F4A3C"],["线条","#E6E2D6"]]
+  }
+];
+
+var HERO_IMG = "assets/img/flowers/roses/roses-030.jpg";
+var TILES = [
+  ["assets/img/flowers/roses/thumb/roses-096.jpg","Roses","Classic & statement blooms"],
+  ["assets/img/flowers/hydrangeas/thumb/hydrangeas-023.jpg","Hydrangeas","Full, voluminous heads"],
+  ["assets/img/flowers/peonies/thumb/peonies-006.jpg","Peonies","Soft romantic layers"]
+];
+var CRAFT = [
+  ["01","Colour, all the way down the line","Shade is verified along the entire production line before a line goes on our list, so the same colour comes out of every batch."],
+  ["02","Shaped like the real thing","We only list blooms whose petals and leaves follow the plant they copy, and we check samples in person before anything joins the collection."]
+];
+
+document.getElementById("root").innerHTML = PALETTES.map(function(p){
+  var swatches = p.sw.map(function(s){
+    var hex = s[1].replace('#','');
+    var r = parseInt(hex.substr(0,2),16), g = parseInt(hex.substr(2,2),16), b = parseInt(hex.substr(4,2),16);
+    var lum = (0.299*r + 0.587*g + 0.114*b) / 255;
+    var tc = lum > 0.55 ? '#3a3a3a' : '#f2f2f4';
+    return '<div style="background:'+s[1]+';color:'+tc+'"><code style="color:'+tc+';border-top-color:'+(lum>0.55?'rgba(0,0,0,.12)':'rgba(255,255,255,.22)')+'">'+s[1]+'</code></div>';
+  }).join("");
+  var tiles = TILES.map(function(t){
+    return '<div class="tile"><img src="'+t[0]+'" alt=""/><h4>'+t[1]+'</h4><span>'+t[2]+'</span></div>';
+  }).join("");
+  var craft = CRAFT.map(function(c){
+    return '<div class="craft-row"><span class="n">'+c[0]+'</span><div><h5>'+c[1]+'</h5><p>'+c[2]+'</p></div></div>';
+  }).join("");
+
+  return '<div class="wrap" id="'+p.id+'" style="--bg:'+p.bg+';--ink:'+p.ink+';--body:'+p.body+';--muted:'+p.muted+
+    ';--line:'+p.line+';--accent:'+p.accent+';--soft:'+p.soft+';--deep:'+p.deep+';--btn-on:'+p.btnOn+'">'+
+    '<div class="info">'+
+      '<p class="en">'+p.en+'</p>'+
+      '<h2>'+p.name+'</h2>'+
+      '<p class="desc">'+p.desc+'</p>'+
+      '<div class="sw">'+swatches+'</div>'+
+      '<p class="fit">'+p.fit+'</p>'+
+    '</div>'+
+    '<div class="preview">'+
+      '<div class="pv-hero"><div>'+
+        '<p class="pv-eyebrow">Floral studio · Wedding, event &amp; holiday decor</p>'+
+        '<h3>Blooms that keep their colour <em>and their shape</em> — all the way to your venue.</h3>'+
+        '<p class="lead">Evonne Flora Co. is a one-woman studio that selects and supplies realistic silk and artificial flowers, greenery and ceremony accents for wedding planners, event decorators and retail display teams.</p>'+
+        '<div class="pv-btns"><span class="pv-btn primary">Browse the collection</span><span class="pv-btn">Send a brief</span></div>'+
+        '<p class="pv-sign">Evonne</p>'+
+      '</div><div class="pv-img"><img src="'+HERO_IMG+'" alt=""/></div></div>'+
+      '<div class="pv-statement"><p>Every stem we send out is <em>colour verified</em>, checked and packed so it arrives the way it was described.</p>'+
+        '<small>Colour verification · Sample inspection · Transit-safe packing</small></div>'+
+      '<div class="pv-tiles">'+tiles+'</div>'+
+      '<div class="pv-craft">'+craft+'</div>'+
+    '</div></div>';
+}).join("");
+</script>
+</body>
+</html>

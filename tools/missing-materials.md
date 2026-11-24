@@ -86,4 +86,15 @@
 | 77 | 2026-11-24 | case-039（White, Blue & Pink Tall Vase） | 浅蓝小蓝星花 | 复用 #45：蓝星花同名款实物黄色（others-189/239），无浅蓝款 | 待补充 |
 | 78 | 2026-11-24 | case-039（White, Blue & Pink Tall Vase） | 白色阿米芹 | 复用 #59：全库无阿米芹/蕾丝花 | 待补充 |
 
+| 79 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 银脉箭叶芋（黑叶箭叶芋，主视觉大叶） | 复用 #21/#54/#62：全库无脉纹长叶海芋/箭叶芋类，本案例主视觉大叶缺 | 待补充 |
+| 80 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 褐色箭叶芋（棕底） | 全库无棕/褐色箭叶芋类叶材 | 待补充 |
+| 81 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 波斯顿蕨 / 羊齿蕨 / 圆叶肾蕨 | 复用 #2/#8：全库无蕨类，三种蕨均缺，均未上页面 | 待补充 |
+| 82 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 垂吊龙须草 | 全库无龙须草 SKU | 待补充 |
+| 83 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 小绿萝叶 | 全库无绿萝 | 待补充 |
+| 84 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 迷你龟背 | 图库龟背仅镂空/超大型两款，无迷你款，不顶替 | 待补充 |
+| 85 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 浅绿仿真团花 | 无绿色球状团花（球菊无绿款、乒乓菊无绿款） | 待补充 |
+| 86 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 仿真苔藓（打底） | 复用 #18：永生苔藓 | 待补充 |
+| 87 | 2026-11-24 | case-040（Arched Green Botanical Wall） | 形态匹配备注：红脉彩叶芋→彩玉叶粉点（白底红脉红点，形态一致）；网纹草→彩玉叶（白底深绿网纹）；矾根暗纹款→彩玉叶绿黄（绿黄斑纹箭形叶） | 三项均拼版核对过实物 | 形态匹配（波比确认后为准） |
+| 88 | 2026-11-24 | 修复记录 | material_matcher 键冲突修复 | 彩玉叶/彩玉叶绿黄同英文名退化成同一键 colour-jade-leaf- 会互相覆盖；改用图片文件名做区分后缀（greenery14/15） | 已修复 |
+
 > 补充提示：补入图库后，回填对应案例 spec 重跑流水线即可一次上线（case-002 缺的 7 项按 spec 分组加回；case-004 的 #10/#11 若决定补 SKU，把 spec 里的暂用项换成新材料重跑即可）。
