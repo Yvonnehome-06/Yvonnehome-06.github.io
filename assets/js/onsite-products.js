@@ -102,5 +102,9 @@ window.LOOK_PRODUCTS = {
   "4-head-lily-pink": {"n": "4-Head Lily - Pink", "cn": "4头百合-粉", "c": "lilies", "s": "4头百合-粉-82cm", "t": "assets/img/flowers/lilies/thumb/lilies-013.jpg", "f": "assets/img/flowers/lilies/lilies-013.jpg"},
   "4-head-lily-white": {"n": "4-Head Lily - White", "cn": "4头百合-白", "c": "lilies", "s": "4头百合-白-82cm", "t": "assets/img/flowers/lilies/thumb/lilies-012.jpg", "f": "assets/img/flowers/lilies/lilies-012.jpg"},
   "golden-lily": {"n": "Golden Lily", "cn": "三头金百合", "c": "lilies", "s": "ZX三头金百合", "t": "assets/img/flowers/lilies/thumb/lilies-043.jpg", "f": "assets/img/flowers/lilies/lilies-043.jpg"},
-  "bunched-cypress-leaf": {"n": "Bunched Cypress Leaf", "cn": "把束大柏叶", "c": "greenery", "s": "把束大柏叶", "t": "assets/img/flowers/greenery/thumb/greenery-023.jpg", "f": "assets/img/flowers/greenery/greenery-023.jpg"}
+  "bunched-cypress-leaf": {"n": "Bunched Cypress Leaf", "cn": "把束大柏叶", "c": "greenery", "s": "把束大柏叶", "t": "assets/img/flowers/greenery/thumb/greenery-023.jpg", "f": "assets/img/flowers/greenery/greenery-023.jpg"},
+  "mimosa": {"n": "Mimosa", "cn": "含羞草", "c": "greenery", "s": "BJ含羞草", "t": "assets/img/flowers/greenery/thumb/greenery-095.jpg", "f": "assets/img/flowers/greenery/greenery-095.jpg"},
+  "cutout-monstera-leaf": {"n": "Cutout Monstera Leaf", "cn": "镂空龟背叶", "c": "greenery", "s": "BJ镂空龟背叶", "t": "assets/img/flowers/greenery/thumb/greenery-110.jpg", "f": "assets/img/flowers/greenery/greenery-110.jpg"},
+  "taro-leaf": {"n": "Taro Leaf", "cn": "香芋叶", "c": "greenery", "s": "香芋叶", "t": "assets/img/flowers/greenery/thumb/greenery-046.jpg", "f": "assets/img/flowers/greenery/greenery-046.jpg"},
+  "12-head-reed": {"n": "12-Head Reed", "cn": "12头芦苇", "c": "greenery", "s": "12头芦苇", "t": "assets/img/flowers/greenery/thumb/greenery-008.jpg", "f": "assets/img/flowers/greenery/greenery-008.jpg"}
 };

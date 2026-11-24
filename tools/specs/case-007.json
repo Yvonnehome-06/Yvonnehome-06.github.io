@@ -1,0 +1,39 @@
+{
+  "case_id": 7,
+  "groups": [
+    {
+      "key": "white",
+      "label": "White blooms",
+      "blurb": "Creamy white main flowers scattered down the columns.",
+      "items": [
+        {"cn": "奥斯汀玫瑰-白", "role": "Large creamy Austin roses along the top-left — the main flower."},
+        {"cn": "9头蝴蝶兰-白", "role": "White phalaenopsis blooms tucked mid-lower, petals trailing lightly."},
+        {"cn": "洋牡丹-白", "role": "A few soft white ranunculus woven through the greenery."}
+      ]
+    },
+    {
+      "key": "yellow",
+      "label": "Yellow accents",
+      "blurb": "Fluffy yellow mimosa giving the arrangement its warm spark.",
+      "items": [
+        {"cn": "含羞草", "role": "Clusters of fluffy yellow mimosa (silver wattle) — the key yellow accent of this look."},
+        {"cn": "小飞燕", "role": "Fine yellow line flowers scattered sparsely."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Greens & trailing strands",
+      "blurb": "Layered forest greens with long hanging strands — the core of this twin-column design.",
+      "items": [
+        {"cn": "镂空龟背叶", "role": "Mid-size split monstera leaves adding tropical breadth."},
+        {"cn": "香芋叶", "role": "Large matte heart-shaped leaves at the base, adding visual weight."},
+        {"cn": "蓬莱松-深绿", "role": "Fluffy light-green needle foliage forming the base layer."},
+        {"cn": "绿灵草", "role": "Long vertical hanging tassels creating the flowing movement."},
+        {"cn": "文竹", "role": "Fine misty green branches softening the mass."},
+        {"cn": "散尾", "role": "Fine feathery fronds spread across the upper layer."},
+        {"cn": "小圆尤加利", "role": "Grey-green round leaves bridging the green layers."},
+        {"cn": "12头芦苇", "role": "Warm brown reed lines on the right, balancing the cool greens."}
+      ]
+    }
+  ]
+}
