@@ -1,0 +1,57 @@
+{
+  "case_id": 5,
+  "groups": [
+    {
+      "key": "blue",
+      "label": "Blue tones",
+      "blurb": "The cool blue masses and lines that give the arch its airy spring feel.",
+      "items": [
+        {"cn": "90瓣绣球-蓝", "role": "Large blue flower balls dotted through the greenery."},
+        {"cn": "飞燕-蓝", "role": "Tall blue-violet spikes reaching above the arch line."},
+        {"cn": "新款钻石玫瑰-雾蓝", "role": "Misty-blue small roses tucked low, adding a vintage blue note."}
+      ]
+    },
+    {
+      "key": "purple",
+      "label": "Purple accents",
+      "blurb": "Purple clusters and fillers balancing the blue masses.",
+      "items": [
+        {"cn": "飞燕-紫", "role": "High purple line flowers at the top of the arch."},
+        {"cn": "90瓣绣球-紫", "role": "Purple hydrangea clusters along the top edge."},
+        {"cn": "小雏菊-紫", "role": "Fine purple filler scattered between the main blooms."}
+      ]
+    },
+    {
+      "key": "yellow",
+      "label": "Yellow pops",
+      "blurb": "Warm yellow accents waking up the blue-purple-green base.",
+      "items": [
+        {"cn": "大乒乓菊-黄", "role": "Bright yellow round mum clusters on the left side."},
+        {"cn": "黄玫瑰", "role": "Orange-yellow rose heads near the top left."},
+        {"cn": "小飞燕", "role": "Fine line flowers scattered sparsely through the arch."}
+      ]
+    },
+    {
+      "key": "pinkwhite",
+      "label": "Pink & white",
+      "blurb": "Lilies as the visual anchors, with soft pink and white fillers.",
+      "items": [
+        {"cn": "4头百合-粉", "role": "Large pink lilies at the lower right — the focal point of this arch."},
+        {"cn": "4头百合-白", "role": "White lilies anchored at the bottom."},
+        {"cn": "洋牡丹-粉", "role": "A cluster of soft pink ranunculus on the left."},
+        {"cn": "小雏菊-白", "role": "Tiny white daisies floating through the air of the arch."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Greens & grasses",
+      "blurb": "The large fluffy green base carrying the whole arch — pine needle greenery is the backbone here.",
+      "items": [
+        {"cn": "蓬莱松-深绿", "role": "Large fluffy needle greenery — the main base layer of this arch."},
+        {"cn": "喷泉草", "role": "Light airy grass strands softening the mass."},
+        {"cn": "小圆尤加利", "role": "Grey-green round leaves dotted through the greens."},
+        {"cn": "三叉米兰果深绿", "role": "Fine berry-bearing branches threading through the greenery."}
+      ]
+    }
+  ]
+}
