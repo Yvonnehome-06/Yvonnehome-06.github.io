@@ -1,0 +1,25 @@
+{
+  "case_id": 23,
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Flowers",
+      "blurb": "Light green blooms and a sculptural green sphere — the fresh focal points of this hanging garden.",
+      "items": [
+        {"cn": "126瓣绣球-浅绿", "role": "Light green hydrangea balls carrying the fresh green palette through the installation."},
+        {"cn": "葱球", "role": "Green allium sphere — the compact, textural green bloom used as the pom-pom accent."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Foliage & trailing greens",
+      "blurb": "Variegated leaf, soft needle foliage and fine trailing lines building the layered green wall.",
+      "items": [
+        {"cn": "彩玉叶粉点", "role": "White-based colour jade leaf with pink-red markings, adding patterned foliage contrast."},
+        {"cn": "蓬莱松-浅绿", "role": "Soft light-green pine spray filling out the foliage mass."},
+        {"cn": "文竹", "role": "Fine asparagus fern sprigs softening the edges with airy texture."},
+        {"cn": "空气草小垂钓", "role": "Long trailing air grass strands draping down as the fine hanging texture."}
+      ]
+    }
+  ]
+}

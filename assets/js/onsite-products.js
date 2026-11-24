@@ -130,5 +130,7 @@ window.LOOK_PRODUCTS = {
   "3d-anthurium-pink": {"n": "3D Anthurium - Pink", "cn": "3D掌-粉", "c": "others", "s": "3D掌-粉-60cm", "t": "assets/img/flowers/others/thumb/others-003.jpg", "f": "assets/img/flowers/others/others-003.jpg"},
   "colour-jade-leaf": {"n": "Colour Jade Leaf", "cn": "彩玉叶粉点", "c": "greenery", "s": "LX彩玉叶粉点", "t": "assets/img/flowers/greenery/thumb/greenery-149.jpg", "f": "assets/img/flowers/greenery/greenery-149.jpg"},
   "pine-spray-light-green": {"n": "Pine Spray - Light Green", "cn": "蓬莱松-浅绿", "c": "greenery", "s": "蓬莱松-浅绿", "t": "assets/img/flowers/greenery/thumb/greenery-043.jpg", "f": "assets/img/flowers/greenery/greenery-043.jpg"},
-  "ducks-foot-tree": {"n": "Duck's Foot Tree", "cn": "鸭掌木", "c": "greenery", "s": "JN鸭掌木", "t": "assets/img/flowers/greenery/thumb/greenery-145.jpg", "f": "assets/img/flowers/greenery/greenery-145.jpg"}
+  "ducks-foot-tree": {"n": "Duck's Foot Tree", "cn": "鸭掌木", "c": "greenery", "s": "JN鸭掌木", "t": "assets/img/flowers/greenery/thumb/greenery-145.jpg", "f": "assets/img/flowers/greenery/greenery-145.jpg"},
+  "allium": {"n": "Allium", "cn": "葱球", "c": "others", "s": "葱球", "t": "assets/img/flowers/others/thumb/others-128.jpg", "f": "assets/img/flowers/others/others-128.jpg"},
+  "air-grass-": {"n": "Air Grass", "cn": "空气草小垂钓", "c": "greenery", "s": "BJ空气草小垂钓", "t": "assets/img/flowers/greenery/thumb/greenery-106.jpg", "f": "assets/img/flowers/greenery/greenery-106.jpg"}
 };
