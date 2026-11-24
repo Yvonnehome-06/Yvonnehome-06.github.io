@@ -12,10 +12,9 @@
     },
     {
       "key": "foliage",
-      "label": "Leaf & vine base",
-      "blurb": "Green trailing material filling the gaps and carrying the climb down the wall.",
+      "label": "Leaf base",
+      "blurb": "Grey-green leaf detail woven through the roses for depth.",
       "items": [
-        {"cn": "1米玫瑰叶花藤", "role": "Rose-leaf vine trailing across the wall, filling gaps with natural green foliage."},
         {"cn": "小圆尤加利", "role": "A touch of round-leaf eucalyptus adding grey-green colour depth."}
       ]
     }
