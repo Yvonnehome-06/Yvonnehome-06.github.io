@@ -1,0 +1,23 @@
+{
+  "case_id": 19,
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "White blooms",
+      "blurb": "Soft white flowers punctuating the deep violet and ivory cloud-sphere installation.",
+      "items": [
+        {"cn": "9头蝴蝶兰-白", "role": "White phalaenopsis orchids trailing through the arrangement with elegant, sculptural blooms."},
+        {"cn": "126瓣绣球-白", "role": "Full white hydrangea heads adding soft, rounded mass among the textures."},
+        {"cn": "5头牡丹-白", "role": "Creamy white peony blooms — the full double flowers reading as the white peony / dahlia accent."}
+      ]
+    },
+    {
+      "key": "base",
+      "label": "Misty base",
+      "blurb": "Fine, hazy texture filling the gaps around the statement spheres.",
+      "items": [
+        {"cn": "情人草-白", "role": "Fine misty white baby's breath forming the soft grey-haze base through the piece."}
+      ]
+    }
+  ]
+}
