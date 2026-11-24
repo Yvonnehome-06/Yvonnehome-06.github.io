@@ -1,0 +1,27 @@
+{
+  "case_id": 51,
+  "groups": [
+    {
+      "key": "hanging-flowers",
+      "label": "Hanging & main flowers",
+      "blurb": "White blooms filling the canopy strands and the ground mounds.",
+      "items": [
+        {"cn": "白绣球", "role": "White hydrangea forming the dense white mounds at the base of the columns."},
+        {"cn": "钻石玫瑰-白", "role": "White roses scattered through the mounds and ground beds."},
+        {"cn": "软胶满天星-白", "role": "White baby's breath building the large airy fill of both column structures."},
+        {"cn": "吊米-白", "role": "White hanging rice-grass strings dropping from the canopy between the wisteria strands."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "Green foliage and grasses threading through the white canopy.",
+      "items": [
+        {"cn": "垂吊柔丝草", "role": "Soft feathery plumes mixed into the hanging strands for green texture."},
+        {"cn": "蓬莱松-浅绿", "role": "Light green feathery pine filling the green layer of the canopy."},
+        {"cn": "小圆尤加利", "role": "Round eucalyptus leaves scattered across the hanging ceiling."},
+        {"cn": "芦苇草", "role": "Fountain reed grass adding airy grass sprays through the columns."}
+      ]
+    }
+  ]
+}
