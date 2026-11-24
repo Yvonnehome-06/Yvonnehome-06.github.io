@@ -36,9 +36,14 @@
     .scene-card .sc-body span { font-size:12px; opacity:.88; }
     .scene-card.active .sc-body::before { content:"✓ "; color:#D7E3CE; }
 
-    .filter-bar { display:flex; align-items:flex-start; gap:26px; flex-wrap:wrap; margin:34px 0 8px; padding:20px 0; border-top:1px solid var(--c-line); border-bottom:1px solid var(--c-line); }
-    .filter-group { flex:1; min-width:260px; }
-    .filter-group > .section-label { margin-bottom:10px; }
+    .refine-panel { margin:34px 0 8px; padding:22px 0 20px; border-top:1px solid var(--c-line); border-bottom:1px solid var(--c-line); }
+    .refine-head { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:16px; }
+    .refine-head .section-label { margin-bottom:0; }
+    .refine-sub { font-size:13px; color:var(--c-muted); margin:6px 0 0; }
+    .refine-actions { display:flex; align-items:center; gap:14px; }
+    .refine-actions .onsite-count { white-space:nowrap; }
+    .chip-clear { background:transparent; color:var(--c-muted); font-weight:600; }
+    .chip-clear:hover { border-color:var(--c-ink); color:var(--c-ink); }
     .chips { margin:0; }
     .color-chip { display:inline-flex; align-items:center; gap:7px; }
     .color-chip .dot { width:13px; height:13px; border-radius:50%; border:1px solid rgba(0,0,0,.15); display:inline-block; }
@@ -177,15 +182,18 @@
 
   <section class="section" style="padding-top:0;">
     <div class="container">
-      <div class="filter-bar">
-        <div class="filter-group">
-          <p class="section-label">02 — Filter by colour palette</p>
-          <div class="chips" id="colorChips"></div>
+      <div class="refine-panel">
+        <div class="refine-head">
+          <div>
+            <p class="section-label">02 — Filter by colour palette</p>
+            <p class="refine-sub" id="refineHint">Showing every scene — pick a scene above, then narrow by colour.</p>
+          </div>
+          <div class="refine-actions">
+            <span class="onsite-count" id="refineCount"></span>
+            <button class="chip chip-clear" id="clearFilters" type="button">Clear filters</button>
+          </div>
         </div>
-        <div class="filter-group" style="flex:0 1 230px;min-width:180px;">
-          <p class="section-label">Scene</p>
-          <div class="chips" id="sceneChips"></div>
-        </div>
+        <div class="chips" id="colorChips"></div>
       </div>
 
       <div id="lookPanel"></div>

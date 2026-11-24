@@ -11,8 +11,10 @@
 
   var elGrid = document.getElementById("onsiteGrid");
   var elSceneGrid = document.getElementById("sceneGrid");
-  var elSceneChips = document.getElementById("sceneChips");
+  var elSceneChips = document.getElementById("sceneChips"); // legacy: scene is now chosen in section 01
   var elColorChips = document.getElementById("colorChips");
+  var elRefineHint = document.getElementById("refineHint");
+  var elRefineCount = document.getElementById("refineCount");
   var elEmpty = document.getElementById("onsiteEmpty");
   var elCount = document.getElementById("onsiteCount");
   var elTitle = document.getElementById("resultTitle");
@@ -78,10 +80,15 @@
       });
     }
     if (elColorChips) {
-      var ch = '<button class="chip active" data-color="all">All colours</button>';
-      COLORS.forEach(function(c){
-        var n = DATA.filter(function(x){return x.colors.indexOf(c.slug)>=0;}).length;
-        if(n) ch += '<button class="chip color-chip" data-color="'+esc(c.slug)+'"><span class="dot" style="background:'+esc(c.hex)+'"></span>'+esc(c.en)+' ('+n+')</button>';
+      // Sort by frequency so the palettes with real depth lead; rare ones trail.
+      var ranked = COLORS.map(function(c){
+        return { c:c, n: DATA.filter(function(x){return x.colors.indexOf(c.slug)>=0;}).length };
+      }).filter(function(o){ return o.n > 0; })
+        .sort(function(a,b){ return b.n - a.n; });
+      var ch = '<button class="chip active" data-color="all">All colours ('+DATA.length+')</button>';
+      ranked.forEach(function(o){
+        var c = o.c;
+        ch += '<button class="chip color-chip" data-color="'+esc(c.slug)+'"><span class="dot" style="background:'+esc(c.hex)+'"></span>'+esc(c.en)+' ('+o.n+')</button>';
       });
       elColorChips.innerHTML = ch;
       elColorChips.addEventListener("click", function(e){
@@ -163,6 +170,15 @@
     });
     elGrid.innerHTML = "";
     if (elCount) elCount.textContent = current.length + (current.length===1?" installation":" installations");
+    if (elRefineCount) elRefineCount.textContent = current.length + (current.length===1?" look":" looks");
+    if (elRefineHint) {
+      if (activeScene === "all") {
+        elRefineHint.textContent = "Showing every scene — pick a scene above, then narrow by colour.";
+      } else {
+        var hs = bySlug(SCENES, activeScene);
+        elRefineHint.textContent = "In " + (hs ? hs.en : activeScene) + " — narrow by colour, or pick another scene above.";
+      }
+    }
     if (elTitle) {
       var s = bySlug(SCENES, activeScene), c = colorObj(activeColor);
       elTitle.textContent = (activeScene!=="all" ? (s?s.en:activeScene) : "All installations") +
@@ -298,13 +314,16 @@
     if(e.key==="ArrowRight") step(1);
   });
 
-  var reset = document.getElementById("resetFilters");
-  if (reset) reset.addEventListener("click", function(){
+  function clearAllFilters() {
     activeScene="all"; activeColor="all";
     if(elSceneChips) elSceneChips.querySelectorAll(".chip").forEach(function(x){x.classList.toggle("active",x.dataset.scene==="all");});
     if(elColorChips) elColorChips.querySelectorAll(".chip").forEach(function(x){x.classList.toggle("active",x.dataset.color==="all");});
     if(elSceneGrid) elSceneGrid.querySelectorAll(".scene-card").forEach(function(x){x.classList.remove("active");});
     render();
+  }
+  ["resetFilters", "clearFilters"].forEach(function(id){
+    var btn = document.getElementById(id);
+    if (btn) btn.addEventListener("click", clearAllFilters);
   });
 
   renderSceneCards();
