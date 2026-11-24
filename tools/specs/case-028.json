@@ -1,0 +1,39 @@
+{
+  "case_id": 28,
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "White blooms",
+      "blurb": "An all-white table in layered lilies, gladiolus and hydrangea.",
+      "items": [
+        {
+          "cn": "3D百合-白",
+          "role": "Large white lilies as the table's statement blooms."
+        },
+        {
+          "cn": "3D火焰百合-白",
+          "role": "White flame lilies with signature curled petals adding sculptural interest."
+        },
+        {
+          "cn": "剑兰-白",
+          "role": "White gladiolus spikes lifting the line of the arrangement."
+        },
+        {
+          "cn": "126瓣绣球-白",
+          "role": "White hydrangeas filling the body of the runner."
+        }
+      ]
+    },
+    {
+      "key": "anthurium",
+      "label": "White anthurium",
+      "blurb": "Elegant white spathes echoing the calla silhouette.",
+      "items": [
+        {
+          "cn": "3D掌-白",
+          "role": "White anthurium with heart-shaped spathes echoing the calla line of the piece."
+        }
+      ]
+    }
+  ]
+}

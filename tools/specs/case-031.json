@@ -1,0 +1,54 @@
+{
+  "case_id": 31,
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "Violet & lavender blooms",
+      "blurb": "Muted violet-grey roses and clematis against buttercup yellow.",
+      "items": [
+        {
+          "cn": "曼塔玫-紫",
+          "role": "Menta roses in muted grey-violet — the romantic core of the palette."
+        },
+        {
+          "cn": "洋牡丹-紫",
+          "role": "Light purple ranunculus with layered petals."
+        },
+        {
+          "cn": "3D铁线莲-紫",
+          "role": "Purple clematis with open flat blooms weaving through the roses."
+        },
+        {
+          "cn": "126瓣绣球-浅紫",
+          "role": "Lilac hydrangeas rounding out the violet tones."
+        }
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Yellow accents",
+      "blurb": "Buttercup-yellow highlights lifting the violet base.",
+      "items": [
+        {
+          "cn": "小雏菊-黄",
+          "role": "Yellow mini daisies adding the bright yellow notes."
+        }
+      ]
+    },
+    {
+      "key": "grass",
+      "label": "Grass & foliage",
+      "blurb": "Airy texture keeping the table setting natural.",
+      "items": [
+        {
+          "cn": "垂钓空气草",
+          "role": "Fine fountain-grass lines adding airy movement."
+        },
+        {
+          "cn": "小圆尤加利",
+          "role": "Round-leaf eucalyptus threading grey-green through the base."
+        }
+      ]
+    }
+  ]
+}

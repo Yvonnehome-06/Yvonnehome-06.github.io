@@ -1,0 +1,54 @@
+{
+  "case_id": 38,
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "Pastel blooms",
+      "blurb": "White and green hydrangea, magnolia and a green orchid in a soft pastel mix.",
+      "items": [
+        {
+          "cn": "126瓣绣球-白",
+          "role": "White hydrangeas forming the pale base."
+        },
+        {
+          "cn": "126瓣绣球-浅绿",
+          "role": "Green hydrangeas echoing the bouquet's green heart."
+        },
+        {
+          "cn": "9头蝴蝶兰-绿",
+          "role": "Green phalaenopsis orchids adding the exotic touch."
+        },
+        {
+          "cn": "3D玉兰-白",
+          "role": "White magnolia blooms with the sculptural petals."
+        },
+        {
+          "cn": "飞燕-粉",
+          "role": "Light pink larkspur spikes threading through the top."
+        }
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Dandelion accents",
+      "blurb": "Fluffy white spheres floating between the blooms.",
+      "items": [
+        {
+          "cn": "三叉蒲公英",
+          "role": "White dandelion balls adding the airy, wild accents."
+        }
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Fine greenery",
+      "blurb": "Fine asparagus fern filling the silhouette.",
+      "items": [
+        {
+          "cn": "天门冬",
+          "role": "Fine asparagus fern weaving the soft green frame."
+        }
+      ]
+    }
+  ]
+}

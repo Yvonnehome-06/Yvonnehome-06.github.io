@@ -1,0 +1,70 @@
+{
+  "case_id": 35,
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "White & green blooms",
+      "blurb": "A garden mix of white roses, hydrangeas and lisianthus with green undertones.",
+      "items": [
+        {
+          "cn": "包芯钻石玫瑰-白",
+          "role": "White roses anchoring the centerpiece."
+        },
+        {
+          "cn": "126瓣绣球-白",
+          "role": "White hydrangeas for the creamy body."
+        },
+        {
+          "cn": "126瓣绣球-浅绿",
+          "role": "Green hydrangeas echoing the tabletop runner."
+        },
+        {
+          "cn": "126瓣绣球-浅紫",
+          "role": "A touch of lilac hydrangea in the hanging piece."
+        },
+        {
+          "cn": "3D火焰百合-白",
+          "role": "White glory lilies with swept-back petals adding drama."
+        },
+        {
+          "cn": "桔梗-白",
+          "role": "White lisianthus with soft layered blooms."
+        },
+        {
+          "cn": "小雏菊-白",
+          "role": "White mini daisies scattering through the greens."
+        }
+      ]
+    },
+    {
+      "key": "hanging",
+      "label": "Hanging greenery",
+      "blurb": "Trailing ferns and grasses falling from the suspended centerpiece.",
+      "items": [
+        {
+          "cn": "文竹",
+          "role": "Asparagus fern trailing from the hanging installation."
+        },
+        {
+          "cn": "天门冬",
+          "role": "Weeping asparagus fern adding the long drooping lines."
+        },
+        {
+          "cn": "垂钓空气草",
+          "role": "Fine fountain grass falling in soft strands."
+        }
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Foliage",
+      "blurb": "Round-leaf eucalyptus tying the runner and the hanging piece together.",
+      "items": [
+        {
+          "cn": "小圆尤加利",
+          "role": "Round-leaf eucalyptus threading through both the table and the hanging piece."
+        }
+      ]
+    }
+  ]
+}

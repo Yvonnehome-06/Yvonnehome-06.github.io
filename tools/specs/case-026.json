@@ -1,30 +1,53 @@
 {
   "case_id": 26,
-  "title": "Sunlit Green Wedding Arch",
   "groups": [
     {
       "key": "blooms",
-      "label": "Blooms",
-      "blurb": "The flower masses carrying the ivory-and-green palette.",
+      "label": "Floral accents",
+      "blurb": "Creamy white hydrangea clusters dotted through the wild greenery.",
       "items": [
-        {"cn": "绿绣球", "role": "Large green clusters forming the main flower mass along the top."},
-        {"cn": "白绣球", "role": "The white cluster accent at the top-right corner."},
-        {"cn": "绿毛球", "role": "Fluffy round green balls dotted through the flowers."},
-        {"cn": "白小菊", "role": "Fine white filler clusters filling the gaps."}
+        {
+          "cn": "126瓣绣球-白",
+          "role": "Creamy white hydrangeas adding soft floral moments to the green arch."
+        }
+      ]
+    },
+    {
+      "key": "hanging",
+      "label": "Hanging tails & fine grasses",
+      "blurb": "Long drooping green tails — the signature of this wild arch.",
+      "items": [
+        {
+          "cn": "柳芽浅绿",
+          "role": "Long drooping green willow tails cascading from the arch — the signature hanging element."
+        },
+        {
+          "cn": "垂钓空气草",
+          "role": "Fine feathery grass lines threading through the piece."
+        },
+        {
+          "cn": "文竹",
+          "role": "Delicate asparagus fern lightening the top structure."
+        }
       ]
     },
     {
       "key": "foliage",
-      "label": "Trailing strands & foliage",
-      "blurb": "Green line, movement and the deep base layer — the foxtail is the soul of this arch.",
+      "label": "Green foliage frame",
+      "blurb": "Mixed fine foliage building the wild, natural silhouette.",
       "items": [
-        {"cn": "绿灵草", "role": "The long bright-green hanging tassels — the signature of this installation."},
-        {"cn": "文竹", "role": "Fine feathery trailing branches adding airy movement."},
-        {"cn": "蓬莱松", "role": "Fluffy massed needle leaves forming the base layer."},
-        {"cn": "尤加利", "role": "Grey-green round-leaf and fine-leaf eucalyptus adding depth."},
-        {"cn": "大羽叶", "role": "Large pinnate leaves spreading across the upper layer."},
-        {"cn": "山归来", "role": "Fine winding vine branches threading through the greenery."},
-        {"cn": "松枝", "role": "Deep-green needle foliage as the dark base."}
+        {
+          "cn": "柳条-浅绿",
+          "role": "Fine-leaf willow branches extending the wild outline."
+        },
+        {
+          "cn": "小圆尤加利",
+          "role": "Round-leaf eucalyptus adding grey-green depth."
+        },
+        {
+          "cn": "蓬莱松-深绿",
+          "role": "Deep green pine spray giving the base its lush body."
+        }
       ]
     }
   ]
