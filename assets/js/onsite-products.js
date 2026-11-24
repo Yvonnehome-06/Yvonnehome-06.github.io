@@ -157,5 +157,7 @@ window.LOOK_PRODUCTS = {
   "5-head-ball-chrysanthemum-pink": {"n": "5-Head Ball Chrysanthemum - Pink", "cn": "5头球菊-粉", "c": "chrysanthemums", "s": "5头球菊-粉-50cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-002.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-002.jpg"},
   "soft-gel-babys-breath-purple": {"n": "Soft-Gel Baby's Breath - Purple", "cn": "软胶满天星-紫", "c": "babys-breath", "s": "软胶满天星-紫-62cm", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-013.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-013.jpg"},
   "wood-hydrangea-white": {"n": "Wood Hydrangea - White", "cn": "木绣球-白", "c": "hydrangeas", "s": "木绣球-白-80cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-084.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-084.jpg"},
-  "dingding-berry-light-green": {"n": "Dingding Berry - Light Green", "cn": "叮叮果-浅绿", "c": "others", "s": "叮叮果-浅绿", "t": "assets/img/flowers/others/thumb/others-038.jpg", "f": "assets/img/flowers/others/others-038.jpg"}
+  "dingding-berry-light-green": {"n": "Dingding Berry - Light Green", "cn": "叮叮果-浅绿", "c": "others", "s": "叮叮果-浅绿", "t": "assets/img/flowers/others/thumb/others-038.jpg", "f": "assets/img/flowers/others/others-038.jpg"},
+  "roman-pot-395": {"n": "Roman Column Flower Pot - 39.5 cm", "cn": "罗马柱花盆-39.5cm", "c": "pots", "s": "", "t": "assets/img/decor/pots/roman-column-pot-395.jpg", "f": "assets/img/decor/pots/roman-column-pot-395.jpg"},
+  "celery-leaf": {"n": "Celery Leaf", "cn": "芹菜叶大", "c": "greenery", "s": "YY芹菜叶大", "t": "assets/img/flowers/greenery/thumb/greenery-188.jpg", "f": "assets/img/flowers/greenery/greenery-188.jpg"}
 };

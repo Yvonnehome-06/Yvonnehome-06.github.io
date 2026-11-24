@@ -1,0 +1,37 @@
+{
+  "case_id": 46,
+  "title": "White Pedestal Arrangement",
+  "desc": "A classical white urn arrangement of white hydrangea, phalaenopsis and roses over fine green foliage.",
+  "scene": "event",
+  "colors": ["white", "green"],
+  "groups": [
+    {
+      "key": "main-flowers",
+      "label": "Main flowers",
+      "blurb": "White blooms carrying the arrangement over the green base.",
+      "items": [
+        {"cn": "126瓣绣球-白", "role": "Petal-white hydrangea forming the full white body of the arrangement."},
+        {"cn": "9头蝴蝶兰-白", "role": "White phalaenopsis cascade falling over the rim on the right side."},
+        {"cn": "钻石玫瑰-白", "role": "White roses tucked between the hydrangea clusters."},
+        {"cn": "葱球", "role": "Green round allium ball rising at the centre as a fresh green sphere."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "Feathery greens and fine line branches shaping the silhouette.",
+      "items": [
+        {"cn": "蓬莱松-浅绿", "role": "Light green feathery pine building the fresh green mass of the piece."},
+        {"cn": "芹菜叶大", "role": "Tall fine-leafed branch rising above the arrangement for the high line."}
+      ]
+    },
+    {
+      "key": "vessel",
+      "label": "Vessel",
+      "blurb": "The classical container the arrangement is built in.",
+      "items": [
+        {"cn": "白色罗马高脚花盆", "role": "White Roman column footed urn holding the whole arrangement."}
+      ]
+    }
+  ]
+}
