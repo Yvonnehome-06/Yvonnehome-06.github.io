@@ -1,0 +1,62 @@
+{
+  "case_id": 14,
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "Main blooms",
+      "blurb": "Crisp white and fresh green — the clean palette of this storefront column.",
+      "items": [
+        {
+          "cn": "126瓣绣球-白",
+          "role": "White hydrangea heads bringing bright, full masses to the column."
+        },
+        {
+          "cn": "126瓣绣球-浅绿",
+          "role": "Green hydrangeas adding the fresh green core of the palette."
+        },
+        {
+          "cn": "3D掌",
+          "role": "Green anthurium-like blooms adding glossy, sculptural shape."
+        },
+        {
+          "cn": "9头蝴蝶兰-白",
+          "role": "White phalaenopsis orchids trailing out with elegant white blooms."
+        }
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Statement foliage",
+      "blurb": "Bold, veined leaves building texture through the arrangement.",
+      "items": [
+        {
+          "cn": "枫叶",
+          "role": "Green maple leaves adding delicate, lobed texture."
+        },
+        {
+          "cn": "香芋叶",
+          "role": "White-veined caladium-like leaves with striking patterned foliage."
+        },
+        {
+          "cn": "镂空龟背叶",
+          "role": "Split monstera leaves adding large, graphic green shapes."
+        }
+      ]
+    },
+    {
+      "key": "trailing",
+      "label": "Trailing greenery",
+      "blurb": "Long hanging lines softening the column edges.",
+      "items": [
+        {
+          "cn": "情人泪",
+          "role": "Trailing bead-like strings hanging down like string-of-pearls."
+        },
+        {
+          "cn": "垂柳",
+          "role": "Long, fine willow strands creating soft trailing lines."
+        }
+      ]
+    }
+  ]
+}
