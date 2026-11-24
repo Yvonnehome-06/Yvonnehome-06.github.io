@@ -1,0 +1,41 @@
+{
+  "case_id": 13,
+  "groups": [
+    {
+      "key": "main",
+      "label": "Main blooms",
+      "blurb": "Purple and pink hydrangeas with soft roses and tall spires — the vintage violet palette of this butterfly piece.",
+      "items": [
+        {"cn": "126瓣绣球-浅紫", "role": "Purple hydrangea heads anchoring the upper part of the arrangement."},
+        {"cn": "126瓣绣球-粉", "role": "Pink hydrangeas softening the violet tones."},
+        {"cn": "奥斯汀玫瑰-粉", "role": "Light pink Austin roses with full, rounded petals."},
+        {"cn": "奥斯汀玫瑰-香槟", "role": "Champagne Austin roses adding a warm vintage tone."},
+        {"cn": "洋牡丹-粉", "role": "Pink ranunculus with delicate layered petals."},
+        {"cn": "飞燕-紫", "role": "Purple delphinium spires lifting the arrangement."},
+        {"cn": "大飞燕-黄", "role": "Yellow delphinium sprays adding bright golden accents."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Small accents",
+      "blurb": "Fine purple and daisy accents scattered through the display.",
+      "items": [
+        {"cn": "勿忘我-紫", "role": "Purple forget-me-not clusters adding fine violet texture."},
+        {"cn": "小雏菊-黄", "role": "Yellow daisies echoing the golden delphinium tones."},
+        {"cn": "小雏菊-白", "role": "White daisies scattered as light, airy dots."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Foliage & grasses",
+      "blurb": "Soft green texture and fine trailing lines grounding the piece.",
+      "items": [
+        {"cn": "蓬莱松-深绿", "role": "Deep green asparagus fern providing a lush base."},
+        {"cn": "文竹", "role": "Fine asparagus fern branches adding airy greenery."},
+        {"cn": "垂钓空气草", "role": "Trailing fine grass softening the edges like fountain grass."},
+        {"cn": "情人草-白", "role": "Creamy statice spray filling gaps with a soft haze."},
+        {"cn": "细叶尤加利", "role": "Fine-leaf eucalyptus threading green through the palette."}
+      ]
+    }
+  ]
+}

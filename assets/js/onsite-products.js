@@ -119,5 +119,6 @@ window.LOOK_PRODUCTS = {
   "galsang-flower-pink": {"n": "Galsang Flower - Pink", "cn": "格桑花-粉", "c": "others", "s": "格桑花-粉-65cm", "t": "assets/img/flowers/others/thumb/others-084.jpg", "f": "assets/img/flowers/others/others-084.jpg"},
   "galsang-flower-light-purple": {"n": "Galsang Flower - Light Purple", "cn": "格桑花-浅紫", "c": "others", "s": "格桑花-浅紫-65cm", "t": "assets/img/flowers/others/thumb/others-081.jpg", "f": "assets/img/flowers/others/others-081.jpg"},
   "126-petal-hydrangea-blue": {"n": "126-Petal Hydrangea - Blue", "cn": "126瓣绣球-蓝", "c": "hydrangeas", "s": "126瓣绣球-蓝-58cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-011.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-011.jpg"},
-  "shirley-poppy-pink": {"n": "Shirley Poppy - Pink", "cn": "虞美人-粉", "c": "others", "s": "虞美人-粉-61cm", "t": "assets/img/flowers/others/thumb/others-138.jpg", "f": "assets/img/flowers/others/others-138.jpg"}
+  "shirley-poppy-pink": {"n": "Shirley Poppy - Pink", "cn": "虞美人-粉", "c": "others", "s": "虞美人-粉-61cm", "t": "assets/img/flowers/others/thumb/others-138.jpg", "f": "assets/img/flowers/others/others-138.jpg"},
+  "austin-rose-champagne": {"n": "Austin Rose - Champagne", "cn": "奥斯汀玫瑰-香槟", "c": "roses", "s": "奥斯汀玫瑰-香槟-66cm", "t": "assets/img/flowers/roses/thumb/roses-057.jpg", "f": "assets/img/flowers/roses/roses-057.jpg"}
 };
