@@ -1,66 +1,233 @@
 {
   "_comment": "中文材料名 -> LOOK_PRODUCTS 键 的别名表。terms 优先精确匹配；未命中时脚本回落到 flowers-data.js 中文名检索。by_key 用于从既有案例反推材料名（生成新 spec）。",
-
   "terms": {
-    "白绣球": ["hyd-white"],
-    "绣球": ["hyd-white"],
-    "白玫瑰": ["rose-white"],
-    "玫瑰": ["rose-white"],
-    "花园玫瑰": ["rose-garden-white"],
-    "洋牡丹": ["ranunculus-white"],
-    "花毛茛": ["ranunculus-white"],
-    "紫洋牡丹": ["ranunculus-purple"],
-    "浅紫洋牡丹": ["ranunculus-purple"],
-    "白落新妇": ["statice-white"],
-    "落新妇": ["statice-white"],
-    "霞草": ["statice-white"],
-    "情人草": ["statice-white"],
-    "绿毛球": ["dianthus-green"],
-    "绿石竹": ["dianthus-green"],
-    "石竹": ["dianthus-green"],
-    "喷泉草": ["air-grass"],
-    "空气草": ["air-grass"],
-    "观赏草": ["air-grass"],
-    "满天星": ["baby-white"],
-    "小白花": ["baby-white"],
-    "小手球": ["snow-willow"],
-    "绣线菊": ["snow-willow"],
-    "柔丽丝": ["hanging-rice-white", "valentine-tears"],
-    "吊米": ["hanging-rice-white"],
-    "情人泪": ["valentine-tears"],
-    "天门冬": ["asparagus"],
-    "武竹": ["asparagus"],
-    "文竹": ["wenzhu"],
-    "芦笋草": ["wenzhu"],
-    "芦荀草": ["asparagus-fern-dg"],
-    "马尾松": ["horsetail-pine"],
-    "雪松枝": ["horsetail-pine"],
-    "松针": ["pine-needle-dg"],
-    "蓬莱松": ["pine-spray-dg"],
-    "高山羊齿": ["asparagus-fern-dg"],
-    "羊齿": ["asparagus-fern-dg"],
-    "蕨": ["asparagus-fern-dg"],
-    "千层金": ["layered-gold-lg"],
-    "散尾葵": ["areca", "areca-3"],
-    "散尾": ["areca", "areca-3"],
-    "尤加利": ["eucalyptus-round", "eucalyptus-fine"],
-    "圆叶尤加利": ["eucalyptus-round"],
-    "细叶尤加利": ["eucalyptus-fine"],
-    "白牡丹": ["peony-white"],
-    "牡丹": ["peony-white"],
-    "白芍药": ["paeonia-white"],
-    "芍药": ["paeonia-white"],
-    "白蝴蝶兰": ["orchid-phal-white"],
-    "蝴蝶兰": ["orchid-phal-white"],
-    "灰紫绣球": ["hyd-purple-grey"],
-    "灰蓝紫绣球": ["hyd-purple-grey"],
-    "浅紫小紫菊": ["daisy-purple"],
-    "小紫菊": ["daisy-purple"],
-    "翠菊": ["daisy-purple"],
-    "橄榄枝": ["milane-berry"],
-    "带果枝叶": ["milane-berry"]
+    "白绣球": [
+      "hyd-white"
+    ],
+    "绣球": [
+      "hyd-white"
+    ],
+    "白玫瑰": [
+      "rose-white"
+    ],
+    "玫瑰": [
+      "rose-white"
+    ],
+    "花园玫瑰": [
+      "rose-garden-white"
+    ],
+    "洋牡丹": [
+      "ranunculus-white"
+    ],
+    "花毛茛": [
+      "ranunculus-white"
+    ],
+    "紫洋牡丹": [
+      "ranunculus-purple"
+    ],
+    "浅紫洋牡丹": [
+      "ranunculus-purple"
+    ],
+    "白落新妇": [
+      "statice-white"
+    ],
+    "落新妇": [
+      "statice-white"
+    ],
+    "霞草": [
+      "statice-white"
+    ],
+    "情人草": [
+      "statice-white"
+    ],
+    "绿毛球": [
+      "dianthus-green"
+    ],
+    "绿石竹": [
+      "dianthus-green"
+    ],
+    "石竹": [
+      "dianthus-green"
+    ],
+    "喷泉草": [
+      "air-grass"
+    ],
+    "空气草": [
+      "air-grass"
+    ],
+    "观赏草": [
+      "air-grass"
+    ],
+    "满天星": [
+      "baby-white"
+    ],
+    "小白花": [
+      "baby-white"
+    ],
+    "小手球": [
+      "snow-willow"
+    ],
+    "绣线菊": [
+      "snow-willow"
+    ],
+    "柔丽丝": [
+      "hanging-rice-white",
+      "valentine-tears"
+    ],
+    "吊米": [
+      "hanging-rice-white"
+    ],
+    "情人泪": [
+      "valentine-tears"
+    ],
+    "天门冬": [
+      "asparagus"
+    ],
+    "武竹": [
+      "asparagus"
+    ],
+    "文竹": [
+      "wenzhu"
+    ],
+    "芦笋草": [
+      "wenzhu"
+    ],
+    "芦荀草": [
+      "asparagus-fern-dg"
+    ],
+    "马尾松": [
+      "horsetail-pine"
+    ],
+    "雪松枝": [
+      "horsetail-pine"
+    ],
+    "松针": [
+      "pine-needle-dg"
+    ],
+    "蓬莱松": [
+      "pine-spray-dg"
+    ],
+    "高山羊齿": [
+      "asparagus-fern-dg"
+    ],
+    "羊齿": [
+      "asparagus-fern-dg"
+    ],
+    "蕨": [
+      "asparagus-fern-dg"
+    ],
+    "千层金": [
+      "layered-gold-lg"
+    ],
+    "散尾葵": [
+      "areca",
+      "areca-3"
+    ],
+    "散尾": [
+      "areca",
+      "areca-3"
+    ],
+    "尤加利": [
+      "eucalyptus-round",
+      "eucalyptus-fine"
+    ],
+    "圆叶尤加利": [
+      "eucalyptus-round"
+    ],
+    "细叶尤加利": [
+      "eucalyptus-fine"
+    ],
+    "白牡丹": [
+      "peony-white"
+    ],
+    "牡丹": [
+      "peony-white"
+    ],
+    "白芍药": [
+      "paeonia-white"
+    ],
+    "芍药": [
+      "paeonia-white"
+    ],
+    "白蝴蝶兰": [
+      "orchid-phal-white"
+    ],
+    "蝴蝶兰": [
+      "orchid-phal-white"
+    ],
+    "灰紫绣球": [
+      "hyd-purple-grey"
+    ],
+    "灰蓝紫绣球": [
+      "hyd-purple-grey"
+    ],
+    "浅紫小紫菊": [
+      "daisy-purple"
+    ],
+    "小紫菊": [
+      "daisy-purple"
+    ],
+    "翠菊": [
+      "daisy-purple"
+    ],
+    "橄榄枝": [
+      "milane-berry"
+    ],
+    "带果枝叶": [
+      "milane-berry"
+    ],
+    "绿绣球": [
+      "hyd-green"
+    ],
+    "浅绿绣球": [
+      "hyd-green"
+    ],
+    "白小菊": [
+      "daisy-white"
+    ],
+    "绿灵草": [
+      "foxtail"
+    ],
+    "绿狐尾": [
+      "foxtail"
+    ],
+    "垂吊柔丝": [
+      "foxtail"
+    ],
+    "长垂松": [
+      "foxtail"
+    ],
+    "山归来": [
+      "mountain-return"
+    ],
+    "蛇葡萄藤": [
+      "mountain-return"
+    ],
+    "松枝": [
+      "pine-needle-dg"
+    ],
+    "白雏菊": [
+      "daisy-white"
+    ],
+    "紫绣球": [
+      "90-petal-hydrangea-purple"
+    ],
+    "紫大飞燕": [
+      "larkspur-purple"
+    ],
+    "黄飞燕": [
+      "larkspur-yellow"
+    ],
+    "浅粉洋牡丹": [
+      "ranunculus-pink"
+    ],
+    "黄洋甘菊": [
+      "mini-daisy-yellow"
+    ],
+    "小雏菊-黄": [
+      "mini-daisy-yellow"
+    ]
   },
-
   "by_key": {
     "hyd-white": "白绣球",
     "rose-white": "白玫瑰",
@@ -90,6 +257,15 @@
     "orchid-phal-white": "白蝴蝶兰",
     "hyd-purple-grey": "灰紫绣球",
     "daisy-purple": "浅紫小紫菊",
-    "milane-berry": "橄榄枝"
+    "milane-berry": "橄榄枝",
+    "hyd-green": "绿绣球",
+    "daisy-white": "白小菊",
+    "foxtail": "绿灵草",
+    "mountain-return": "山归来",
+    "90-petal-hydrangea-purple": "紫绣球",
+    "larkspur-purple": "紫大飞燕",
+    "larkspur-yellow": "黄飞燕",
+    "ranunculus-pink": "浅粉洋牡丹",
+    "mini-daisy-yellow": "黄色洋甘菊/小雏菊"
   }
 }

@@ -81,7 +81,7 @@ DECOR_CAT_CN = {
 }
 
 # 词根匹配时剥离的通用后缀
-TAIL_WORDS = ['叶', '枝', '条', '花', '草', '球', '串', '球菊']
+TAIL_WORDS = ['叶', '枝', '条', '花', '草', '球', '串', '球菊', '蕨']
 
 # 同物异名：材料名 -> 图库中文名（当字面检索不到时按此改写再检索）
 SYNONYM_CN = {
@@ -101,6 +101,11 @@ SYNONYM_CN = {
     '情人泪': ['情人泪'],
     '柔丽丝': ['吊米'],
     '橄榄枝': ['米兰果'],
+    '绿灵草': ['狐尾'],
+    '垂吊柔丝': ['狐尾'],
+    '长垂松': ['狐尾'],
+    '大羽叶': ['散尾'],
+    '白小菊': ['小雏菊'],
 }
 
 
@@ -243,11 +248,20 @@ class Matcher:
                     out.append(p)
                 return (out if len(out) == 1 else out), None
 
-        # 2) 别名词表按"剥离颜色后的词根"命中
+        # 2) 图库中文名精确命中（spec cn 本就是图库真实名时最权威，
+        #    必须先于别名剥色词根，否则无色别名会抢走有色精确名）
+        if cn in self.cn_index:
+            rec = self.cn_index[cn][0]
+            return [self._rec_to_item(rec, role)], None
+
+        # 3) 别名词表按"剥离颜色后的词根"命中
         stem = self._strip_color(cn)
         color = self._split_color(cn)
         for term, keys in self.terms.items():
             if _norm(self._strip_color(term)) == _norm(stem) and _norm(term) != _norm(cn):
+                tcolor = self._split_color(term)
+                if tcolor and color and tcolor != color:
+                    continue
                 got = [k for k in keys if k in self.look]
                 if got:
                     out = []
@@ -257,11 +271,6 @@ class Matcher:
                         p['role'] = role
                         out.append(p)
                     return out, None
-
-        # 3) 图库中文名精确命中
-        if cn in self.cn_index:
-            rec = self.cn_index[cn][0]
-            return [self._rec_to_item(rec, role)], None
 
         # 3b) 装饰品类命中（按类别中文别名）
         if '花环' in cn or 'wreath' in cn.lower():
@@ -309,11 +318,12 @@ class Matcher:
 
         # 5b) 双向前缀容错：材料名是图库名的前缀或反之
         #      "龟背竹" vs "镂空龟背叶" / "桉叶" vs "桉树叶"
+        #      dcn 至少 3 字，防短名假命中（"波斯" ≠ "波斯顿蕨"）
         for d in allrec:
             dcn = (d.get('cn') or '').strip()
             if not dcn or not stem:
                 continue
-            if stem in dcn or dcn in stem:
+            if (stem in dcn and len(stem) >= 3) or (dcn in stem and len(dcn) >= 3):
                 if color and self._split_color(dcn) != color:
                     continue
                 hit = d
@@ -326,7 +336,8 @@ class Matcher:
             for d in allrec:
                 dcn = (d.get('cn') or '').strip()
                 if alt and alt in dcn:
-                    if color and self._split_color(dcn) != color:
+                    dc = self._split_color(dcn)
+                    if color and dc and dc != color:
                         continue
                     return [self._rec_to_item(d, role)], None
 
