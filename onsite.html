@@ -106,7 +106,7 @@
     .lb { position:fixed; inset:0; z-index:100; background:rgba(20,20,18,.96); display:none; align-items:center; justify-content:center; padding:24px; }
     .lb.open { display:flex; }
     .lb-inner { display:flex; gap:30px; align-items:stretch; max-width:1340px; width:100%; }
-    .lb-stage { flex:1 1 62%; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+    .lb-stage { flex:1 1 62%; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; }
     .lb-stage img { max-width:100%; max-height:82vh; object-fit:contain; border-radius:8px; }
     /* detail panel — paper-coloured, like the reference: image left, grouped materials right */
     .lb-side { flex:0 0 428px; max-height:86vh; overflow:auto; background:var(--c-bg-soft); color:var(--c-ink); border-radius:10px; padding:26px 26px 24px; box-shadow:0 18px 60px rgba(0,0,0,.35); }
@@ -129,9 +129,12 @@
     .lb-mini strong { display:block; font-size:12.5px; font-weight:600; line-height:1.3; }
     .lb-mini small { display:block; color:var(--c-muted); font-size:10.5px; margin-top:1px; }
     .lb-mini em { display:block; font-style:normal; color:#5B574D; font-size:11px; line-height:1.4; margin-top:4px; }
-    .lb-close { position:absolute; top:16px; right:22px; color:#fff; font-size:34px; cursor:pointer; line-height:1; background:none; border:0; z-index:2; }
-    .lb-nav { position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:36px; cursor:pointer; background:rgba(255,255,255,.1); border:0; width:46px; height:46px; border-radius:50%; line-height:1; }
-    .lb-prev { left:16px; } .lb-next { right:16px; }
+    /* controls sit on the photo stage, not the whole overlay, so they never overlap the material panel */
+    .lb-close { position:absolute; top:12px; right:12px; color:#fff; font-size:24px; cursor:pointer; line-height:1; background:rgba(20,20,18,.55); border:0; width:38px; height:38px; border-radius:50%; z-index:3; display:flex; align-items:center; justify-content:center; }
+    .lb-close:hover { background:rgba(20,20,18,.8); }
+    .lb-nav { position:absolute; top:50%; transform:translateY(-50%); z-index:3; color:#fff; font-size:36px; cursor:pointer; background:rgba(20,20,18,.55); border:0; width:46px; height:46px; border-radius:50%; line-height:1; display:flex; align-items:center; justify-content:center; }
+    .lb-nav:hover { background:rgba(20,20,18,.8); }
+    .lb-prev { left:12px; } .lb-next { right:12px; }
     .photo-count { position:absolute; top:12px; right:12px; z-index:2; background:rgba(34,32,28,.78); color:#fff; font-size:11px; letter-spacing:.06em; padding:4px 9px; border-radius:20px; }
     .lb-photo-meta { display:flex; align-items:center; justify-content:center; gap:14px; min-height:26px; margin-top:10px; }
     .lb-count { color:#D8D3C8; font-size:12px; letter-spacing:.08em; min-width:34px; text-align:right; }
@@ -251,11 +254,12 @@
   </footer>
 
   <div class="lb" id="onsiteLb" role="dialog" aria-label="Image viewer">
-    <button class="lb-close" id="onsiteLbClose" aria-label="Close">×</button>
-    <button class="lb-nav lb-prev" id="onsiteLbPrev" aria-label="Previous">‹</button>
     <div class="lb-inner">
       <div class="lb-stage">
+        <button class="lb-close" id="onsiteLbClose" aria-label="Close">×</button>
         <img id="onsiteLbImg" src="" alt="" />
+        <button class="lb-nav lb-prev" id="onsiteLbPrev" aria-label="Previous">‹</button>
+        <button class="lb-nav lb-next" id="onsiteLbNext" aria-label="Next">›</button>
         <div class="lb-photo-meta"><span class="lb-count" id="onsiteLbCount"></span><div class="lb-dots" id="onsiteLbDots"></div></div>
       </div>
       <div class="lb-side">
@@ -265,7 +269,6 @@
         <a href="contact.html" class="btn btn-primary btn-block" style="margin-top:14px;">Ask about this look</a>
       </div>
     </div>
-    <button class="lb-nav lb-next" id="onsiteLbNext" aria-label="Next">›</button>
   </div>
 
   <script type="application/ld+json">
