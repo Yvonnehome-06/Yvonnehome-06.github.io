@@ -124,5 +124,7 @@ window.LOOK_PRODUCTS = {
   "3d-anthurium": {"n": "3D Anthurium", "cn": "3D掌", "c": "others", "s": "3D掌", "t": "assets/img/flowers/others/thumb/others-008.jpg", "f": "assets/img/flowers/others/others-008.jpg"},
   "maple-leaf": {"n": "Maple Leaf", "cn": "枫叶", "c": "greenery", "s": "FKLJ枫叶", "t": "assets/img/flowers/greenery/thumb/greenery-117.jpg", "f": "assets/img/flowers/greenery/greenery-117.jpg"},
   "weeping-willow": {"n": "Weeping Willow", "cn": "垂柳", "c": "others", "s": "垂柳", "t": "assets/img/flowers/others/thumb/others-048.jpg", "f": "assets/img/flowers/others/others-048.jpg"},
-  "5-head-peony-white": {"n": "5-Head Peony - White", "cn": "5头牡丹-白", "c": "peonies", "s": "5头牡丹-白-66cm", "t": "assets/img/flowers/peonies/thumb/peonies-007.jpg", "f": "assets/img/flowers/peonies/peonies-007.jpg"}
+  "5-head-peony-white": {"n": "5-Head Peony - White", "cn": "5头牡丹-白", "c": "peonies", "s": "5头牡丹-白-66cm", "t": "assets/img/flowers/peonies/thumb/peonies-007.jpg", "f": "assets/img/flowers/peonies/peonies-007.jpg"},
+  "jute-purple": {"n": "Coloured Jute Mesh - Purple", "cn": "麻丝-紫", "c": "jute", "s": "紫麻丝球", "t": "assets/img/decor/jute/jute-mesh-purple.jpg", "f": "assets/img/decor/jute/jute-mesh-purple.jpg"},
+  "jute-cream": {"n": "Coloured Jute Mesh - Cream", "cn": "麻丝-奶油", "c": "jute", "s": "米白麻丝球", "t": "assets/img/decor/jute/jute-mesh-cream.jpg", "f": "assets/img/decor/jute/jute-mesh-cream.jpg"}
 };

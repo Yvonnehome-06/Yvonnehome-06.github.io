@@ -12,6 +12,15 @@
       ]
     },
     {
+      "key": "cloud-spheres",
+      "label": "Cloud spheres",
+      "blurb": "The signature soft thread spheres — violet and ivory jute wound into airy, cloud-like masses.",
+      "items": [
+        {"cn": "紫色云雾丝球", "role": "Violet jute thread spheres — the signature cloudy mass giving the piece its misty violet character."},
+        {"cn": "米白云雾丝球", "role": "Ivory jute thread spheres woven through in soft, cloud-like ivory clumps."}
+      ]
+    },
+    {
       "key": "base",
       "label": "Misty base",
       "blurb": "Fine, hazy texture filling the gaps around the statement spheres.",
