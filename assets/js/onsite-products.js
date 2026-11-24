@@ -159,5 +159,6 @@ window.LOOK_PRODUCTS = {
   "wood-hydrangea-white": {"n": "Wood Hydrangea - White", "cn": "木绣球-白", "c": "hydrangeas", "s": "木绣球-白-80cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-084.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-084.jpg"},
   "dingding-berry-light-green": {"n": "Dingding Berry - Light Green", "cn": "叮叮果-浅绿", "c": "others", "s": "叮叮果-浅绿", "t": "assets/img/flowers/others/thumb/others-038.jpg", "f": "assets/img/flowers/others/others-038.jpg"},
   "roman-pot-395": {"n": "Roman Column Flower Pot - 39.5 cm", "cn": "罗马柱花盆-39.5cm", "c": "pots", "s": "", "t": "assets/img/decor/pots/roman-column-pot-395.jpg", "f": "assets/img/decor/pots/roman-column-pot-395.jpg"},
-  "celery-leaf": {"n": "Celery Leaf", "cn": "芹菜叶大", "c": "greenery", "s": "YY芹菜叶大", "t": "assets/img/flowers/greenery/thumb/greenery-188.jpg", "f": "assets/img/flowers/greenery/greenery-188.jpg"}
+  "celery-leaf": {"n": "Celery Leaf", "cn": "芹菜叶大", "c": "greenery", "s": "YY芹菜叶大", "t": "assets/img/flowers/greenery/thumb/greenery-188.jpg", "f": "assets/img/flowers/greenery/greenery-188.jpg"},
+  "tulle-white": {"n": "Wedding Chair Back Tulle - White", "cn": "椅背纱-白", "c": "sheers", "s": "", "t": "assets/img/decor/sheers/chair-tulle-white.jpg", "f": "assets/img/decor/sheers/chair-tulle-white.jpg"}
 };

@@ -1,0 +1,25 @@
+{
+  "case_id": 48,
+  "title": "Black Rose Cascade",
+  "desc": "Dark sculptural styling: black spray roses cascading over a black panel with sheer white gauze.",
+  "scene": "event",
+  "colors": ["black", "white"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Flowers",
+      "blurb": "The single dramatic flower carrying the whole look.",
+      "items": [
+        {"cn": "黑色多头玫瑰", "role": "Black spray roses running in dense garland lines down and across the panel — the core of the look."}
+      ]
+    },
+    {
+      "key": "softening",
+      "label": "Softening layer",
+      "blurb": "The light contrast running through the dark roses.",
+      "items": [
+        {"cn": "透明网纱", "role": "Sheer white gauze woven through the black roses, softening the dark mass."}
+      ]
+    }
+  ]
+}
