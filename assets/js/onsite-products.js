@@ -91,5 +91,6 @@ window.LOOK_PRODUCTS = {
   "larkspur-yellow": {"n": "Larkspur - Yellow", "cn": "大飞燕-黄", "c": "orchids", "s": "MZ大飞燕", "t": "assets/img/flowers/orchids/thumb/orchids-085.jpg", "f": "assets/img/flowers/orchids/orchids-085.jpg"},
   "shirley-poppy-yellow": {"n": "Shirley Poppy - Yellow", "cn": "虞美人-黄", "c": "others", "s": "虞美人-黄-61cm", "t": "assets/img/flowers/others/thumb/others-140.jpg", "f": "assets/img/flowers/others/others-140.jpg"},
   "mini-daisy-yellow": {"n": "Mini Daisy - Yellow", "cn": "小雏菊-黄", "c": "chrysanthemums", "s": "小雏菊-黄-56cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-020.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-020.jpg"},
-  "ranunculus-pink": {"n": "Ranunculus - Pink", "cn": "洋牡丹-粉", "c": "peonies", "s": "洋牡丹-粉-65cm", "t": "assets/img/flowers/peonies/thumb/peonies-049.jpg", "f": "assets/img/flowers/peonies/peonies-049.jpg"}
+  "ranunculus-pink": {"n": "Ranunculus - Pink", "cn": "洋牡丹-粉", "c": "peonies", "s": "洋牡丹-粉-65cm", "t": "assets/img/flowers/peonies/thumb/peonies-049.jpg", "f": "assets/img/flowers/peonies/peonies-049.jpg"},
+  "diamond-rose-pink": {"n": "Diamond Rose - Pink", "cn": "钻石玫瑰-粉", "c": "roses", "s": "钻石玫瑰-粉-66cm", "t": "assets/img/flowers/roses/thumb/roses-109.jpg", "f": "assets/img/flowers/roses/roses-109.jpg"}
 };

@@ -1,0 +1,23 @@
+{
+  "case_id": 4,
+  "groups": [
+    {
+      "key": "blooms",
+      "label": "Pink roses",
+      "blurb": "Layered pink roses in mixed sizes — full Austin heads with smaller blooms woven through for depth.",
+      "items": [
+        {"cn": "4头奥斯汀-粉", "role": "Large pink multi-head Austin roses — the main body of the climbing wall."},
+        {"cn": "钻石玫瑰-粉", "role": "Small pink roses woven between the large heads, adding layer and bud-like detail."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Leaf & vine base",
+      "blurb": "Green trailing material filling the gaps and carrying the climb down the wall.",
+      "items": [
+        {"cn": "1米玫瑰叶花藤", "role": "Rose-leaf vine trailing across the wall, filling gaps with natural green foliage."},
+        {"cn": "小圆尤加利", "role": "A touch of round-leaf eucalyptus adding grey-green colour depth."}
+      ]
+    }
+  ]
+}
