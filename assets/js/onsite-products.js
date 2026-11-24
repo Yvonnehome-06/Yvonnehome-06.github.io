@@ -90,5 +90,6 @@ window.LOOK_PRODUCTS = {
   "forget-me-not-purple": {"n": "Forget-Me-Not - Purple", "cn": "勿忘我-紫", "c": "babys-breath", "s": "勿忘我-紫-77cm", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-003.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-003.jpg"},
   "larkspur-yellow": {"n": "Larkspur - Yellow", "cn": "大飞燕-黄", "c": "orchids", "s": "MZ大飞燕", "t": "assets/img/flowers/orchids/thumb/orchids-085.jpg", "f": "assets/img/flowers/orchids/orchids-085.jpg"},
   "shirley-poppy-yellow": {"n": "Shirley Poppy - Yellow", "cn": "虞美人-黄", "c": "others", "s": "虞美人-黄-61cm", "t": "assets/img/flowers/others/thumb/others-140.jpg", "f": "assets/img/flowers/others/others-140.jpg"},
-  "mini-daisy-yellow": {"n": "Mini Daisy - Yellow", "cn": "小雏菊-黄", "c": "chrysanthemums", "s": "小雏菊-黄-56cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-020.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-020.jpg"}
+  "mini-daisy-yellow": {"n": "Mini Daisy - Yellow", "cn": "小雏菊-黄", "c": "chrysanthemums", "s": "小雏菊-黄-56cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-020.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-020.jpg"},
+  "ranunculus-pink": {"n": "Ranunculus - Pink", "cn": "洋牡丹-粉", "c": "peonies", "s": "洋牡丹-粉-65cm", "t": "assets/img/flowers/peonies/thumb/peonies-049.jpg", "f": "assets/img/flowers/peonies/peonies-049.jpg"}
 };
