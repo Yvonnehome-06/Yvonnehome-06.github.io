@@ -250,6 +250,33 @@
     ],
     "黄色小飞燕": [
       "larkspur"
+    ],
+    "黄色金合欢": [
+      "mimosa"
+    ],
+    "银叶金合欢": [
+      "mimosa"
+    ],
+    "金合欢": [
+      "mimosa"
+    ],
+    "深色大心叶": [
+      "taro-leaf"
+    ],
+    "海芋叶": [
+      "taro-leaf"
+    ],
+    "大心叶": [
+      "taro-leaf"
+    ],
+    "干蒲苇": [
+      "12-head-reed"
+    ],
+    "浅棕干草": [
+      "12-head-reed"
+    ],
+    "蒲苇": [
+      "12-head-reed"
     ]
   },
   "by_key": {
@@ -296,6 +323,9 @@
     "new-diamond-rose-misty-blue": "蓝玫瑰（雾蓝）",
     "4-head-lily-pink": "粉百合",
     "4-head-lily-white": "白百合",
-    "jumbo-pompon-mum-yellow": "黄菊/乒乓菊"
+    "jumbo-pompon-mum-yellow": "黄菊/乒乓菊",
+    "mimosa": "黄色金合欢",
+    "taro-leaf": "深色大心叶",
+    "12-head-reed": "干蒲苇"
   }
 }
