@@ -1,0 +1,33 @@
+{
+  "case_id": 22,
+  "groups": [
+    {
+      "key": "features",
+      "label": "Feature plants",
+      "blurb": "The pink-toned accent pieces nestled through the suspended garden.",
+      "items": [
+        {"cn": "3D掌-粉", "role": "Blush-pink anthurium (flamingo flower) adding soft colour among the greenery."},
+        {"cn": "彩玉叶粉点", "role": "Pink-speckled caladium-like foliage bringing patterned pink-green texture."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Structural greenery",
+      "blurb": "Layered leaf shapes and textures building the suspended corner arrangement.",
+      "items": [
+        {"cn": "镂空龟背叶", "role": "Split monstera leaves giving bold, graphic green forms."},
+        {"cn": "蓬莱松-浅绿", "role": "Tender yellow-green pine spray adding airy, feathery volume."},
+        {"cn": "鸭掌木", "role": "Duck's foot tree / schefflera foliage forming the leafy mid-layer."},
+        {"cn": "散尾葵叶", "role": "Areca palm fronds adding soft feathered leaf texture."}
+      ]
+    },
+    {
+      "key": "trailing",
+      "label": "Trailing lines",
+      "blurb": "Long hanging strands softening the edges of the floating installation.",
+      "items": [
+        {"cn": "垂钓空气草", "role": "Long trailing soft grass hanging down in fine green strands."}
+      ]
+    }
+  ]
+}

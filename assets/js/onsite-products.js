@@ -126,5 +126,9 @@ window.LOOK_PRODUCTS = {
   "weeping-willow": {"n": "Weeping Willow", "cn": "垂柳", "c": "others", "s": "垂柳", "t": "assets/img/flowers/others/thumb/others-048.jpg", "f": "assets/img/flowers/others/others-048.jpg"},
   "5-head-peony-white": {"n": "5-Head Peony - White", "cn": "5头牡丹-白", "c": "peonies", "s": "5头牡丹-白-66cm", "t": "assets/img/flowers/peonies/thumb/peonies-007.jpg", "f": "assets/img/flowers/peonies/peonies-007.jpg"},
   "jute-purple": {"n": "Coloured Jute Mesh - Purple", "cn": "麻丝-紫", "c": "jute", "s": "紫麻丝球", "t": "assets/img/decor/jute/jute-mesh-purple.jpg", "f": "assets/img/decor/jute/jute-mesh-purple.jpg"},
-  "jute-cream": {"n": "Coloured Jute Mesh - Cream", "cn": "麻丝-奶油", "c": "jute", "s": "米白麻丝球", "t": "assets/img/decor/jute/jute-mesh-cream.jpg", "f": "assets/img/decor/jute/jute-mesh-cream.jpg"}
+  "jute-cream": {"n": "Coloured Jute Mesh - Cream", "cn": "麻丝-奶油", "c": "jute", "s": "米白麻丝球", "t": "assets/img/decor/jute/jute-mesh-cream.jpg", "f": "assets/img/decor/jute/jute-mesh-cream.jpg"},
+  "3d-anthurium-pink": {"n": "3D Anthurium - Pink", "cn": "3D掌-粉", "c": "others", "s": "3D掌-粉-60cm", "t": "assets/img/flowers/others/thumb/others-003.jpg", "f": "assets/img/flowers/others/others-003.jpg"},
+  "colour-jade-leaf": {"n": "Colour Jade Leaf", "cn": "彩玉叶粉点", "c": "greenery", "s": "LX彩玉叶粉点", "t": "assets/img/flowers/greenery/thumb/greenery-149.jpg", "f": "assets/img/flowers/greenery/greenery-149.jpg"},
+  "pine-spray-light-green": {"n": "Pine Spray - Light Green", "cn": "蓬莱松-浅绿", "c": "greenery", "s": "蓬莱松-浅绿", "t": "assets/img/flowers/greenery/thumb/greenery-043.jpg", "f": "assets/img/flowers/greenery/greenery-043.jpg"},
+  "ducks-foot-tree": {"n": "Duck's Foot Tree", "cn": "鸭掌木", "c": "greenery", "s": "JN鸭掌木", "t": "assets/img/flowers/greenery/thumb/greenery-145.jpg", "f": "assets/img/flowers/greenery/greenery-145.jpg"}
 };
