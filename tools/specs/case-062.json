@@ -1,0 +1,43 @@
+{
+  "case_id": 62,
+  "title": "Colourful Garden Party",
+  "desc": "A bright outdoor party in full mixed colour.",
+  "scene": "birthday",
+  "colors": ["purple", "yellow", "pink", "blue"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The purple-yellow-pink-blue party mix climbing the arch.",
+      "items": [
+        {"cn": "126瓣绣球-深紫", "role": "Deep purple hydrangea massing at the arch top with the hanging purple tones."},
+        {"cn": "126瓣绣球-蓝", "role": "Blue hydrangea accents on the right cluster (lighter backup: Angel Hydrangea - Blue)."},
+        {"cn": "新款钻石玫瑰-黄", "role": "Bright yellow roses warming the left-side cluster."},
+        {"cn": "钻石玫瑰-粉", "role": "Pink roses mixed into the lower left planting (lighter backup: New Diamond Rose - Light Pink)."},
+        {"cn": "飞燕-粉", "role": "Pink larkspur spikes adding vertical accents near the base."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Accents & fills",
+      "blurb": "Small faces scattering through the colour blocks.",
+      "items": [
+        {"cn": "小雏菊-黄", "role": "Yellow daisies scattered around the yellow rose zone."},
+        {"cn": "小雏菊-紫", "role": "Purple daisies sprinkled under the purple hydrangea."},
+        {"cn": "桔梗-白", "role": "White lisianthus lightening the base clusters."},
+        {"cn": "情人草-白", "role": "White statice filling the gaps between colour blocks."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Hanging greenery & foliage",
+      "blurb": "The trailing greens cascading over the arch.",
+      "items": [
+        {"cn": "柳芽浅绿", "role": "Long fine trailing green stems cascading from the arch top (closest trailing green — araucaria/pine droops are a logged gap)."},
+        {"cn": "芦苇草", "role": "Fountain grass plumes adding airy movement."},
+        {"cn": "小圆尤加利", "role": "Round eucalyptus sprigs between the blooms."},
+        {"cn": "垂吊柔丝草", "role": "Soft feathery tails trailing through the greenery."}
+      ]
+    }
+  ]
+}
