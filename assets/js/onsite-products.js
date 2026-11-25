@@ -181,5 +181,6 @@ window.LOOK_PRODUCTS = {
   "flame-chrysanthemum-orange": {"n": "Flame Chrysanthemum - Orange", "cn": "火焰菊-桔", "c": "chrysanthemums", "s": "火焰菊-桔-66cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-022.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-022.jpg"},
   "lily-of-the-valley-coffee": {"n": "Lily of the Valley - Coffee", "cn": "铃兰-咖色", "c": "orchids", "s": "铃兰-咖色-95cm", "t": "assets/img/flowers/orchids/thumb/orchids-060.jpg", "f": "assets/img/flowers/orchids/orchids-060.jpg"},
   "tulip-pink": {"n": "Tulip - Pink", "cn": "郁金香-粉", "c": "others", "s": "郁金香-粉-66cm", "t": "assets/img/flowers/others/thumb/others-158.jpg", "f": "assets/img/flowers/others/others-158.jpg"},
-  "grape-cluster": {"n": "Grape Cluster", "cn": "葡萄粒", "c": "greenery", "s": "HY葡萄粒", "t": "assets/img/flowers/greenery/thumb/greenery-140.jpg", "f": "assets/img/flowers/greenery/greenery-140.jpg"}
+  "grape-cluster": {"n": "Grape Cluster", "cn": "葡萄粒", "c": "greenery", "s": "HY葡萄粒", "t": "assets/img/flowers/greenery/thumb/greenery-140.jpg", "f": "assets/img/flowers/greenery/greenery-140.jpg"},
+  "3-head-hydrangea-fruit-green": {"n": "3-Head Hydrangea - Fruit Green", "cn": "3头绣球-果绿", "c": "hydrangeas", "s": "3头绣球-果绿", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-033.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-033.jpg"}
 };

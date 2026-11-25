@@ -1,0 +1,33 @@
+{
+  "case_id": 61,
+  "title": "Outdoor White Wedding Arch",
+  "desc": "A white-and-green arch set against an open lawn.",
+  "scene": "wedding",
+  "colors": ["white", "green"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The white-and-green bloom mass shaping the arch.",
+      "items": [
+        {"cn": "126瓣绣球-白", "role": "White hydrangea pom clusters running down both arch legs and across the top."},
+        {"cn": "3头绣球-果绿", "role": "Apple-green hydrangea balls punched into the white mass for the green accents."},
+        {"cn": "钻石玫瑰-白", "role": "White roses tucked between the hydrangea poms."},
+        {"cn": "大乒乓菊-白", "role": "White pompom mums echoing the round silhouette of the hydrangeas."},
+        {"cn": "软胶满天星-白", "role": "White baby's breath spraying through the upper foliage."},
+        {"cn": "情人草-白", "role": "White statice sprigs scattered as the delicate filler layer."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Foliage & grasses",
+      "blurb": "The feathery greens and airy grasses wrapping the frame.",
+      "items": [
+        {"cn": "蓬莱松-浅绿", "role": "Light-green pine-needle sprays giving the arch its feathery conifer texture."},
+        {"cn": "芦苇草", "role": "Fountain grass plumes breaking the silhouette at the top (stands in for the fine grass tails)."},
+        {"cn": "小圆尤加利", "role": "Round eucalyptus sprigs threaded along the green zones."},
+        {"cn": "文竹", "role": "Asparagus fern softening the lower greenery (also covers the soft-foliage request)."}
+      ]
+    }
+  ]
+}
