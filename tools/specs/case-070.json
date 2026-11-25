@@ -1,0 +1,54 @@
+{
+  "case_id": 70,
+  "title": "Blue & Gold Table Arch",
+  "desc": "A rainbow-toned garden arch over pale blue sheers, with colourful aisle beds flanking wooden benches.",
+  "scene": "wedding",
+  "colors": ["white", "purple", "yellow", "blue"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The rainbow mix crowning the arch and lining the aisle beds.",
+      "items": [
+        {"cn": "白绣球", "role": "White hydrangea heads anchoring the arch clusters."},
+        {"cn": "90瓣绣球-紫", "role": "Violet-purple hydrangea through the arch centre."},
+        {"cn": "126瓣绣球-粉", "role": "Pink hydrangea warming the lower clusters."},
+        {"cn": "白玫瑰", "role": "White roses along the aisle beds (orange ranunculus tone in the scene is a logged gap — the warm orange comes from the spray roses)."},
+        {"cn": "钻石玫瑰-粉", "role": "Pink roses through the arch and ground mixes."},
+        {"cn": "飞燕-紫", "role": "Purple larkspur spikes through the arch sides."},
+        {"cn": "大飞燕-黄", "role": "Yellow larkspur spikes adding bright verticals."},
+        {"cn": "新款钻石玫瑰-桔", "role": "Orange multi-head spray roses brightening the lower clusters (closest orange multi-head rose)."}
+      ]
+    },
+    {
+      "key": "filler",
+      "label": "Fillers",
+      "blurb": "Small faces scattering through the rainbow planting.",
+      "items": [
+        {"cn": "小雏菊-紫", "role": "Small purple daisies in the bed mixes (form-match small purple chrysanth types)."},
+        {"cn": "小雏菊-黄", "role": "Yellow mini daisies — covers both the yellow mini daisies and small yellow filler blooms."},
+        {"cn": "小雏菊-白", "role": "White mini daisies scattered through the beds."},
+        {"cn": "勿忘我-紫", "role": "Purple forget-me-not clusters weaving through the arch."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "The feathery green base of the whole scheme.",
+      "items": [
+        {"cn": "蓬莱松-深绿", "role": "Dark green pine spray giving needle texture inside the mixes."},
+        {"cn": "芦苇草", "role": "Airy plume grass covering the fountain grass and miscanthus plumes (form-match)."},
+        {"cn": "垂吊柔丝草", "role": "Fine soft trailing grasses over the arch edges."},
+        {"cn": "3D尤加利", "role": "Eucalyptus sprigs through the mid layer."}
+      ]
+    },
+    {
+      "key": "props",
+      "label": "Styling",
+      "blurb": "The drapes and furniture of the aisle.",
+      "items": [
+        {"cn": "白色布幔", "role": "Pure white milk-silk backdrop drape layered behind the pale blue sheers (pale blue sheer itself is a pending decision — see logged gap)."}
+      ]
+    }
+  ]
+}
