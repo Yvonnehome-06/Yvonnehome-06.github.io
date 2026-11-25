@@ -27,6 +27,7 @@
     }
     .decor-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
     .decor-item:hover img { transform: scale(1.04); }
+    .style-count { position:absolute; top:12px; right:12px; z-index:2; padding:4px 10px; border-radius:20px; background:rgba(20,20,18,.66); color:#fff; font-size:11px; letter-spacing:.04em; }
     .decor-item::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.68)); }
     .decor-cap { position:absolute; left:18px; right:18px; bottom:16px; z-index:2; color:#fff; }
     .decor-cap h3 { color:#fff; font-size:18px; margin:0 0 3px; }
@@ -45,12 +46,35 @@
     .decor-teaser h3 { margin:0 0 6px; font-size:18px; }
     .decor-teaser p { margin:0; font-size:14px; color:var(--c-muted); }
     .decor-teaser .dt-cn { font-size:12px; color:var(--c-muted); margin-top:6px; }
-    /* lightbox */
-    .lb { position:fixed; inset:0; z-index:100; background:rgba(20,14,30,.94); display:none; align-items:center; justify-content:center; padding:24px; }
+    /* Lightbox — same editorial panel as the product & on-site galleries */
+    .lb { position:fixed; inset:0; z-index:100; background:rgba(20,20,18,.96); display:none; align-items:center; justify-content:center; padding:24px; }
     .lb.open { display:flex; }
-    .lb img { max-width:min(92vw,960px); max-height:86vh; object-fit:contain; border-radius:10px; }
-    .lb-close { position:absolute; top:18px; right:24px; color:#fff; font-size:34px; cursor:pointer; line-height:1; background:none; border:0; }
-    .lb-cap { position:absolute; bottom:20px; left:0; right:0; text-align:center; color:#fff; font-size:15px; }
+    .lb-inner { display:flex; gap:30px; align-items:stretch; max-width:1340px; width:100%; }
+    .lb-stage { flex:1 1 62%; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; }
+    .lb-stage img { max-width:100%; max-height:82vh; object-fit:contain; border-radius:8px; }
+    .lb-side { flex:0 0 428px; max-height:86vh; overflow:auto; background:var(--c-bg-soft); color:var(--c-ink); border-radius:10px; padding:26px 26px 24px; box-shadow:0 18px 60px rgba(0,0,0,.35); }
+    .lb-side h3 { font-family:var(--font-serif); font-size:25px; line-height:1.2; margin:0 0 7px; color:var(--c-ink); }
+    .lb-side p { color:var(--c-muted); font-size:12.5px; line-height:1.6; margin:0 0 18px; }
+    .lb-mats-head { display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding-bottom:9px; border-bottom:1px solid var(--c-line); margin-bottom:18px; }
+    .lb-mats-head span:first-child { font-family:var(--font-serif); font-size:16px; color:var(--c-ink); }
+    .lb-mats-head span:last-child { font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--c-muted); white-space:nowrap; }
+    .lb-mats { display:flex; flex-direction:column; gap:8px; }
+    .lb-mini { display:flex; align-items:flex-start; gap:10px; padding:9px; border:1px solid var(--c-line); border-radius:6px; background:#fff; text-decoration:none; color:var(--c-ink); text-align:left; cursor:pointer; font:inherit; width:100%; transition:box-shadow .2s, border-color .2s; }
+    .lb-mini:hover, .lb-mini.active { border-color:var(--c-accent); box-shadow:var(--shadow-sm); }
+    .lb-mini img { width:54px; height:54px; object-fit:cover; border-radius:4px; flex:0 0 auto; background:var(--c-bg-soft); }
+    .lb-mini-txt { min-width:0; display:block; }
+    .lb-mini strong { display:block; font-size:12.5px; font-weight:600; line-height:1.3; }
+    .lb-mini small { display:block; color:var(--c-muted); font-size:10.5px; margin-top:1px; }
+    .lb-close { position:absolute; top:12px; right:12px; color:#fff; font-size:24px; cursor:pointer; line-height:1; background:rgba(20,20,18,.55); border:0; width:38px; height:38px; border-radius:50%; z-index:3; display:flex; align-items:center; justify-content:center; }
+    .lb-nav { position:absolute; top:50%; transform:translateY(-50%); z-index:3; color:#fff; font-size:36px; cursor:pointer; background:rgba(20,20,18,.55); border:0; width:46px; height:46px; border-radius:50%; line-height:1; display:flex; align-items:center; justify-content:center; }
+    .lb-prev { left:12px; } .lb-next { right:12px; }
+    .lb-photo-meta { display:flex; align-items:center; justify-content:center; gap:14px; min-height:26px; margin-top:10px; }
+    .lb-count { color:#D8D3C8; font-size:12px; letter-spacing:.08em; min-width:34px; text-align:right; }
+    .lb-dots { display:flex; gap:8px; }
+    .lb-dot { width:8px; height:8px; border-radius:50%; border:1px solid rgba(255,255,255,.6); background:transparent; padding:0; cursor:pointer; }
+    .lb-dot.active { background:#fff; }
+    @media (max-width:1100px){ .lb-side{flex-basis:360px; padding:22px 20px;} }
+    @media (max-width:900px){ .lb-inner{flex-direction:column; overflow:auto;} .lb-side{flex:none; max-height:none; width:100%;} .lb-stage img{max-height:52vh;} }
     @media (max-width:900px){ .decor-grid,.decor-teasers{ grid-template-columns:repeat(2,1fr);} }
     @media (max-width:640px){ .decor-grid,.decor-teasers{ grid-template-columns:1fr;} }
   </style>
@@ -63,6 +87,7 @@
       <nav>
         <ul class="nav-links" id="navLinks">
           <li><a href="products.html">Collections</a></li>
+          <li><a href="onsite.html">On-Site Gallery</a></li>
           <li><a href="about.html">Studio</a></li>
           <li><a href="blog/index.html">Journal</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -78,7 +103,7 @@
       <p class="eyebrow">Ceremony &amp; Event Decor</p>
       <h1>The details that define the venue.</h1>
       <p class="decor-quote">From backdrop drapery and candle holders to horn arches and planters — <b>everything beyond the bloom.</b></p>
-      <p class="muted" style="max-width:58ch;">Backdrop drapery in 14 colours, sheer chair tulle, pillar candles, horn arch frames, column planters, satin tablecloths and confetti cannons for weddings, events, holiday windows and retail displays. Tell us the venue, colours and quantity and we'll put together a tailored selection and quote.</p>
+      <p class="muted" style="max-width:58ch;">Backdrop drapery in 14 colours, sheer chair tulle, pillar candles, horn arch frames, column planters, satin tablecloths and confetti cannons for weddings, events and holiday windows. Tell us the venue, colours and quantity and we'll put together a tailored selection and quote.</p>
     </div>
   </section>
 
@@ -161,10 +186,23 @@
     </div>
   </footer>
 
-  <div class="lb" id="decorLb" role="dialog" aria-label="Image viewer">
-    <button class="lb-close" id="decorLbClose" aria-label="Close">×</button>
-    <img id="decorLbImg" src="" alt="" />
-    <div class="lb-cap" id="decorLbCap"></div>
+  <div class="lb" id="decorLb" role="dialog" aria-label="Product details">
+    <div class="lb-inner">
+      <div class="lb-stage">
+        <button class="lb-close" id="decorLbClose" aria-label="Close">×</button>
+        <button class="lb-nav lb-prev" id="decorLbPrev" aria-label="Previous">‹</button>
+        <img id="decorLbImg" src="" alt="" />
+        <button class="lb-nav lb-next" id="decorLbNext" aria-label="Next">›</button>
+        <div class="lb-photo-meta"><span class="lb-count" id="decorLbCount"></span><div class="lb-dots" id="decorLbDots"></div></div>
+      </div>
+      <aside class="lb-side">
+        <h3 id="decorLbTitle"></h3>
+        <p id="decorLbDesc"></p>
+        <div class="lb-mats-head"><span>Styles &amp; sizes</span><span id="decorLbStylesLabel">Available options</span></div>
+        <div class="lb-mats" id="decorLbProducts"></div>
+        <div style="margin-top:24px;"><a href="contact.html" class="btn btn-primary">Ask about this item</a></div>
+      </aside>
+    </div>
   </div>
 
   <script type="application/ld+json">

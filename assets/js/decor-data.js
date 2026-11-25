@@ -6,22 +6,27 @@
 // ---------------------------------------------------------------
 window.DECOR_DATA = [
   {
-    "img": "assets/img/newitems/ribbons-1005.jpg",
+    "img": "assets/img/decor/ribbons/wedding-sash-scene.jpg",
     "cat": "accents",
-    "title": "Wedding Sash Ribbon - 2 Pack",
-    "desc": "Wedding sash ribbon for chair backs, aisle decor and ceremony styling."
-  },
-  {
-    "img": "assets/img/newitems/ribbons-1006.jpg",
-    "cat": "accents",
-    "title": "Wedding Sash Ribbon - A Toast To Forever",
-    "desc": "Wedding sash ribbon for chair backs, aisle decor and ceremony styling."
-  },
-  {
-    "img": "assets/img/newitems/ribbons-1007.jpg",
-    "cat": "accents",
-    "title": "Wedding Sash Ribbon - Just Married",
-    "desc": "Wedding sash ribbon for chair backs, aisle decor and ceremony styling."
+    "title": "Wedding Sash Ribbon",
+    "desc": "Wedding sash ribbon for chair backs, aisle decor and ceremony styling. Open to see all three wordings.",
+    "variants": [
+      {
+        "img": "assets/img/newitems/ribbons-1005.jpg",
+        "title": "Wedding Sash Ribbon - 2 Pack",
+        "desc": "Two-piece set, one ribbon each wording."
+      },
+      {
+        "img": "assets/img/newitems/ribbons-1006.jpg",
+        "title": "Wedding Sash Ribbon - A Toast To Forever",
+        "desc": "Single ribbon printed 'A Toast To Forever'."
+      },
+      {
+        "img": "assets/img/newitems/ribbons-1007.jpg",
+        "title": "Wedding Sash Ribbon - Just Married",
+        "desc": "Single ribbon printed 'Just Married'."
+      }
+    ]
   },
   {
     "img": "assets/img/decor/confetti/confetti-cannon-40-petal-feather.jpg",
@@ -44,26 +49,30 @@ window.DECOR_DATA = [
   {
     "img": "assets/img/decor/candelabra/cupid-candelabra-3pc-gold.jpg",
     "cat": "candelabra",
-    "title": "Cupid Candelabra 3-Piece Set - Gold",
-    "desc": "Three-arm cupid candelabra in gold for ceremony tables. Candles not included."
-  },
-  {
-    "img": "assets/img/decor/candelabra/cupid-candelabra-large-gold.jpg",
-    "cat": "candelabra",
-    "title": "Cupid Candelabra Large - Gold",
-    "desc": "Large cupid candelabra in gold, sized for statement centrepieces."
-  },
-  {
-    "img": "assets/img/decor/candelabra/cupid-candelabra-medium-gold.jpg",
-    "cat": "candelabra",
-    "title": "Cupid Candelabra Medium - Gold",
-    "desc": "Mid-size cupid candelabra in gold for table settings and aisle decor."
-  },
-  {
-    "img": "assets/img/decor/candelabra/cupid-candelabra-small-gold.jpg",
-    "cat": "candelabra",
-    "title": "Cupid Candelabra Small - Gold",
-    "desc": "Small cupid candelabra in gold for intimate tables and detail styling."
+    "title": "Cupid Candelabra - Gold",
+    "desc": "Cupid candelabra in gold. Three-piece set shown; open to see individual sizes. Candles not included.",
+    "variants": [
+      {
+        "img": "assets/img/decor/candelabra/cupid-candelabra-3pc-gold.jpg",
+        "title": "Cupid Candelabra 3-Piece Set - Gold",
+        "desc": "Three candlesticks in graduated heights for ceremony tables."
+      },
+      {
+        "img": "assets/img/decor/candelabra/cupid-candelabra-large-gold.jpg",
+        "title": "Cupid Candelabra Large - Gold",
+        "desc": "Large, 25 cm high, 9 cm base."
+      },
+      {
+        "img": "assets/img/decor/candelabra/cupid-candelabra-medium-gold.jpg",
+        "title": "Cupid Candelabra Medium - Gold",
+        "desc": "Medium, 22.5 cm high, 9 cm base."
+      },
+      {
+        "img": "assets/img/decor/candelabra/cupid-candelabra-small-gold.jpg",
+        "title": "Cupid Candelabra Small - Gold",
+        "desc": "Small size for intimate tables and detail styling."
+      }
+    ]
   },
   {
     "img": "assets/img/decor/candelabra/cupid-candelabra-3pc-black.jpg",
