@@ -1,0 +1,41 @@
+{
+  "case_id": 59,
+  "title": "Moss Garden Table",
+  "desc": "A table set into a lush moss garden with bright yellow accents.",
+  "scene": "table",
+  "colors": ["green", "white", "pink"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "Soft whites and pinks rising out of the moss bed.",
+      "items": [
+        {"cn": "奥斯汀玫瑰-白", "role": "White Austin roses in loose clusters across the table — the main bloom."},
+        {"cn": "郁金香-粉", "role": "Pink tulips adding cupped accents between the roses."},
+        {"cn": "洋牡丹-粉", "role": "Pink ranunculus layered into the mid clusters (yellow ranunculus is a logged gap)."},
+        {"cn": "小雏菊-白", "role": "Tiny white daisies sprinkled around the dessert stands."},
+        {"cn": "软胶满天星-白", "role": "White baby's breath filling the gaps between blooms."}
+      ]
+    },
+    {
+      "key": "fruit",
+      "label": "Fruit & fills",
+      "blurb": "Green grape texture woven through the planting.",
+      "items": [
+        {"cn": "葡萄粒", "role": "Green-tone grape clusters draped over the moss edge (closest match — bright green grape bunches are a logged note)."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Foliage & grasses",
+      "blurb": "The living foliage carrying the garden look.",
+      "items": [
+        {"cn": "垂钓空气草", "role": "Air-plant style wisps sitting on the moss like natural tillandsia."},
+        {"cn": "镂空龟背叶", "role": "Cutout monstera leaves giving the bold tropical leaf moments."},
+        {"cn": "芦苇草", "role": "Fountain grass plumes adding airy height."},
+        {"cn": "小圆尤加利", "role": "Round eucalyptus sprigs between the flowers."},
+        {"cn": "文竹", "role": "Asparagus fern softening the arrangement edges (stands in for soft fern texture)."}
+      ]
+    }
+  ]
+}
