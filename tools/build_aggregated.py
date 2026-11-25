@@ -24,8 +24,16 @@ COLOR_WORDS = set("""白 粉 红 黄 蓝 紫 绿 咖色 酒红 香槟 奶白 浅
 浅绿 深绿 果绿 桔 浅咖 深咖 灰色 银色 金色 杏色 米白 象牙 渐变 混色 多色 拼色
 60cm 80cm 100cm 120cm 1米 2米 大号 中号 小号 单只 3头 5头""".split())
 
-def cn_base(cn):
+def strip_prefix(cn):
+    """剥供应商前缀：开头 ≥2 个大写字母(可带数字尾)紧跟中文，如 DM/JN/XH/DD/DT/XGM3/HY/DDYZ。
+    数字开头(3D尤加利)或纯中文(12头芦苇)不剥。"""
     cn = (cn or "").strip()
+    m = re.match(r"^([A-Z]{2,}\d*)(?=[\u4e00-\u9fa5])", cn)
+    return cn[len(m.group(1)):].strip() if m else cn
+
+
+def cn_base(cn):
+    cn = strip_prefix((cn or "").strip())
     # 剥最后一个 -后缀（颜色或规格）
     if "-" in cn or "－" in cn:
         head, tail = re.split(r"[-－]", cn, 1)
@@ -86,6 +94,40 @@ MERGE_OVERRIDES = {
         "drop_files": ["assets/img/newitems/garlands-968.jpg"],
         "labels": {},
     },
+    # 硬胶/软胶满天星：同一实物不同拍摄照片(d=78哈希抓不到)，波比 2026-11-25 指认合并
+    "babys-breath|硬胶满天星": {
+        "merge_bases": ["软胶满天星"],
+        "drop_files": [],
+        "labels": {
+            "硬胶满天星-白": {"color": "白（硬胶）"},
+            "软胶满天星-白": {"color": "白（软胶）", "cn": "软胶满天星-白", "name": "Baby's Breath - White (Soft-Gel)"},
+            "软胶满天星-粉": {"color": "粉（软胶）"},
+            "软胶满天星-紫": {"color": "紫（软胶）"},
+            "软胶满天星-黄": {"color": "黄（软胶）"},
+            "软胶满天星": {"color": "软胶款"},
+        },
+        "name": "Baby's Breath",
+    },
+    # ---- 同款同色重复拍摄去重（2026-11-25 波比授权"有重复就需要更正"，拼版人工核对）----
+    # 国潮牡丹 红/酒红 实物同色，仅背景不同（白底/灰底），留白底 028
+    "peonies|国潮牡丹": {"merge_bases": [], "drop_files": ["assets/img/flowers/peonies/peonies-029.jpg"], "labels": {}},
+    # 锦绣 红/酒红 实物同色，留 060
+    "peonies|锦绣": {"merge_bases": [], "drop_files": ["assets/img/flowers/peonies/peonies-062.jpg"], "labels": {}},
+    # 燕尾兰 BDJN 前缀条目与 083 同款同色重复拍摄，留 083
+    "orchids|燕尾兰": {"merge_bases": [], "drop_files": ["assets/img/flowers/orchids/orchids-119.jpg"], "labels": {}},
+    # 塑料葱球 HY 前缀条目重复拍摄，留 187
+    "others|塑料葱球": {"merge_bases": [], "drop_files": ["assets/img/flowers/others/others-228.jpg"], "labels": {}},
+    # 把束花生叶 XGM 前缀条目重复拍摄，留 090
+    "greenery|把束花生叶": {"merge_bases": [], "drop_files": ["assets/img/flowers/greenery/greenery-206.jpg"], "labels": {}},
+    # 叉圣诞叶：087=XGM3叉(3叉)、088=XGM5叉(5叉) 同色不同规格，标签区分
+    "greenery|叉圣诞叶": {
+        "merge_bases": [],
+        "drop_files": [],
+        "labels": {
+            "叉圣诞叶-黄": {"color": "黄（3叉）"},
+            "叉圣诞叶-黄@greenery-088.jpg": {"color": "黄（5叉）"},
+        },
+    },
 }
 
 for mkey, cfg in MERGE_OVERRIDES.items():
@@ -116,24 +158,39 @@ def _phash(path):
             bits |= 1 << i
     return bits
 
+# 彩色距离：同构图不同色相（如宝蓝/玫红绣球）灰度哈希相同但彩距大(>10)；真同图 <7
+def _csmall(path, sz=12):
+    return list(_PILImage.open(path).convert("RGB").resize((sz, sz)).getdata())
+
+def _cdist(a, b):
+    return sum(abs(x[0] - y[0]) + abs(x[1] - y[1]) + abs(x[2] - y[2]) for x, y in zip(a, b)) / max(len(a), 1)
+
 _SPEC_RE = re.compile(r"\d+(?:\.\d+)?(?:头|叉|米|cm)")
 
 def _spec_tokens(cn):
-    return sorted(_SPEC_RE.findall(cn or ""))
+    return sorted(_SPEC_RE.findall(strip_prefix(cn or "")))
 
 def _csuf(cn):
-    cn = cn or ""
+    cn = strip_prefix(cn or "")
     return cn.rsplit("-", 1)[-1] if "-" in cn else ""
 
-def _same_display(cna, cnb, ha, hb):
+def _same_display(cna, cnb, ha, hb, ca=None, cb=None):
+    """同一张照片 = 灰度 d<=8 且彩距<=8（同构图不同色相不算同图）"""
     if bin(ha ^ hb).count("1") > 8:
         return False
+    if ca is not None and cb is not None and _cdist(ca, cb) > 8:
+        return False
+    return True
+
+def _compat(cna, cnb):
+    """UNION 级兼容：规格词一致 + 颜色后缀兼容"""
     if _spec_tokens(cna) != _spec_tokens(cnb):
         return False
     s1, s2 = _csuf(cna), _csuf(cnb)
     return s1 == s2 or (s1.isdigit() and s2.isdigit())
 
 _fh_cache = {}
+_fc_cache = {}
 def _fh(f):
     if f not in _fh_cache:
         try:
@@ -141,6 +198,14 @@ def _fh(f):
         except Exception:
             _fh_cache[f] = None
     return _fh_cache[f]
+
+def _fc(f):
+    if f not in _fc_cache:
+        try:
+            _fc_cache[f] = _csmall(f)
+        except Exception:
+            _fc_cache[f] = None
+    return _fc_cache[f]
 
 _parent = {k: k for k in groups}
 def _find(x):
@@ -152,10 +217,14 @@ def _find(x):
 _by_cat = _collections.defaultdict(list)
 for k in groups:
     _by_cat[k[0]].append(k)
+# 同图但规格/颜色标注冲突的强制去重：同一张照片只有一个实物，保留规格词标注更全的一条
+_force_drop = set()
 for _cat, _keys in _by_cat.items():
     _flat = [(k, it) for k in _keys for it in groups[k]]
     for _i in range(len(_flat)):
         _ka, _ia = _flat[_i]
+        if id(_ia) in {id(x) for _, x in _flat[:_i]}:
+            pass
         _ha = _fh(_ia.get("file", ""))
         if _ha is None:
             continue
@@ -163,15 +232,32 @@ for _cat, _keys in _by_cat.items():
             _kb, _ib = _flat[_j]
             if _find(_ka) == _find(_kb):
                 continue
+            if _ia.get("file", "") == _ib.get("file", ""):
+                continue
             _hb = _fh(_ib.get("file", ""))
             if _hb is None:
                 continue
-            if _same_display(_ia.get("cn", ""), _ib.get("cn", ""), _ha, _hb):
+            _ca, _cb = _fc(_ia.get("file", "")), _fc(_ib.get("file", ""))
+            if not _same_display(_ia.get("cn", ""), _ib.get("cn", ""), _ha, _hb, _ca, _cb):
+                continue
+            if _compat(_ia.get("cn", ""), _ib.get("cn", "")):
                 _parent[_find(_kb)] = _find(_ka)
+            else:
+                # 同图但标注冲突：留规格词多者，同多则留文件序号小者
+                sa, sb = len(_spec_tokens(_ia.get("cn", ""))), len(_spec_tokens(_ib.get("cn", "")))
+                if sa != sb:
+                    winner, loser = (_ia, _ib) if sa > sb else (_ib, _ia)
+                else:
+                    winner, loser = (_ia, _ib) if _ia.get("file", "") <= _ib.get("file", "") else (_ib, _ia)
+                _force_drop.add(id(loser))
+                print("FORCE-DROP %-10s 留[%s] %s  弃[%s] %s  (同图标注冲突)" % (
+                    _cat, winner.get("cn"), winner.get("file", "").split("/")[-1],
+                    loser.get("cn"), loser.get("file", "").split("/")[-1]))
 
 _merged = {}
 for k in groups:
-    _merged.setdefault(_find(k), []).extend(groups[k])
+    _merged.setdefault(_find(k), []).extend([it for it in groups[k] if id(it) not in _force_drop])
+_merged = {k: v for k, v in _merged.items() if v}
 _union_log = []
 _new_groups = {}
 for _root, _items in sorted(_merged.items()):
@@ -197,7 +283,7 @@ for (cat, base), items in groups.items():
         _dup = False
         for _k in kept:
             _hk = _fh(_k.get("file", ""))
-            if _hk is not None and _same_display(it.get("cn", ""), _k.get("cn", ""), _h, _hk):
+            if _hk is not None and _same_display(it.get("cn", ""), _k.get("cn", ""), _h, _hk, _fc(it.get("file", "")), _fc(_k.get("file", ""))):
                 _dup = True
                 break
         if not _dup:
@@ -221,7 +307,8 @@ for (cat, base), items in groups.items():
         if vkey in seen:
             continue
         seen.add(vkey)
-        lo = label_cfg.get(it.get("cn", ""), {})
+        _cn = it.get("cn", "")
+        lo = label_cfg.get(_cn + "@" + it.get("file", "").split("/")[-1]) or label_cfg.get(_cn, {}) or label_cfg.get(_cn + "@" + it.get("file", ""), {})
         variants.append({
             "name": lo.get("name", it.get("name", "")),
             "cn": lo.get("cn", it.get("cn", "")),
@@ -231,13 +318,14 @@ for (cat, base), items in groups.items():
             "file": it.get("file", ""),
         })
     c = next((x for x in CATS if x["slug"] == cat), {})
+    _name_ov = (MERGE_OVERRIDES.get(cat + "|" + base) or {}).get("name")
     agg.append({
         "id": base[:40] + "-" + cat,
         "cat": cat,
         "catCn": c.get("cn", ""),
         "catEn": c.get("en", ""),
         "base": base,
-        "name": en_base(rep.get("name", ""), base),
+        "name": _name_ov or en_base(rep.get("name", ""), base),
         "thumb": rep.get("thumb", ""),
         "file": rep.get("file", ""),
         "count": len(variants),
@@ -265,3 +353,33 @@ print("SKU:", len(DATA), "-> 商品:", len(agg))
 print("多规格商品:", sum(1 for a in agg if a["count"] > 1))
 print("分类:", " | ".join(f'{c["slug"]}:{c["count"]}' for c in cats_out))
 print("WROTE", OUT)
+
+# ---- 前缀剥离清单（人工过目防误剥）----
+_pref = _collections.Counter()
+for it in DATA:
+    m = re.match(r"^([A-Z]{2,}\d*)(?=[\u4e00-\u9fa5])", (it.get("cn") or "").strip())
+    if m:
+        _pref[m.group(1)] += 1
+print("剥前缀清单:", dict(_pref) or "（无）")
+
+# ---- 残留同图扫描（合并后同类目内不应再有同图重复；灰度+彩距双判据）----
+_left = []
+for _cat in {a["cat"] for a in agg}:
+    _items = [(a["name"], v) for a in agg if a["cat"] == _cat for v in a["variants"]]
+    for _i in range(len(_items)):
+        _ha = _fh(_items[_i][1].get("file", ""))
+        if _ha is None:
+            continue
+        for _j in range(_i + 1, len(_items)):
+            if _items[_i][1]["file"] == _items[_j][1]["file"]:
+                continue
+            _hb = _fh(_items[_j][1].get("file", ""))
+            if _hb is None or bin(_ha ^ _hb).count("1") > 8:
+                continue
+            _ca, _cb = _fc(_items[_i][1].get("file", "")), _fc(_items[_j][1].get("file", ""))
+            if _ca is None or _cb is None or _cdist(_ca, _cb) > 8:
+                continue
+            _left.append((_cat, _items[_i][0], _items[_j][0], _items[_i][1]["file"], _items[_j][1]["file"]))
+print("残留同图对(d<=8):", len(_left))
+for _c, _n1, _n2, _f1, _f2 in _left[:30]:
+    print("  [%s] %s <-> %s  (%s | %s)" % (_c, _n1, _n2, _f1.split("/")[-1], _f2.split("/")[-1]))
