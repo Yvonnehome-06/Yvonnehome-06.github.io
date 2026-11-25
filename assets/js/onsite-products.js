@@ -189,5 +189,6 @@ window.LOOK_PRODUCTS = {
   "drape-white": {"n": "Wedding Backdrop Drape - Pure White", "cn": "", "c": "drapery", "s": "", "t": "assets/img/decor/drapery/backdrop-drape-white.jpg", "f": "assets/img/decor/drapery/backdrop-drape-white.jpg"},
   "valentine-tears-yellow": {"n": "Valentine Tears - Yellow", "cn": "情人泪-黄", "c": "babys-breath", "s": "DT情人泪", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-016.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-016.jpg"},
   "2-branch-larkspur-white": {"n": "2-Branch Larkspur - White", "cn": "2叉飞燕-白", "c": "orchids", "s": "2叉飞燕-白-85cm", "t": "assets/img/flowers/orchids/thumb/orchids-001.jpg", "f": "assets/img/flowers/orchids/orchids-001.jpg"},
-  "dancing-orchid-white": {"n": "Dancing Orchid - White", "cn": "跳舞兰-白", "c": "orchids", "s": "跳舞兰-白-86cm", "t": "assets/img/flowers/orchids/thumb/orchids-057.jpg", "f": "assets/img/flowers/orchids/orchids-057.jpg"}
+  "dancing-orchid-white": {"n": "Dancing Orchid - White", "cn": "跳舞兰-白", "c": "orchids", "s": "跳舞兰-白-86cm", "t": "assets/img/flowers/orchids/thumb/orchids-057.jpg", "f": "assets/img/flowers/orchids/orchids-057.jpg"},
+  "tablecloth-cream": {"n": "Satin Tablecloth - Cream", "cn": "", "c": "tablecloths", "s": "", "t": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg", "f": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg"}
 };

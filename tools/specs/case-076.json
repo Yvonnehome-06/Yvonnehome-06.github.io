@@ -1,0 +1,46 @@
+{
+  "case_id": 76,
+  "title": "White Dining Table",
+  "desc": "A white-green long table banquet and welcome table: anthurium, orchids and pompon mums over cream linens, candles in glass cylinders.",
+  "scene": "table",
+  "colors": ["white", "green"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The white-green arrangement running down the table and welcome mirror.",
+      "items": [
+        {"cn": "3D掌-白", "role": "White anthurium standing tall above the arrangement (the sculptural white spathes)."},
+        {"cn": "2叉飞燕-白", "role": "White branching larkspur spikes adding vertical lift (form-match for large white delphinium)."},
+        {"cn": "大乒乓菊-白", "role": "White pompon mums as the round ball faces in the garland."},
+        {"cn": "白玫瑰", "role": "White roses through the table garland and welcome mirror piece."},
+        {"cn": "洋牡丹-白", "role": "White ranunculus layered into the low clusters."},
+        {"cn": "9头蝴蝶兰-白", "role": "White phalaenopsis sprays trailing over the table centre."},
+        {"cn": "跳舞兰-白", "role": "White oncidium orchids arching through the garland."},
+        {"cn": "白绣球", "role": "White hydrangea massing along the table line."},
+        {"cn": "绿绣球", "role": "Light green hydrangea accents in the garland (form-match for the green ball tones)."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & trailing",
+      "blurb": "The greens that run the length of the table.",
+      "items": [
+        {"cn": "3D尤加利", "role": "Eucalyptus sprigs through the garland base."},
+        {"cn": "芦苇草", "role": "Fountain grass plumes softening the line."},
+        {"cn": "情人泪-黄", "role": "Beaded trailing strings draping over the table edge (form-match trailing beaded green)."},
+        {"cn": "蓬莱松-深绿", "role": "Dark green pine spray giving needle texture."},
+        {"cn": "天门冬", "role": "Fine-leaf asparagus fern filling the garland body (form-match for the fine asparagus foliage)."}
+      ]
+    },
+    {
+      "key": "styling",
+      "label": "Table styling",
+      "blurb": "The cream linens and candlelight of the banquet.",
+      "items": [
+        {"cn": "米白桌布", "role": "Cream satin tablecloth draping the long table with side bows."},
+        {"cn": "白色长蜡烛", "role": "White pillar candles lit inside the tall glass cylinders (glass cylinder holders themselves are a logged gap; napkins, black bamboo chairs, oak barrels and the arched welcome mirror are venue pieces)."}
+      ]
+    }
+  ]
+}
