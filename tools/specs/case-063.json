@@ -1,0 +1,72 @@
+{
+  "case_id": 63,
+  "title": "Draped Green & Red Scene",
+  "desc": "Cream draped backdrop with wine ribbon bows, dressed by a lush green column and deep red blooms.",
+  "scene": "event",
+  "colors": [
+    "green",
+    "red"
+  ],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "Deep red blooms scattered through the green column and along the base.",
+      "items": [
+        {
+          "cn": "红玫瑰",
+          "role": "Deep red roses dotted through the greenery column and base line (dark red Austin tone, closest to the wine-red single heads in the scene)."
+        },
+        {
+          "cn": "红洋牡丹",
+          "role": "Dark red ranunculus layered between the roses for rounded depth."
+        }
+      ]
+    },
+    {
+      "key": "filler",
+      "label": "Green ball filler",
+      "blurb": "The round green face breaking up the red-and-green scheme.",
+      "items": [
+        {
+          "cn": "绿绣球",
+          "role": "Light green hydrangea ball adding a rounded green face to the planting (scene uses a true green ball; this is the closest green hydrangea in the library)."
+        }
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Foliage & grasses",
+      "blurb": "The feathery, trailing greens that build the whole left column.",
+      "items": [
+        {
+          "cn": "文竹",
+          "role": "Feathery asparagus fern forming the main airy texture across the column."
+        },
+        {
+          "cn": "长马尾草",
+          "role": "Long fine grass tails cascading down the centre of the green column (form-match trailing grass)."
+        },
+        {
+          "cn": "3D尤加利",
+          "role": "Eucalyptus sprigs adding flat oval leaves through the middle layer."
+        },
+        {
+          "cn": "蓬莱松-深绿",
+          "role": "Dark green pine spray giving fine needle texture at the edges."
+        }
+      ]
+    },
+    {
+      "key": "props",
+      "label": "Drapery",
+      "blurb": "The cream backdrop that carries the wine-red ribbon bows.",
+      "items": [
+        {
+          "cn": "奶白色褶皱布幔",
+          "role": "Cream milk-silk draped backdrop with gathered swags, finished with wine-red ribbon bows (bows are a logged gap)."
+        }
+      ]
+    }
+  ]
+}
