@@ -174,5 +174,10 @@ window.LOOK_PRODUCTS = {
   "4-head-chrysanthemum-yellow": {"n": "4-Head Chrysanthemum - Yellow", "cn": "4头菊花-黄", "c": "others", "s": "4头菊花-黄-52cm", "t": "assets/img/flowers/others/thumb/others-015.jpg", "f": "assets/img/flowers/others/others-015.jpg"},
   "layered-gold": {"n": "Layered Gold", "cn": "千层金橘黄", "c": "others", "s": "HY千层金橘黄", "t": "assets/img/flowers/others/thumb/others-186.jpg", "f": "assets/img/flowers/others/others-186.jpg"},
   "jute-orange": {"n": "Coloured Jute Mesh - Orange", "cn": "彩色麻丝网-橙", "c": "jute", "s": "", "t": "assets/img/decor/jute/jute-mesh-orange.jpg", "f": "assets/img/decor/jute/jute-mesh-orange.jpg"},
-  "jumbo-hydrangea": {"n": "Jumbo Hydrangea", "cn": "超大绣球", "c": "hydrangeas", "s": "DG超大绣球", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-098.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-098.jpg"}
+  "jumbo-hydrangea": {"n": "Jumbo Hydrangea", "cn": "超大绣球", "c": "hydrangeas", "s": "DG超大绣球", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-098.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-098.jpg"},
+  "tablecloth-white": {"n": "Satin Tablecloth - Pure White", "cn": "缎面桌布-白", "c": "tablecloths", "s": "", "t": "assets/img/decor/tablecloths/satin-tablecloth-white.jpg", "f": "assets/img/decor/tablecloths/satin-tablecloth-white.jpg"},
+  "deep-yellow-hydrangea": {"n": "Deep Yellow Hydrangea", "cn": "深黄绣球", "c": "hydrangeas", "s": "WX深黄绣球", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-094.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-094.jpg"},
+  "dancing-orchid-yellow": {"n": "Dancing Orchid - Yellow", "cn": "跳舞兰-黄", "c": "orchids", "s": "跳舞兰-黄-86cm", "t": "assets/img/flowers/orchids/thumb/orchids-059.jpg", "f": "assets/img/flowers/orchids/orchids-059.jpg"},
+  "flame-chrysanthemum-orange": {"n": "Flame Chrysanthemum - Orange", "cn": "火焰菊-桔", "c": "chrysanthemums", "s": "火焰菊-桔-66cm", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-022.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-022.jpg"},
+  "lily-of-the-valley-coffee": {"n": "Lily of the Valley - Coffee", "cn": "铃兰-咖色", "c": "orchids", "s": "铃兰-咖色-95cm", "t": "assets/img/flowers/orchids/thumb/orchids-060.jpg", "f": "assets/img/flowers/orchids/orchids-060.jpg"}
 };
