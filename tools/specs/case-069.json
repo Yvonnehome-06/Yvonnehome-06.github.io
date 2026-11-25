@@ -1,0 +1,44 @@
+{
+  "case_id": 69,
+  "title": "Draped Green Ceremony",
+  "desc": "A garden ceremony under a leafy tree canopy with white sheer swags, pink-and-white blooms climbing the greens.",
+  "scene": "wedding",
+  "colors": ["white", "green", "pink"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The pink-white mix climbing the tree and filling the base.",
+      "items": [
+        {"cn": "126瓣绣球-粉", "role": "Pink hydrangea heads clustered on the right tree and around the base."},
+        {"cn": "白绣球", "role": "White hydrangea massing along the lower arrangements."},
+        {"cn": "粉洋牡丹", "role": "Pink ranunculus layered into the tree-edge planting."},
+        {"cn": "白玫瑰", "role": "White roses through the base beds and aisle corners."},
+        {"cn": "飞燕-粉", "role": "Pink larkspur spikes climbing with the tree greens."},
+        {"cn": "飞燕-白", "role": "White larkspur spikes rising on the left side."},
+        {"cn": "3D铁线莲-粉", "role": "Pink clematis vines scrambling up the tree trunks (form-match climbing clematis)."}
+      ]
+    },
+    {
+      "key": "filler",
+      "label": "Fillers",
+      "blurb": "Small faces scattered through the ground planting.",
+      "items": [
+        {"cn": "小雏菊-紫", "role": "Small purple daisies adding violet accents (form-match small purple chrysanth types)."},
+        {"cn": "小雏菊-黄", "role": "Yellow mini daisies as the small yellow filler blooms."},
+        {"cn": "小雏菊-白", "role": "White mini daisies scattered across the beds."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "The lush tree canopy greens and trailing grasses.",
+      "items": [
+        {"cn": "芦苇草", "role": "Fountain grass plumes softening the planting edges."},
+        {"cn": "垂吊长丝草", "role": "Fine trailing grass tails hanging over the base arrangements."},
+        {"cn": "蓬莱松-深绿", "role": "Dark green pine spray giving needle texture."},
+        {"cn": "3D尤加利", "role": "Eucalyptus sprigs through the mid layer."}
+      ]
+    }
+  ]
+}
