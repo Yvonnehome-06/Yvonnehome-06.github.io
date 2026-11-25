@@ -60,10 +60,19 @@ for it in DATA:
     groups[key].append(it)
 
 # 选代表图：优先名字里不带颜色/规格歧义、白底图（文件名序号小），取第一条
+# 封面人工指定（波比 2026-11-25：玫红掌杆子太假，换粉款，石纹背景更经得起细看）；键=cat|cn_base
+COVER_OVERRIDES = {
+    "others|3D掌": "assets/img/flowers/others/others-003.jpg",  # 3D掌-粉
+}
 agg = []
 for (cat, base), items in groups.items():
     items = sorted(items, key=lambda x: x.get("file", ""))
     rep = items[0]
+    ov = COVER_OVERRIDES.get(cat + "|" + base)
+    if ov:
+        cand = [x for x in items if x.get("file") == ov]
+        if cand:
+            rep = cand[0]
     variants = []
     seen = set()
     for it in items:
