@@ -172,5 +172,7 @@ window.LOOK_PRODUCTS = {
   "open-petal-rose-yellow": {"n": "Open-Petal Rose - Yellow", "cn": "翻瓣玫瑰-黄", "c": "roses", "s": "翻瓣玫瑰-黄-66cm", "t": "assets/img/flowers/roses/thumb/roses-104.jpg", "f": "assets/img/flowers/roses/roses-104.jpg"},
   "marigold": {"n": "Marigold", "cn": "金盏菊", "c": "chrysanthemums", "s": "DG金盏菊", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-036.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-036.jpg"},
   "4-head-chrysanthemum-yellow": {"n": "4-Head Chrysanthemum - Yellow", "cn": "4头菊花-黄", "c": "others", "s": "4头菊花-黄-52cm", "t": "assets/img/flowers/others/thumb/others-015.jpg", "f": "assets/img/flowers/others/others-015.jpg"},
-  "layered-gold": {"n": "Layered Gold", "cn": "千层金橘黄", "c": "others", "s": "HY千层金橘黄", "t": "assets/img/flowers/others/thumb/others-186.jpg", "f": "assets/img/flowers/others/others-186.jpg"}
+  "layered-gold": {"n": "Layered Gold", "cn": "千层金橘黄", "c": "others", "s": "HY千层金橘黄", "t": "assets/img/flowers/others/thumb/others-186.jpg", "f": "assets/img/flowers/others/others-186.jpg"},
+  "jute-orange": {"n": "Coloured Jute Mesh - Orange", "cn": "彩色麻丝网-橙", "c": "jute", "s": "", "t": "assets/img/decor/jute/jute-mesh-orange.jpg", "f": "assets/img/decor/jute/jute-mesh-orange.jpg"},
+  "jumbo-hydrangea": {"n": "Jumbo Hydrangea", "cn": "超大绣球", "c": "hydrangeas", "s": "DG超大绣球", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-098.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-098.jpg"}
 };

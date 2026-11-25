@@ -1,0 +1,27 @@
+{
+  "case_id": 55,
+  "title": "Amber Hanging Display",
+  "desc": "Warm amber florals suspended against cool blue tones.",
+  "scene": "hanging",
+  "colors": ["orange", "blue"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The warm orange bloom trails running down the silver arc.",
+      "items": [
+        {"cn": "小雏菊-黄", "role": "Yellow-orange mini daisies in the trailing garland lines (closest match — gerberas are a logged gap)."},
+        {"cn": "4头菊花-黄", "role": "Yellow-orange multi-head mums adding the larger daisy faces along the trails (multi-head form matched)."}
+      ]
+    },
+    {
+      "key": "fill",
+      "label": "Fill & volumes",
+      "blurb": "The cotton-ball whites and fiery fibrous fill.",
+      "items": [
+        {"cn": "超大绣球", "role": "Jumbo white hydrangea cotton-ball spheres sitting on the arc and floor."},
+        {"cn": "橙色雾丝草", "role": "Orange fibrous jute mesh wrapped through the flower lines for the fiery haze effect."}
+      ]
+    }
+  ]
+}
