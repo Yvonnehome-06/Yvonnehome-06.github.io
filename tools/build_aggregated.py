@@ -64,10 +64,147 @@ for it in DATA:
 COVER_OVERRIDES = {
     "others|3D掌": "assets/img/flowers/others/others-003.jpg",  # 3D掌-粉
 }
+
+# 手动合并（波比 2026-11-25：情人泪5个SKU实为2个实物，感知哈希 024≈016、023≈017，
+# 021 与 017 同色重复；合并为一个商品，只留 黄016 + 奶黄017，重复图不再上墙）
+# 键=cat|cn_base（目标商品），merge_bases=并入的组，drop_files=并组后丢弃的重复图，labels=变体显示名覆盖
+MERGE_OVERRIDES = {
+    "babys-breath|情人泪": {
+        "merge_bases": ["DT情人泪", "DT情人泪2", "情人泪2"],
+        "drop_files": [
+            "assets/img/flowers/babys-breath/babys-breath-021.jpg",
+            "assets/img/flowers/babys-breath/babys-breath-023.jpg",
+            "assets/img/flowers/babys-breath/babys-breath-024.jpg",
+        ],
+        "labels": {
+            "情人泪2-黄": {"color": "奶黄", "cn": "情人泪-奶黄", "name": "Valentine Tears - Creamy Yellow"},
+        },
+    },
+    # 万圣节藤条-1米 与 1米万圣节藤条：同一张图(d=1)同一规格，仅名字顺序不同
+    "garlands|万圣节藤条": {
+        "merge_bases": ["1米万圣节藤条"],
+        "drop_files": ["assets/img/newitems/garlands-968.jpg"],
+        "labels": {},
+    },
+}
+
+for mkey, cfg in MERGE_OVERRIDES.items():
+    mcat, mbase = mkey.split("|", 1)
+    tgt = groups.get((mcat, mbase))
+    if tgt is None:
+        continue
+    for b in cfg.get("merge_bases", []):
+        src = groups.pop((mcat, b), [])
+        tgt.extend(src)
+    drops = set(cfg.get("drop_files", []))
+    if drops:
+        groups[(mcat, mbase)] = [x for x in tgt if x.get("file") not in drops]
+
+# ---- 通用近重复合并（波比规则：同商品同色同规格只保留一个展示图）----
+# 判据：感知哈希 d<=8（同一张图）+ 颜色后缀兼容（相等或均为纯数字）+ 规格词（X头/X叉/X米/cm）一致
+# 仅同类目内并；决策全部打印供人工复核
+import collections as _collections
+from PIL import Image as _PILImage
+
+def _phash(path):
+    im = _PILImage.open(path).convert("L").resize((16, 16))
+    px = list(im.getdata())
+    avg = sum(px) / len(px)
+    bits = 0
+    for i, v in enumerate(px):
+        if v > avg:
+            bits |= 1 << i
+    return bits
+
+_SPEC_RE = re.compile(r"\d+(?:\.\d+)?(?:头|叉|米|cm)")
+
+def _spec_tokens(cn):
+    return sorted(_SPEC_RE.findall(cn or ""))
+
+def _csuf(cn):
+    cn = cn or ""
+    return cn.rsplit("-", 1)[-1] if "-" in cn else ""
+
+def _same_display(cna, cnb, ha, hb):
+    if bin(ha ^ hb).count("1") > 8:
+        return False
+    if _spec_tokens(cna) != _spec_tokens(cnb):
+        return False
+    s1, s2 = _csuf(cna), _csuf(cnb)
+    return s1 == s2 or (s1.isdigit() and s2.isdigit())
+
+_fh_cache = {}
+def _fh(f):
+    if f not in _fh_cache:
+        try:
+            _fh_cache[f] = _phash(f)
+        except Exception:
+            _fh_cache[f] = None
+    return _fh_cache[f]
+
+_parent = {k: k for k in groups}
+def _find(x):
+    while _parent[x] != x:
+        _parent[x] = _parent[_parent[x]]
+        x = _parent[x]
+    return x
+
+_by_cat = _collections.defaultdict(list)
+for k in groups:
+    _by_cat[k[0]].append(k)
+for _cat, _keys in _by_cat.items():
+    _flat = [(k, it) for k in _keys for it in groups[k]]
+    for _i in range(len(_flat)):
+        _ka, _ia = _flat[_i]
+        _ha = _fh(_ia.get("file", ""))
+        if _ha is None:
+            continue
+        for _j in range(_i + 1, len(_flat)):
+            _kb, _ib = _flat[_j]
+            if _find(_ka) == _find(_kb):
+                continue
+            _hb = _fh(_ib.get("file", ""))
+            if _hb is None:
+                continue
+            if _same_display(_ia.get("cn", ""), _ib.get("cn", ""), _ha, _hb):
+                _parent[_find(_kb)] = _find(_ka)
+
+_merged = {}
+for k in groups:
+    _merged.setdefault(_find(k), []).extend(groups[k])
+_union_log = []
+_new_groups = {}
+for _root, _items in sorted(_merged.items()):
+    _bases = sorted({cn_base(it.get("cn") or "") for it in _items})
+    _base = min(_bases, key=lambda b: (len(b), b))
+    _new_groups[(_root[0], _base)] = _items
+    if len(_bases) > 1:
+        _union_log.append((_root[0], _base, _bases, len(_items)))
+groups = _new_groups
+for _cat, _base, _bases, _n in sorted(_union_log):
+    print("UNION %-12s -> %-14s  并入组: %s  (共%d SKU)" % (_cat, _base, " / ".join(_bases), _n))
+
 agg = []
 for (cat, base), items in groups.items():
     items = sorted(items, key=lambda x: x.get("file", ""))
-    rep = items[0]
+    # 组内去重：与已保留项同图（d<=8）且颜色/规格兼容的不重复上墙
+    kept = []
+    for it in items:
+        _h = _fh(it.get("file", ""))
+        if _h is None:
+            kept.append(it)
+            continue
+        _dup = False
+        for _k in kept:
+            _hk = _fh(_k.get("file", ""))
+            if _hk is not None and _same_display(it.get("cn", ""), _k.get("cn", ""), _h, _hk):
+                _dup = True
+                break
+        if not _dup:
+            kept.append(it)
+    items = kept
+    # 代表项：优先 cn_base == base 的条目，否则第一条
+    rep = next((x for x in items if cn_base(x.get("cn") or "") == base), items[0])
     ov = COVER_OVERRIDES.get(cat + "|" + base)
     if ov:
         cand = [x for x in items if x.get("file") == ov]
@@ -75,17 +212,21 @@ for (cat, base), items in groups.items():
             rep = cand[0]
     variants = []
     seen = set()
+    label_cfg = (MERGE_OVERRIDES.get(cat + "|" + base) or {}).get("labels", {})
     for it in items:
         color = (it.get("cn") or it.get("sku") or "").replace(base, "").lstrip("-－").strip()
+        # 供应商前缀残留清理（并组后 base 变短，如 JN高枝夏花-黄 剥 高枝夏花 得 JN-黄 → 黄）
+        color = re.sub(r"^[A-Za-z0-9]+[-－]?", "", color).strip()
         vkey = (it.get("cn"), it.get("file"))
         if vkey in seen:
             continue
         seen.add(vkey)
+        lo = label_cfg.get(it.get("cn", ""), {})
         variants.append({
-            "name": it.get("name", ""),
-            "cn": it.get("cn", ""),
+            "name": lo.get("name", it.get("name", "")),
+            "cn": lo.get("cn", it.get("cn", "")),
             "sku": it.get("sku", ""),
-            "color": color,
+            "color": lo.get("color", color),
             "thumb": it.get("thumb", ""),
             "file": it.get("file", ""),
         })
