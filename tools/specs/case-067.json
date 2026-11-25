@@ -1,0 +1,41 @@
+{
+  "case_id": 67,
+  "title": "Lilac & Blue Petal Arch",
+  "desc": "An outdoor wooden triangle arch draped with white sheer, dressed in lilac, white and yellow with soft trailing greens.",
+  "scene": "wedding",
+  "colors": ["purple", "yellow", "white"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The lilac-white-yellow mix crowning the triangle arch.",
+      "items": [
+        {"cn": "126瓣绣球-浅紫", "role": "Lilac hydrangea clusters at the arch top and corners (soft lilac tone matching the scene)."},
+        {"cn": "126瓣绣球-白", "role": "White hydrangea heads massed at the centre crown."},
+        {"cn": "飞燕-白", "role": "White larkspur spikes rising through the crown (white larkspur/lily forms in the scene)."}
+      ]
+    },
+    {
+      "key": "filler",
+      "label": "Fillers",
+      "blurb": "Yellow orchids and small white faces along the arch and ground line.",
+      "items": [
+        {"cn": "黄色文心兰", "role": "Yellow oncidium (dancing orchid) sprays arching out of the top greenery."},
+        {"cn": "白色小菊", "role": "Small white daisies scattered through the ground line plantings."},
+        {"cn": "白色乒乓菊", "role": "White pompon mums adding rounded white faces along the aisle edges."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "The soft feathery greens filling the arch frame.",
+      "items": [
+        {"cn": "芦苇草", "role": "Fountain grass plumes softening the arrangement edges."},
+        {"cn": "垂吊柔丝草", "role": "Fine soft trailing grasses hanging over the arch line."},
+        {"cn": "蓬莱松-深绿", "role": "Dark green pine spray giving needle texture inside the mix."},
+        {"cn": "3D尤加利", "role": "Eucalyptus sprigs through the mid layer."},
+        {"cn": "柳芽浅绿", "role": "Long fine yellow-green drooping stems cascading over the arch (form-match for the yellow-green trailing pine foliage — true drooping pine is a logged gap)."}
+      ]
+    }
+  ]
+}
