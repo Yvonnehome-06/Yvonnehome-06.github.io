@@ -1,0 +1,32 @@
+{
+  "case_id": 68,
+  "title": "Garden Aisle in White",
+  "desc": "A white-and-green garden aisle: curved ground beds and an overhead greenery canopy, set with white folding chairs.",
+  "scene": "wedding",
+  "colors": ["white", "green"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The white-green blooms lining the curved beds and canopy.",
+      "items": [
+        {"cn": "白绣球", "role": "White hydrangea massing through the ground beds and overhead canopy."},
+        {"cn": "绿绣球", "role": "Light green hydrangea ball accents mixed into the white beds."},
+        {"cn": "白玫瑰", "role": "White roses filling the beds and the floor cluster corners."},
+        {"cn": "飞燕-白", "role": "White larkspur spikes rising from the beds (tall white lily spikes in the scene)."},
+        {"cn": "桔梗-白", "role": "White lisianthus-style blooms softening the bed edges (form-match for white lisianthus)."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "The airy greens that fill the beds and trailing canopy.",
+      "items": [
+        {"cn": "3D尤加利", "role": "Eucalyptus sprigs through the beds and overhead greens."},
+        {"cn": "芦苇草", "role": "Fountain grass plumes adding airy movement at the edges."},
+        {"cn": "垂吊柔丝草", "role": "Fine trailing grass tails hanging from the canopy (form-match trailing grass)."},
+        {"cn": "文竹", "role": "Asparagus fern adding feathery texture inside the mixes."}
+      ]
+    }
+  ]
+}
