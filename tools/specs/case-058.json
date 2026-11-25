@@ -3,18 +3,36 @@
   "title": "Autumn Draped Table",
   "desc": "An autumn table finished with warm drapery and orange blooms.",
   "scene": "table",
-  "colors": ["orange", "yellow"],
+  "colors": [
+    "orange",
+    "yellow"
+  ],
   "groups": [
     {
       "key": "flowers",
       "label": "Feature flowers",
       "blurb": "The saturated orange-and-yellow canopy over the table.",
       "items": [
-        {"cn": "72瓣绣球-桔", "role": "Vivid orange hydrangea anchoring the top-left canopy."},
-        {"cn": "深黄绣球", "role": "Deep yellow hydrangea poms carrying the yellow half of the canopy (fluffy backup: Bread Hydrangea - Yellow)."},
-        {"cn": "跳舞兰-黄", "role": "Yellow oncidium sprays trailing beneath the canopy over the drapes."},
-        {"cn": "翻瓣玫瑰-黄", "role": "Yellow-toned spray roses scattered through the arrangement (closest yellow — orange-yellow roses are a logged gap)."},
-        {"cn": "火焰菊-桔", "role": "Orange multi-head spider mums deepening the autumn tones (caramel backup: Flame Chrysanthemum - Coffee)."}
+        {
+          "cn": "72瓣绣球-桔",
+          "role": "Vivid orange hydrangea anchoring the top-left canopy."
+        },
+        {
+          "cn": "深黄绣球",
+          "role": "Deep yellow hydrangea poms carrying the yellow half of the canopy (fluffy backup: Bread Hydrangea - Yellow)."
+        },
+        {
+          "cn": "跳舞兰-黄",
+          "role": "Yellow oncidium sprays trailing beneath the canopy over the drapes."
+        },
+        {
+          "cn": "翻瓣玫瑰-黄",
+          "role": "Yellow-toned spray roses scattered through the arrangement (closest yellow — orange-yellow roses are a logged gap)."
+        },
+        {
+          "cn": "火焰菊-桔",
+          "role": "Orange multi-head spider mums deepening the autumn tones (caramel backup: Flame Chrysanthemum - Coffee)."
+        }
       ]
     },
     {
@@ -22,8 +40,14 @@
       "label": "Accents & fills",
       "blurb": "Small faces and soft bells between the big blooms.",
       "items": [
-        {"cn": "4头菊花-黄", "role": "Yellow aster-style daisies scattered across the ground clusters."},
-        {"cn": "铃兰-咖色", "role": "Caramel bell-flower spikes echoing the burnt tones (bell form matched)."}
+        {
+          "cn": "4头菊花-黄",
+          "role": "Yellow aster-style daisies scattered across the ground clusters."
+        },
+        {
+          "cn": "铃兰-咖色",
+          "role": "Caramel bell-flower spikes echoing the burnt tones (bell form matched)."
+        }
       ]
     },
     {
@@ -31,10 +55,22 @@
       "label": "Foliage & styling",
       "blurb": "Greens, grasses and the table dressing.",
       "items": [
-        {"cn": "小圆尤加利", "role": "Round eucalyptus leaves peeking between the warm blooms."},
-        {"cn": "芦苇草", "role": "Fountain-like grass plumes softening the canopy edges."},
-        {"cn": "tablecloth-white", "role": "Pure white satin tablecloth pooling over the rustic table."},
-        {"cn": "pearl-runner", "role": "Pearl strands draping from the drape edge over the table."}
+        {
+          "cn": "小圆尤加利",
+          "role": "Round eucalyptus leaves peeking between the warm blooms."
+        },
+        {
+          "cn": "芦苇草",
+          "role": "Fountain-like grass plumes softening the canopy edges."
+        },
+        {
+          "cn": "白色桌布",
+          "role": "Pure white satin tablecloth pooling over the rustic table."
+        },
+        {
+          "cn": "珍珠链",
+          "role": "Pearl strands draping from the drape edge over the table."
+        }
       ]
     }
   ]
