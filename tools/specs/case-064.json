@@ -1,0 +1,59 @@
+{
+  "case_id": 64,
+  "title": "Grand Hall Aisle",
+  "desc": "A grand hall aisle lined with lush florals under chandeliers, facing a cream draped stage with neon lettering.",
+  "scene": "wedding",
+  "colors": ["white", "green"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The white-pink-purple mix climbing both sides of the aisle.",
+      "items": [
+        {"cn": "钻石玫瑰-白", "role": "White roses massed through the aisle arrangements."},
+        {"cn": "钻石玫瑰-粉", "role": "Pink roses woven between the white blooms."},
+        {"cn": "洋牡丹-白", "role": "White ranunculus adding rounded layered faces."},
+        {"cn": "洋牡丹-粉", "role": "Pink ranunculus echoing the rose tones."},
+        {"cn": "90瓣绣球-紫", "role": "Purple hydrangea heads anchoring the taller clusters."},
+        {"cn": "126瓣绣球-粉", "role": "Pink hydrangea lightening the palette."},
+        {"cn": "飞燕-白", "role": "White larkspur spikes giving vertical lift."},
+        {"cn": "单头多层向日葵-黄", "role": "Small yellow sunflower faces dotted into the greenery (form-match for the small sunflower accents)."},
+        {"cn": "新款钻石玫瑰-桔", "role": "Orange spray roses warming the lower arrangements (closest orange multi-head rose)."}
+      ]
+    },
+    {
+      "key": "filler",
+      "label": "Fillers",
+      "blurb": "Small faces and airy fills between the feature blooms.",
+      "items": [
+        {"cn": "软胶满天星-白", "role": "White baby's breath scattering through the mixes."},
+        {"cn": "小雏菊-紫", "role": "Small purple daisies adding tiny violet faces (form-match for small purple chrysanth types)."},
+        {"cn": "小雏菊-黄", "role": "Yellow mini daisies as the small yellow filler blooms."},
+        {"cn": "情人草-白", "role": "White statice filling gaps with fine texture."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Foliage & grasses",
+      "blurb": "The lush green base building the aisle plantings.",
+      "items": [
+        {"cn": "芦苇草", "role": "Fountain grass plumes adding airy movement at the edges."},
+        {"cn": "蓬莱松-深绿", "role": "Dark green pine spray giving fine needle texture."},
+        {"cn": "3D尤加利", "role": "Eucalyptus sprigs through the middle layer."},
+        {"cn": "文竹", "role": "Asparagus fern adding soft feathery volume."},
+        {"cn": "长马尾草", "role": "Fine trailing grass tails over the arrangement edges (form-match trailing grass)."},
+        {"cn": "镂空龟背叶", "role": "Monstera leaves giving broad tropical structure at the base."}
+      ]
+    },
+    {
+      "key": "styling",
+      "label": "Styling & props",
+      "blurb": "The cream drape, pearl detailing and candlelight of the stage.",
+      "items": [
+        {"cn": "奶白布幔", "role": "Cream milk-silk backdrop drape with gathered swags behind the stage."},
+        {"cn": "珍珠链", "role": "Pearl mesh runner detailing along the aisle styling."},
+        {"cn": "白色蜡烛", "role": "White pillar candles for the ceremony glow (chandeliers, neon sign, string lights, paper flower installs and plush carpet are venue fixtures — logged gap)."}
+      ]
+    }
+  ]
+}

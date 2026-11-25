@@ -388,6 +388,27 @@
     ],
     "红色洋牡丹": [
       "ranunculus-red"
+    ],
+    "蜡烛": [
+      "candle-white"
+    ],
+    "白色蜡烛": [
+      "candle-white"
+    ],
+    "橙色多头玫瑰": [
+      "rose-orange"
+    ],
+    "黄色小向日葵": [
+      "sunflower"
+    ],
+    "紫色小菊": [
+      "daisy-purple"
+    ],
+    "黄色碎花": [
+      "mini-daisy-yellow"
+    ],
+    "马尾垂吊草": [
+      "foxtail"
     ]
   },
   "by_key": {
