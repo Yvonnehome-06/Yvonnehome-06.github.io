@@ -1,0 +1,58 @@
+{
+  "case_id": 42,
+  "colors": ["pink", "purple", "blue"],
+  "groups": [
+    {
+      "key": "main-flowers",
+      "label": "Main flowers",
+      "blurb": "Pink, purple and blue blooms covering the cake tiers.",
+      "items": [
+        {"cn": "126瓣绣球-粉", "role": "Pink hydrangea forming the soft pink clusters across the tiers."},
+        {"cn": "126瓣绣球-浅紫", "role": "Light purple hydrangea softening the pink field with lilac tones."},
+        {"cn": "新款钻石玫瑰-浅粉", "role": "Light pink roses scattered through the arrangement."},
+        {"cn": "洋牡丹-粉", "role": "Pink ranunculus adding rounded layered blooms."},
+        {"cn": "飞燕-粉", "role": "Pink larkspur spikes lifting the top tier."},
+        {"cn": "飞燕-蓝", "role": "Blue larkspur bringing the blue notes through the middle tiers."},
+        {"cn": "9头蝴蝶兰-雾蓝", "role": "Misty-blue phalaenopsis cascading over the middle tier edge."},
+        {"cn": "9头蝴蝶兰-绿", "role": "Green phalaenopsis climbing the upper tier beside the orchid cascade."},
+        {"cn": "3D玉兰-粉", "role": "Pink magnolia blooms adding spring-tree accents."},
+        {"cn": "樱花-粉", "role": "Pink-white cherry blossom branches reaching across the top of the cake."}
+      ]
+    },
+    {
+      "key": "fillers",
+      "label": "Fillers & small blooms",
+      "blurb": "Small flowers filling the gaps between the main blooms.",
+      "items": [
+        {"cn": "勿忘我绣球-紫", "role": "Purple-blue clustered blooms dotted through the tiers."},
+        {"cn": "小雏菊-黄", "role": "Yellow mini daisies adding fresh yellow touches."},
+        {"cn": "2叉飞燕-紫", "role": "Light purple larkspur spikes threading through the pink field."},
+        {"cn": "铃兰-粉", "role": "Pink bell flowers rising along the tiers."},
+        {"cn": "软胶满天星-紫", "role": "Purple star sprigs filling the gaps."},
+        {"cn": "小雏菊-白", "role": "White mini daisies lightening the palette."},
+        {"cn": "芍药-粉", "role": "Pink peonies anchoring the lower tiers."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & grasses",
+      "blurb": "Green foliage balancing the pastel blooms.",
+      "items": [
+        {"cn": "枫叶", "role": "Green maple leaves adding crisp leaf shapes through the arrangement."},
+        {"cn": "垂吊柔丝草", "role": "Soft feathery plumes threading through the tiers."},
+        {"cn": "芦苇草", "role": "Fountain reed grass adding airy grass sprays."},
+        {"cn": "文竹", "role": "Fine asparagus fern softening the edges."},
+        {"cn": "小圆尤加利", "role": "Round eucalyptus leaves adding cool-green circles."}
+      ]
+    },
+    {
+      "key": "styling",
+      "label": "Styling details",
+      "blurb": "Decorative details layered on the cake.",
+      "items": [
+        {"cn": "珍珠链", "role": "Pearl strands draped along the tier edges."},
+        {"cn": "叮叮果-黄", "role": "Yellow berry garlands ringing the tiers like small lemons."}
+      ]
+    }
+  ]
+}

@@ -160,5 +160,12 @@ window.LOOK_PRODUCTS = {
   "dingding-berry-light-green": {"n": "Dingding Berry - Light Green", "cn": "叮叮果-浅绿", "c": "others", "s": "叮叮果-浅绿", "t": "assets/img/flowers/others/thumb/others-038.jpg", "f": "assets/img/flowers/others/others-038.jpg"},
   "roman-pot-395": {"n": "Roman Column Flower Pot - 39.5 cm", "cn": "罗马柱花盆-39.5cm", "c": "pots", "s": "", "t": "assets/img/decor/pots/roman-column-pot-395.jpg", "f": "assets/img/decor/pots/roman-column-pot-395.jpg"},
   "celery-leaf": {"n": "Celery Leaf", "cn": "芹菜叶大", "c": "greenery", "s": "YY芹菜叶大", "t": "assets/img/flowers/greenery/thumb/greenery-188.jpg", "f": "assets/img/flowers/greenery/greenery-188.jpg"},
-  "tulle-white": {"n": "Wedding Chair Back Tulle - White", "cn": "椅背纱-白", "c": "sheers", "s": "", "t": "assets/img/decor/sheers/chair-tulle-white.jpg", "f": "assets/img/decor/sheers/chair-tulle-white.jpg"}
+  "tulle-white": {"n": "Wedding Chair Back Tulle - White", "cn": "椅背纱-白", "c": "sheers", "s": "", "t": "assets/img/decor/sheers/chair-tulle-white.jpg", "f": "assets/img/decor/sheers/chair-tulle-white.jpg"},
+  "pearl-runner": {"n": "Pearl Mesh Table Runner - White", "cn": "珍珠网桌旗-白", "c": "runners", "s": "", "t": "assets/img/decor/runners/pearl-mesh-runner-white.jpg", "f": "assets/img/decor/runners/pearl-mesh-runner-white.jpg"},
+  "new-diamond-rose-light-pink": {"n": "New Diamond Rose - Light Pink", "cn": "新款钻石玫瑰-浅粉", "c": "roses", "s": "新款钻石玫瑰-浅粉-66cm", "t": "assets/img/flowers/roses/thumb/roses-067.jpg", "f": "assets/img/flowers/roses/roses-067.jpg"},
+  "3d-magnolia-pink": {"n": "3D Magnolia - Pink", "cn": "3D玉兰-粉", "c": "others", "s": "3D玉兰-粉-83cm", "t": "assets/img/flowers/others/thumb/others-010.jpg", "f": "assets/img/flowers/others/others-010.jpg"},
+  "2-branch-larkspur-purple": {"n": "2-Branch Larkspur - Purple", "cn": "2叉飞燕-紫", "c": "orchids", "s": "2叉飞燕-紫-85cm", "t": "assets/img/flowers/orchids/thumb/orchids-003.jpg", "f": "assets/img/flowers/orchids/orchids-003.jpg"},
+  "lily-of-the-valley-pink": {"n": "Lily of the Valley - Pink", "cn": "铃兰-粉", "c": "orchids", "s": "铃兰-粉-95cm", "t": "assets/img/flowers/orchids/thumb/orchids-063.jpg", "f": "assets/img/flowers/orchids/orchids-063.jpg"},
+  "peony-pink-peonies053": {"n": "Peony - Pink", "cn": "芍药-粉", "c": "peonies", "s": "芍药-粉-72cm", "t": "assets/img/flowers/peonies/thumb/peonies-053.jpg", "f": "assets/img/flowers/peonies/peonies-053.jpg"},
+  "dingding-berry-yellow": {"n": "Dingding Berry - Yellow", "cn": "叮叮果-黄", "c": "greenery", "s": "DT叮叮果", "t": "assets/img/flowers/greenery/thumb/greenery-084.jpg", "f": "assets/img/flowers/greenery/greenery-084.jpg"}
 };
