@@ -167,5 +167,10 @@ window.LOOK_PRODUCTS = {
   "2-branch-larkspur-purple": {"n": "2-Branch Larkspur - Purple", "cn": "2叉飞燕-紫", "c": "orchids", "s": "2叉飞燕-紫-85cm", "t": "assets/img/flowers/orchids/thumb/orchids-003.jpg", "f": "assets/img/flowers/orchids/orchids-003.jpg"},
   "lily-of-the-valley-pink": {"n": "Lily of the Valley - Pink", "cn": "铃兰-粉", "c": "orchids", "s": "铃兰-粉-95cm", "t": "assets/img/flowers/orchids/thumb/orchids-063.jpg", "f": "assets/img/flowers/orchids/orchids-063.jpg"},
   "peony-pink-peonies053": {"n": "Peony - Pink", "cn": "芍药-粉", "c": "peonies", "s": "芍药-粉-72cm", "t": "assets/img/flowers/peonies/thumb/peonies-053.jpg", "f": "assets/img/flowers/peonies/peonies-053.jpg"},
-  "dingding-berry-yellow": {"n": "Dingding Berry - Yellow", "cn": "叮叮果-黄", "c": "greenery", "s": "DT叮叮果", "t": "assets/img/flowers/greenery/thumb/greenery-084.jpg", "f": "assets/img/flowers/greenery/greenery-084.jpg"}
+  "dingding-berry-yellow": {"n": "Dingding Berry - Yellow", "cn": "叮叮果-黄", "c": "greenery", "s": "DT叮叮果", "t": "assets/img/flowers/greenery/thumb/greenery-084.jpg", "f": "assets/img/flowers/greenery/greenery-084.jpg"},
+  "72-petal-hydrangea-orange": {"n": "72-Petal Hydrangea - Orange", "cn": "72瓣绣球-桔", "c": "hydrangeas", "s": "72瓣绣球-桔-68cm", "t": "assets/img/flowers/hydrangeas/thumb/hydrangeas-059.jpg", "f": "assets/img/flowers/hydrangeas/hydrangeas-059.jpg"},
+  "open-petal-rose-yellow": {"n": "Open-Petal Rose - Yellow", "cn": "翻瓣玫瑰-黄", "c": "roses", "s": "翻瓣玫瑰-黄-66cm", "t": "assets/img/flowers/roses/thumb/roses-104.jpg", "f": "assets/img/flowers/roses/roses-104.jpg"},
+  "marigold": {"n": "Marigold", "cn": "金盏菊", "c": "chrysanthemums", "s": "DG金盏菊", "t": "assets/img/flowers/chrysanthemums/thumb/chrysanthemums-036.jpg", "f": "assets/img/flowers/chrysanthemums/chrysanthemums-036.jpg"},
+  "4-head-chrysanthemum-yellow": {"n": "4-Head Chrysanthemum - Yellow", "cn": "4头菊花-黄", "c": "others", "s": "4头菊花-黄-52cm", "t": "assets/img/flowers/others/thumb/others-015.jpg", "f": "assets/img/flowers/others/others-015.jpg"},
+  "layered-gold": {"n": "Layered Gold", "cn": "千层金橘黄", "c": "others", "s": "HY千层金橘黄", "t": "assets/img/flowers/others/thumb/others-186.jpg", "f": "assets/img/flowers/others/others-186.jpg"}
 };

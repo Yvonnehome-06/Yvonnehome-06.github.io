@@ -1,0 +1,41 @@
+{
+  "case_id": 53,
+  "title": "Autumn Garden Arch",
+  "desc": "A warm orange arch set in an autumn garden.",
+  "scene": "wedding",
+  "colors": ["orange", "white", "yellow"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The saturated orange mass shaping the arch, with white pockets for contrast.",
+      "items": [
+        {"cn": "72瓣绣球-桔", "role": "Vivid orange hydrangea — the broadest colour block wrapping both sides of the arch."},
+        {"cn": "126瓣绣球-白", "role": "White hydrangea clusters breaking the orange on the lower left and right feet."},
+        {"cn": "洋牡丹-白", "role": "White ranunculus tucked into the white pockets for layered texture."},
+        {"cn": "翻瓣玫瑰-黄", "role": "Yellow-toned spray roses dotted through the mid sections (closest yellow in the library — orange-yellow roses are a logged gap)."},
+        {"cn": "大乒乓菊-桔", "role": "Round orange pompom mums giving the arch its bold spherical accents."},
+        {"cn": "金盏菊", "role": "Yellow-orange marigolds bridging the orange and yellow zones."}
+      ]
+    },
+    {
+      "key": "accents",
+      "label": "Accent fills",
+      "blurb": "Small scatter flowers lightening the dense colour mass.",
+      "items": [
+        {"cn": "4头菊花-黄", "role": "Yellow aster-style daisies scattered across the outer edges (closest match — true China asters are a logged gap)."},
+        {"cn": "小雏菊-白", "role": "Tiny white daisies sprinkled into the white clusters."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Foliage & grasses",
+      "blurb": "Softening greens and feathery fills between the flower blocks.",
+      "items": [
+        {"cn": "小圆尤加利", "role": "Round eucalyptus leaves peeking between the orange blooms."},
+        {"cn": "芦苇草", "role": "Fountain-like grass plumes adding airy movement at the arch edges."},
+        {"cn": "千层金橘黄", "role": "Orange feathery filler foliage deepening the warm tonal shifts (matched to the mist-grass filler)."}
+      ]
+    }
+  ]
+}
