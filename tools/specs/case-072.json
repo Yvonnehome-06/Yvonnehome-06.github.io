@@ -1,0 +1,42 @@
+{
+  "case_id": 72,
+  "title": "White Orchid Wall",
+  "desc": "A sculptural white-green corner installation: phalaenopsis cascades, green orchid clusters and tropical foliage on a shaped plinth.",
+  "scene": "shopfront",
+  "colors": ["white", "green"],
+  "groups": [
+    {
+      "key": "orchids",
+      "label": "Feature orchids",
+      "blurb": "The white cascades and green clusters that carry the wall.",
+      "items": [
+        {"cn": "9头蝴蝶兰-白", "role": "White phalaenopsis cascades running down the centre of the installation."},
+        {"cn": "9头蝴蝶兰-绿", "role": "Green-yellow orchid clusters at the top edges (form-match for the green cymbidium sprays)."},
+        {"cn": "白绣球", "role": "White hydrangea heads filling between the orchid cascades."},
+        {"cn": "绿绣球", "role": "Green hydrangea ball accents in the lower right planting."}
+      ]
+    },
+    {
+      "key": "foliage",
+      "label": "Foliage & statement leaves",
+      "blurb": "The patterned and tropical leaves giving the wall its structure.",
+      "items": [
+        {"cn": "香芋叶", "role": "White-veined arrow leaves at the base (form-match for the white caladium foliage, per the established mapping)."},
+        {"cn": "枫叶", "role": "Green maple sprays scattering through the upper section (form-match for the yellow-green maple foliage)."},
+        {"cn": "小圆尤加利", "role": "Round eucalyptus sprigs softening the mid layer."},
+        {"cn": "石竹", "role": "Green trick dianthus balls as the rounded green faces (form-match for the green ball chrysanth mounds)."}
+      ]
+    },
+    {
+      "key": "trailing",
+      "label": "Trailing greens",
+      "blurb": "The drooping textures that finish the silhouette.",
+      "items": [
+        {"cn": "情人泪-黄", "role": "Beaded trailing strings hanging from the top (form-match for the stringy droops; scene tone is slightly greener — logged as a form match)."},
+        {"cn": "垂吊柔丝草", "role": "Fine soft trailing grasses over the edges."},
+        {"cn": "垂钓空气草", "role": "Air plant sprigs tucked into the foliage (form-match for the air fern tufts)."},
+        {"cn": "蓬莱松-深绿", "role": "Dark green pine spray giving fine needle texture throughout."}
+      ]
+    }
+  ]
+}

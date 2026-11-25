@@ -186,5 +186,6 @@ window.LOOK_PRODUCTS = {
   "drape-cream": {"n": "Wedding Backdrop Drape - Cream", "cn": "", "c": "drapery", "s": "", "t": "assets/img/decor/drapery/backdrop-drape-cream.jpg", "f": "assets/img/decor/drapery/backdrop-drape-cream.jpg"},
   "candle-white": {"n": "Pure White Bullet Candle 3-Piece Set", "cn": "", "c": "candles", "s": "", "t": "assets/img/decor/candles/bullet-candle-white-set-3.jpg", "f": "assets/img/decor/candles/bullet-candle-white-set-3.jpg"},
   "3d-clematis-pink": {"n": "3D Clematis - Pink", "cn": "3D铁线莲-粉", "c": "others", "s": "3D铁线莲-粉-78cm", "t": "assets/img/flowers/others/thumb/others-013.jpg", "f": "assets/img/flowers/others/others-013.jpg"},
-  "drape-white": {"n": "Wedding Backdrop Drape - Pure White", "cn": "", "c": "drapery", "s": "", "t": "assets/img/decor/drapery/backdrop-drape-white.jpg", "f": "assets/img/decor/drapery/backdrop-drape-white.jpg"}
+  "drape-white": {"n": "Wedding Backdrop Drape - Pure White", "cn": "", "c": "drapery", "s": "", "t": "assets/img/decor/drapery/backdrop-drape-white.jpg", "f": "assets/img/decor/drapery/backdrop-drape-white.jpg"},
+  "valentine-tears-yellow": {"n": "Valentine Tears - Yellow", "cn": "情人泪-黄", "c": "babys-breath", "s": "DT情人泪", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-016.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-016.jpg"}
 };
