@@ -1,0 +1,41 @@
+{
+  "case_id": 74,
+  "title": "Suspended Window Garden",
+  "desc": "A suspended garden window: white orchids and larkspur cascading over feathery greens against a pleated white drape.",
+  "scene": "hanging",
+  "colors": ["white", "green"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Feature flowers",
+      "blurb": "The white cascade running across the suspended garden.",
+      "items": [
+        {"cn": "9头蝴蝶兰-白", "role": "White phalaenopsis clusters hanging through the centre (the ruffled white cascades)."},
+        {"cn": "2叉飞燕-白", "role": "White branching larkspur spikes rising through the greens (form-match for the large white delphinium)."},
+        {"cn": "洋牡丹-白", "role": "White ranunculus filling the mid-section clusters."},
+        {"cn": "白绣球", "role": "White hydrangea heads anchoring the top edge."},
+        {"cn": "跳舞兰-白", "role": "White oncidium orchid sprays arching out of the greenery."}
+      ]
+    },
+    {
+      "key": "greenery",
+      "label": "Greenery & trailing",
+      "blurb": "The feathery, trailing greens that build the hanging silhouette.",
+      "items": [
+        {"cn": "文竹", "role": "Asparagus fern forming the feathery body of the garden."},
+        {"cn": "细叶尤加利", "role": "Fine-leaf eucalyptus sprigs through the mid layer."},
+        {"cn": "芦苇草", "role": "Fountain grass plumes softening the edges."},
+        {"cn": "长马尾草", "role": "Long green tassels trailing down below the blooms (form-match hanging green spike)."},
+        {"cn": "蓬莱松-深绿", "role": "Dark green pine spray giving needle texture."}
+      ]
+    },
+    {
+      "key": "props",
+      "label": "Styling",
+      "blurb": "The pleated drape backdrop.",
+      "items": [
+        {"cn": "白色布幔", "role": "Pure white pleated milk-silk drape hung behind the suspended garden (wooden wall is the venue surface — logged gap)."}
+      ]
+    }
+  ]
+}
