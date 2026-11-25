@@ -1,0 +1,41 @@
+{
+  "case_id": 81,
+  "title": "Birthday Floral Backdrop",
+  "desc": "A wild-garden birthday backdrop: airy asparagus fern and willow branches sweeping across a white panel, dotted with lilac hydrangea, purple larkspur, cream daisies and yellow accent blooms.",
+  "scene": "birthday",
+  "colors": ["purple", "yellow", "green", "white"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Focal Flowers",
+      "blurb": "Lilac and purple accents with soft cream daisies.",
+      "items": [
+        {"cn": "126瓣绣球-浅紫", "role": "Round lilac hydrangea heads anchoring the lower clusters."},
+        {"cn": "飞燕-紫", "role": "Soft purple larkspur spikes rising through the greens."},
+        {"cn": "2叉飞燕-白", "role": "White branching larkspur lightening the composition."},
+        {"cn": "小雏菊-白", "role": "Cream daisies with yellow centres scattered at the base (matches the yellow-centre white-edge daisy request)."}
+      ]
+    },
+    {
+      "key": "filler",
+      "label": "Fillers",
+      "blurb": "Small purple mist-flowers and trailing beads.",
+      "items": [
+        {"cn": "紫雾花", "role": "Purple forget-me-not sprays standing in for the small purple mist-flowers."},
+        {"cn": "情人泪-黄", "role": "Beaded trailing branches echoing the hanging strands (yellow-green tone; no green variant — noted)."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Foliage & Line Grasses",
+      "blurb": "The airy, sweeping greenery that defines this look.",
+      "items": [
+        {"cn": "天门冬", "role": "Large fluffy asparagus fern sweeps — the signature airy mass of this backdrop."},
+        {"cn": "细叶尤加利", "role": "Fine-leaf eucalyptus stems through the mid layer."},
+        {"cn": "喷泉草", "role": "Reed grass plumes adding fine vertical line."},
+        {"cn": "细枝柳叶", "role": "Light-green willow branch with fine leaves for the sweeping line accents."},
+        {"cn": "柔丝草", "role": "Foxtail soft trailing grass woven through the corners."}
+      ]
+    }
+  ]
+}

@@ -44,7 +44,7 @@
       "dianthus-green"
     ],
     "喷泉草": [
-      "air-grass"
+      "reed-grass"
     ],
     "空气草": [
       "air-grass"
@@ -72,7 +72,7 @@
       "hanging-rice-white"
     ],
     "情人泪": [
-      "valentine-tears"
+      "valentine-tears-yellow"
     ],
     "天门冬": [
       "asparagus"
@@ -495,6 +495,21 @@
     ],
     "棕榈叶": [
       "areca"
+    ],
+    "紫色小飞燕": [
+      "larkspur-purple"
+    ],
+    "紫雾花": [
+      "forget-me-not-purple"
+    ],
+    "小碎花": [
+      "forget-me-not-purple"
+    ],
+    "细枝柳叶": [
+      "willow-branch-light-green"
+    ],
+    "柔丝草": [
+      "foxtail"
     ]
   },
   "by_key": {
