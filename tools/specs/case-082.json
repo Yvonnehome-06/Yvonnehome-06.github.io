@@ -1,0 +1,69 @@
+{
+  "case_id": 82,
+  "title": "White Wedding Ceiling",
+  "desc": "An all-white suspended ceiling installation: layers of white feather fringe and pampas plumes beneath a floral garland of white phalaenopsis orchids, hydrangea, lisianthus and wispy branches.",
+  "scene": "wedding",
+  "colors": [
+    "white",
+    "green"
+  ],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Focal Flowers",
+      "blurb": "White orchids and soft hydrangea crowning the installation.",
+      "items": [
+        {
+          "cn": "9头蝴蝶兰-白",
+          "role": "White phalaenopsis orchids arching over the floral crown."
+        },
+        {
+          "cn": "126瓣绣球-白",
+          "role": "White hydrangea massing the garland body."
+        },
+        {
+          "cn": "126瓣绣球-浅绿",
+          "role": "Light green hydrangea accents inside the white crown."
+        },
+        {
+          "cn": "桔梗-白",
+          "role": "White lisianthus blooms woven through the garland."
+        }
+      ]
+    },
+    {
+      "key": "filler",
+      "label": "Fillers",
+      "blurb": "Baby's breath and small white faces lightening the crown.",
+      "items": [
+        {
+          "cn": "满天星",
+          "role": "White baby's breath clouds through the floral crown."
+        },
+        {
+          "cn": "勿忘我-白",
+          "role": "Small white forget-me-not sprays scattered across the fringe."
+        }
+      ]
+    },
+    {
+      "key": "texture",
+      "label": "Feather & Line Elements",
+      "blurb": "The feathery, airy materials that build this look.",
+      "items": [
+        {
+          "cn": "白色蒲苇",
+          "role": "White pampas-style plumes standing in for the big feather pampas grass (12-head white reed, fluffy feather-like plumes — the real pampas/feather fringe is a logged gap)."
+        },
+        {
+          "cn": "喷泉草",
+          "role": "Reed grass plumes adding fine green-white vertical line."
+        },
+        {
+          "cn": "细枝飘逸木本枝条",
+          "role": "Snow willow branches with fine white buds for the wispy woody lines."
+        }
+      ]
+    }
+  ]
+}

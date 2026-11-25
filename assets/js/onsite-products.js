@@ -193,5 +193,6 @@ window.LOOK_PRODUCTS = {
   "tablecloth-cream": {"n": "Satin Tablecloth - Cream", "cn": "", "c": "tablecloths", "s": "", "t": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg", "f": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg"},
   "lily-yellow": {"n": "Lily - Yellow", "cn": "D胶片百合-黄", "c": "lilies", "s": "XKL3D胶片百合", "t": "assets/img/flowers/lilies/thumb/lilies-042.jpg", "f": "assets/img/flowers/lilies/lilies-042.jpg"},
   "bean-pod": {"n": "Bean Pod", "cn": "豆荚", "c": "greenery", "s": "DT豆荚", "t": "assets/img/flowers/greenery/thumb/greenery-113.jpg", "f": "assets/img/flowers/greenery/greenery-113.jpg"},
-  "jumbo-monstera": {"n": "Jumbo Monstera", "cn": "超大型大龟背", "c": "greenery", "s": "LX超大型大龟背", "t": "assets/img/flowers/greenery/thumb/greenery-152.jpg", "f": "assets/img/flowers/greenery/greenery-152.jpg"}
+  "jumbo-monstera": {"n": "Jumbo Monstera", "cn": "超大型大龟背", "c": "greenery", "s": "LX超大型大龟背", "t": "assets/img/flowers/greenery/thumb/greenery-152.jpg", "f": "assets/img/flowers/greenery/greenery-152.jpg"},
+  "forget-me-not-white": {"n": "Forget-Me-Not - White", "cn": "勿忘我-白", "c": "babys-breath", "s": "勿忘我-白-77cm", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-001.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-001.jpg"}
 };
