@@ -109,8 +109,7 @@
       "areca-3"
     ],
     "散尾": [
-      "areca",
-      "areca-3"
+      "areca"
     ],
     "尤加利": [
       "eucalyptus-round",
@@ -484,6 +483,18 @@
     ],
     "白色长蜡烛": [
       "candle-white"
+    ],
+    "仿真柠檬串": [
+      "dingding-berry-yellow"
+    ],
+    "单支仿真柠檬果": [
+      "dingding-berry-yellow"
+    ],
+    "仿真柠檬果": [
+      "dingding-berry-yellow"
+    ],
+    "棕榈叶": [
+      "areca"
     ]
   },
   "by_key": {

@@ -190,5 +190,8 @@ window.LOOK_PRODUCTS = {
   "valentine-tears-yellow": {"n": "Valentine Tears - Yellow", "cn": "情人泪-黄", "c": "babys-breath", "s": "DT情人泪", "t": "assets/img/flowers/babys-breath/thumb/babys-breath-016.jpg", "f": "assets/img/flowers/babys-breath/babys-breath-016.jpg"},
   "2-branch-larkspur-white": {"n": "2-Branch Larkspur - White", "cn": "2叉飞燕-白", "c": "orchids", "s": "2叉飞燕-白-85cm", "t": "assets/img/flowers/orchids/thumb/orchids-001.jpg", "f": "assets/img/flowers/orchids/orchids-001.jpg"},
   "dancing-orchid-white": {"n": "Dancing Orchid - White", "cn": "跳舞兰-白", "c": "orchids", "s": "跳舞兰-白-86cm", "t": "assets/img/flowers/orchids/thumb/orchids-057.jpg", "f": "assets/img/flowers/orchids/orchids-057.jpg"},
-  "tablecloth-cream": {"n": "Satin Tablecloth - Cream", "cn": "", "c": "tablecloths", "s": "", "t": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg", "f": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg"}
+  "tablecloth-cream": {"n": "Satin Tablecloth - Cream", "cn": "", "c": "tablecloths", "s": "", "t": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg", "f": "assets/img/decor/tablecloths/satin-tablecloth-cream.jpg"},
+  "lily-yellow": {"n": "Lily - Yellow", "cn": "D胶片百合-黄", "c": "lilies", "s": "XKL3D胶片百合", "t": "assets/img/flowers/lilies/thumb/lilies-042.jpg", "f": "assets/img/flowers/lilies/lilies-042.jpg"},
+  "bean-pod": {"n": "Bean Pod", "cn": "豆荚", "c": "greenery", "s": "DT豆荚", "t": "assets/img/flowers/greenery/thumb/greenery-113.jpg", "f": "assets/img/flowers/greenery/greenery-113.jpg"},
+  "jumbo-monstera": {"n": "Jumbo Monstera", "cn": "超大型大龟背", "c": "greenery", "s": "LX超大型大龟背", "t": "assets/img/flowers/greenery/thumb/greenery-152.jpg", "f": "assets/img/flowers/greenery/greenery-152.jpg"}
 };

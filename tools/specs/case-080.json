@@ -1,0 +1,40 @@
+{
+  "case_id": 80,
+  "title": "Lemon Yellow & Green Window Garland",
+  "desc": "A lush lemon-themed garland framing a window: bright yellow lilies and lemon clusters over light green and blush hydrangeas, tropical taro and monstera leaves, hanging green bean pods and palm fronds, finished with yellow and white fabric bows.",
+  "scene": "window",
+  "colors": ["yellow", "green", "blush"],
+  "groups": [
+    {
+      "key": "flowers",
+      "label": "Focal Flowers",
+      "blurb": "Yellow lilies and soft hydrangeas carrying the citrus palette.",
+      "items": [
+        {"cn": "D胶片百合-黄", "role": "Bright yellow trumpet lilies crowning the garland corners."},
+        {"cn": "126瓣绣球-浅绿", "role": "Light green hydrangeas forming the main body of the garland."},
+        {"cn": "126瓣绣球-粉", "role": "Blush pink hydrangea clusters softening the lower corner (no yellow-green lisianthus in the library — logged gap; the yellow-green tone is carried by the light green hydrangea and green pods)."}
+      ]
+    },
+    {
+      "key": "citrus",
+      "label": "Citrus & Pods",
+      "blurb": "The signature lemon elements of this look.",
+      "items": [
+        {"cn": "仿真柠檬串", "role": "Yellow berry-cluster branches standing in for the hanging lemon garlands (lemon SKU not in library — follow case-042 mapping #102; form is small round berries, not full-size lemons — noted for Bobbie)."},
+        {"cn": "豆荚", "role": "Green bean-pod branches echoing the long hanging pods in the scene."}
+      ]
+    },
+    {
+      "key": "greens",
+      "label": "Foliage & Grasses",
+      "blurb": "Tropical leaves and soft greens framing the window.",
+      "items": [
+        {"cn": "香芋叶", "role": "White-veined caladium leaves (following the #54 mapping)."},
+        {"cn": "超大型大龟背", "role": "Full-size monstera leaves behind the composition (the scene shows whole leaves, not the cutout style)."},
+        {"cn": "散尾", "role": "Areca palm fronds standing in for the palm leaves (no palm-leaf SKU; feather-palm form matches — noted)."},
+        {"cn": "天门冬", "role": "Asparagus fern / ming fern filler greenery (Boston fern itself is logged gap #8)."},
+        {"cn": "蓬莱松-深绿", "role": "Deep-green pine-spray clusters adding density."}
+      ]
+    }
+  ]
+}
